@@ -1,0 +1,81 @@
+# CarbonPulse Finland — Production Docker Compose
+#
+# Three services sharing one /data volume:
+#   streamer   : fetches Fingrid data every 15 min → writes to SQLite
+#   api        : FastAPI forecast service on port 8000
+#   app        : Streamlit dashboard on port 8501
+#
+# Usage:
+#   First time (set up DB, copy model files, then):
+#     docker compose up --build
+#
+#   Background (production):
+#     docker compose up --build -d
+#
+#   View logs:
+#     docker compose logs -f streamer
+#     docker compose logs -f api
+#
+#   Stop:
+#     docker compose down
+
+services:
+
+  streamer:
+    build: ./streamer
+    container_name: carbonpulse_streamer
+    restart: unless-stopped
+    environment:
+      - FINGRID_API_KEY=${FINGRID_API_KEY}
+      - DB_PATH=/data/project_data.db
+      - FETCH_INTERVAL_MIN=15
+      - LOOKBACK_MIN=60
+    volumes:
+      - ./data:/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  api:
+    build: ./api
+    container_name: carbonpulse_api
+    restart: unless-stopped
+    environment:
+      - DB_PATH=/data/project_data.db
+      - MODEL_PATH=/data/gru_model.pt
+      - SCALER_X=/data/scaler_X_15min.pkl
+      - SCALER_Y=/data/scaler_y_15min.pkl
+      - COL_CFG=/data/column_config.json
+      - SEQ_LEN=80
+    volumes:
+      - ./data:/data
+    ports:
+      - "8000:8000"
+    depends_on:
+      - streamer
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  app:
+    build: ./app
+    container_name: carbonpulse_dashboard
+    restart: unless-stopped
+    environment:
+      - DB_PATH=/data/project_data.db
+      - API_URL=http://api:8000
+    volumes:
+      - ./data:/data
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+volumes:
+  data:

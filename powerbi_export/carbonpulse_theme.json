@@ -1,0 +1,44 @@
+{
+  "name": "CarbonPulse Finland",
+  "dataColors": [
+    "#2a9d8f",
+    "#e76f51",
+    "#264653",
+    "#e9c46a",
+    "#457b9d",
+    "#52b788",
+    "#f4a261",
+    "#6d6875"
+  ],
+  "background": "#0f1923",
+  "foreground": "#e8f4f8",
+  "tableAccent": "#2a9d8f",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{"color": {"solid": {"color": "#1a2535"}}}],
+        "border": [{"show": false}],
+        "title": [{
+          "fontColor": {"solid": {"color": "#e8f4f8"}},
+          "fontSize": 11,
+          "fontFamily": "Segoe UI",
+          "bold": false
+        }],
+        "labels": [{"color": {"solid": {"color": "#a8c5d8"}}}]
+      }
+    },
+    "card": {
+      "*": {
+        "calloutValue": [{"fontSize": 28, "fontFamily": "Segoe UI Light"}],
+        "categoryLabel": [{"fontSize": 10, "color": {"solid": {"color": "#7fafc0"}}}],
+        "background": [{"color": {"solid": {"color": "#1e2f42"}}}]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "lineStyles": [{"lineWidth": 2}],
+        "plotArea": [{"background": {"color": {"solid": {"color": "#0f1923"}}}}]
+      }
+    }
+  }
+}

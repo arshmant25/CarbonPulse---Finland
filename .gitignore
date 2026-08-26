@@ -1,0 +1,60 @@
+# ==========================================
+# SOURCE CODE
+# ==========================================
+*.py
+*.ipynb
+
+# ==========================================
+# DATA / DATABASES
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.csv
+*.xlsx
+*.xls
+
+# ==========================================
+# MODEL ARTIFACTS
+# ==========================================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ==========================================
+# GENERATED OUTPUTS
+# ==========================================
+outputs/
+Research Experiments/eda_data/
+
+# ==========================================
+# CREDENTIALS & SENSITIVE FILES
+# ==========================================
+.env
+.env.*
+!.env.example
+secrets/
+config/*.json
+*.pem
+*.key
+
+# ==========================================
+# ENVIRONMENT & SYSTEM
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/
+.ipynb_checkpoints/

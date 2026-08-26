@@ -1,0 +1,16 @@
+requests
+pandas
+schedule
+streamlit
+plotly
+jupyter
+ipykernel
+matplotlib
+seaborn
+statsmodels
+joblib
+scikit-learn
+torch
+openpyxl
+fastapi
+uvicorn
