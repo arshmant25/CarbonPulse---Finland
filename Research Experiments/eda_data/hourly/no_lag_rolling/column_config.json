@@ -1,0 +1,43 @@
+{
+  "TARGET_FREQUENCY": "hourly",
+  "EXPERIMENT_NAME": "no_lag_rolling",
+  "NO_LAG_ROLLING": true,
+  "SEQ_LEN": 168,
+  "LAG_STEPS": [
+    1,
+    6,
+    24,
+    168
+  ],
+  "ROLL_WINDOWS": [
+    6,
+    24
+  ],
+  "FEATURE_COLS": [
+    "chp_district_mw_mean",
+    "chp_industrial_mw_mean",
+    "hydro_mw_mean",
+    "nuclear_mw_mean",
+    "wind_mw_mean",
+    "total_production_mw_mean",
+    "consumption_elec_mw_mean",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "month_sin",
+    "month_cos",
+    "time_index",
+    "renewable_share",
+    "net_load",
+    "fossil_share"
+  ],
+  "TARGET_COLS": [
+    "co2_intensity_simple_avg",
+    "consumption_co2_intens_simple_avg"
+  ],
+  "TRAIN_RATIO": 0.7,
+  "VAL_RATIO": 0.15,
+  "TEST_RATIO": 0.15
+}
