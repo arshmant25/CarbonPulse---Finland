@@ -6,9 +6,6 @@
 *.sqlite
 *.sqlite3
 *.parquet
-*.csv
-*.xlsx
-*.xls
 
 # ==========================================
 # MODEL ARTIFACTS

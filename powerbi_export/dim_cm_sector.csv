@@ -1,0 +1,7 @@
+cm_sector,ipcc_approx,sector_group
+Power,1A1 Energy Industries,energy
+Industry,1A2 Manufacturing / 2 Industrial Processes,energy
+Ground Transport,1A3b Road Transportation,transport
+Residential,1A4 Other Sectors (Buildings),buildings
+Domestic Aviation,1A3a Domestic Aviation,transport
+International Aviation,1D International Transport (memo),transport

@@ -1,0 +1,124 @@
+sector_code,sector_name,sector_full,level,depth_label,group_name,parent_code,parent_name,parent_l1
+TOTAL_NO_LULUCF,Emissions without LULUCF,Emissions without LULUCF,0,total,total,,,TOTAL_NO_LULUCF
+TOTAL_WITH_LULUCF,Emissions with LULUCF,Emissions with LULUCF,0,total,total,,,TOTAL_WITH_LULUCF
+1,Energy,1 Energy,1,parent,energy,TOTAL_NO_LULUCF,Emissions without LULUCF,1
+1D,International transport (memo item),1D International transport,1,parent,international,,,1D
+2,Industrial processes and product use,2 Industrial processes and product use,1,parent,industry,TOTAL_NO_LULUCF,Emissions without LULUCF,2
+3,Agriculture,3 Agriculture,1,parent,agriculture,TOTAL_NO_LULUCF,Emissions without LULUCF,3
+4,"Land use, land-use change and forestry (LULUCF)","4 Land use, land-use change and forestry (LULUCF)",1,parent,lulucf,TOTAL_WITH_LULUCF,Emissions with LULUCF,4
+5,Waste management,5 Waste management,1,parent,waste,TOTAL_NO_LULUCF,Emissions without LULUCF,5
+INDCO2,Indirect CO2 emission,Indirect CO2 emission,1,parent,other,TOTAL_NO_LULUCF,Emissions without LULUCF,INDCO2
+1A1,Energy industries,1A1 Energy industries,2,child,energy,1,Energy,1
+1A2,Manufacturing industries and construction,1A2 Manufacturing industries and construction,2,child,industry,1,Energy,1
+1A3,Transport,1A3 Transport,2,child,transport,1,Energy,1
+1A4,Other sectors (buildings),1A4 Other sectors,2,child,buildings,1,Energy,1
+1A5,Other fuel use,1A5 Other fuel use,2,child,energy,1,Energy,1
+1B,Fugitive emissions from fuels,1B Fugitive emissions from fuels,2,child,energy,1,Energy,1
+1D1a,International aviation,1D1a International aviation,2,child,international,1D,International transport (memo item),1D
+1D1b,International navigation,1D1b International navigation,2,child,international,1D,International transport (memo item),1D
+2A,Mineral industry,2A Mineral industry,2,child,industry,2,Industrial processes and product use,2
+2B,Chemical industry,2B Chemical industry,2,child,industry,2,Industrial processes and product use,2
+2C,Metal industry,2C Metal industry,2,child,industry,2,Industrial processes and product use,2
+2D,Non-energy products from fuels & solvent use,2D Non-energy products from fuels and solvent use,2,child,industry,2,Industrial processes and product use,2
+2F,Substitutes for ozone-depleting substances,2F Product uses as substitutes for ozone-depleting substances,2,child,industry,2,Industrial processes and product use,2
+2G,Other product manufacture and use,2G Other product manufacture and use,2,child,industry,2,Industrial processes and product use,2
+2H,Other industrial process emissions,2H Other emissions from industrial processses,2,child,industry,2,Industrial processes and product use,2
+3A,Enteric fermentation,3A  Enteric fermentation,2,child,agriculture,3,Agriculture,3
+3B,Manure management,3B Manure management,2,child,agriculture,3,Agriculture,3
+3D,Agricultural soils,3D Agricultural soils,2,child,agriculture,3,Agriculture,3
+3F,Field burning of agricultural residues,3F Field burning of agricultural residues,2,child,agriculture,3,Agriculture,3
+3G,Liming,3G Liming,2,child,agriculture,3,Agriculture,3
+3H,Urea application,3H Urea application,2,child,agriculture,3,Agriculture,3
+4A,Forest land,4A Forest land,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+4B,Cropland,4B Cropland,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+4C,Grassland,4C Grassland,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+4D,Wetlands,4D Wetlands,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+4E,Settlements,4E Settlements,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+4G,Harvested wood products,4G Harvested wood products,2,child,lulucf,4,"Land use, land-use change and forestry (LULUCF)",4
+5A,Waste disposal (landfill),5A Waste disposal,2,child,waste,5,Waste management,5
+5B,Biological treatment of waste,5B Biological treatment of  waste,2,child,waste,5,Waste management,5
+5D,Wastewater treatment and discharge,5D Wastewater treatment and discharge,2,child,waste,5,Waste management,5
+1A2(-1A2gvii),Manufacturing excl. off-road vehicles,1A2(-1A2gvii) Manufacturing industries and construction excl. off-road vehicles and other machinery,3,subchild,industry,1A2,Manufacturing industries and construction,1
+1A2gvii,Off-road vehicles & machinery (manuf.),1A2gvii Off-road vehicles and other machinery production,3,subchild,industry,1A2,Manufacturing industries and construction,1
+1A3a,Domestic aviation,1A3a Domestic aviation,3,subchild,transport,1A3,Transport,1
+1A3b,Road transportation,1A3b Road transportation,3,subchild,transport,1A3,Transport,1
+1A3c,Railways,1A3c Railways,3,subchild,transport,1A3,Transport,1
+1A3d,Domestic navigation,1A3d Domestic navigation,3,subchild,transport,1A3,Transport,1
+1A4a,Commercial and institutional,1A4a Commercial and institutional,3,subchild,buildings,1A4,Other sectors (buildings),1
+1A4b,Residential,1A4b Residential,3,subchild,buildings,1A4,Other sectors (buildings),1
+1A4c,"Agriculture, forestry and fishing (energy use)","1A4c Agriculture, forestry anf fishing",3,subchild,buildings,1A4,Other sectors (buildings),1
+2F1,Refrigeration and air conditioning,2F1 Refrigeration and air conditioning,3,subchild,industry,2F,Substitutes for ozone-depleting substances,2
+2F2,Foam blowing agents,2F2 Foam blowing agents,3,subchild,industry,2F,Substitutes for ozone-depleting substances,2
+2F4,Aerosols,2F4 Aerosols,3,subchild,industry,2F,Substitutes for ozone-depleting substances,2
+3A1,Cattle (enteric),3A1 Cattle,3,subchild,agriculture,3A,Enteric fermentation,3
+3A2,Sheep (enteric),3A2 Sheep,3,subchild,agriculture,3A,Enteric fermentation,3
+3A3,Swine (enteric),3A3 Swine,3,subchild,agriculture,3A,Enteric fermentation,3
+3A4d,Goats (enteric),3A4d Goats,3,subchild,agriculture,3A,Enteric fermentation,3
+3A4e,Horses and ponies (enteric),3A4e Horses and ponies,3,subchild,agriculture,3A,Enteric fermentation,3
+3A4hii,Reindeer (enteric),3A4hii Reindeer,3,subchild,agriculture,3A,Enteric fermentation,3
+3A4hiv,Fur-bearing animals (enteric),3A4hiv Fur-bearing animals,3,subchild,agriculture,3A,Enteric fermentation,3
+3B1,Cattle (manure),3B1 Cattle,3,subchild,agriculture,3B,Manure management,3
+3B2,Sheep (manure),3B2 Sheep,3,subchild,agriculture,3B,Manure management,3
+3B3,Swine (manure),3B3 Swine,3,subchild,agriculture,3B,Manure management,3
+3B4d,Goats (manure),3B4d Goats,3,subchild,agriculture,3B,Manure management,3
+3B4e,Horses and ponies (manure),3B4e Horses and ponies,3,subchild,agriculture,3B,Manure management,3
+3B4g,Poultry (manure),3B4g Poultry,3,subchild,agriculture,3B,Manure management,3
+3B4hii,Reindeer (manure),3B4hii Reindeer,3,subchild,agriculture,3B,Manure management,3
+3B4hiv,Fur-bearing animals (manure),3B4hiv Fur-bearing animals,3,subchild,agriculture,3B,Manure management,3
+3B5,Indirect N2O from manure management,3B5 Indirect N2O emissions from manure management,3,subchild,agriculture,3B,Manure management,3
+3D1,Direct N2O from managed soils,3D1 Direct N2O emissions from managed soils,3,subchild,agriculture,3D,Agricultural soils,3
+3D2,Indirect N2O from managed soils,3D2 Indirect N2O emissions from managed soils,3,subchild,agriculture,3D,Agricultural soils,3
+4(i)A,Forest land: N2O from N-fertilization,4(i)A Forest land: N2O emissions from N-fertilization,3,subchild,lulucf,4A,Forest land,4
+4(i)E,Settlements: N2O from N-fertilization,4(i)E Settlements: N2O emissions from N-fertilization,3,subchild,lulucf,4E,Settlements,4
+4(ii)A,Forest land: drainage & rewetting,4(ii)A Forest land: emissions and removals from drainage and rewetting,3,subchild,lulucf,4A,Forest land,4
+4(ii)D,Wetlands: drainage & rewetting,4(ii)D Wetlands: emissions and removals from drainage and rewetting,3,subchild,lulucf,4D,Wetlands,4
+4(ii)E,Settlements: drainage & rewetting,4(ii)E Settlements: emissions and removals from drainage and rewetting,3,subchild,lulucf,4E,Settlements,4
+4(iii)A,Forest land: N2O from SOM loss (mineral),4(iii)A Forest land: N2O emissions from nitrogen mineralization associated with loss of soil organic matter in mineral soils,3,subchild,lulucf,4A,Forest land,4
+4(iii)B,Cropland: N2O from SOM loss (mineral),4(iii)B Cropland: N2O emissions from nitrogen mineralization associated with loss of soil organic matter in mineral soils,3,subchild,lulucf,4B,Cropland,4
+4(iii)C,Grassland: N2O from SOM loss (mineral),4(iii)C Grassland: N2O emissions from nitrogen mineralization associated with loss of soil organic matter in mineral soils,3,subchild,lulucf,4C,Grassland,4
+4(iii)E,Settlements: N2O from SOM loss (mineral),4(iii)E Settlements: N2O emissions from nitrogen mineralization associated with loss of soil organic matter in mineral soils,3,subchild,lulucf,4E,Settlements,4
+4(iv)A,Forest land: biomass burning,"4(iv)A Forest land: biomass burning (wildfires, prescribed and restoration burnings)",3,subchild,lulucf,4A,Forest land,4
+4(iv)C,Grassland: biomass burning,"4(iv)C Grassland: biomass burning (wildfires, prescribed and restoration burnings)",3,subchild,lulucf,4C,Grassland,4
+4Ai1,Forest land: biomass (mineral soils),4Ai1 Forest land: biomass (mineral soils),3,subchild,lulucf,4A,Forest land,4
+4Ai2,Forest land: biomass (organic soils),4Ai2 Forest land: biomass (organic soils),3,subchild,lulucf,4A,Forest land,4
+4Aiv,Forest land: DOM+SOM (mineral soils),4Aiv Forest land: DOM + SOM (mineral soils),3,subchild,lulucf,4A,Forest land,4
+4Av,Forest land: DOM+SOM (organic soils),4Av Forest land: DOM + SOM (organic soils),3,subchild,lulucf,4A,Forest land,4
+4Bi,Cropland: biomass,4Bi Cropland: biomass,3,subchild,lulucf,4B,Cropland,4
+4Biv,Cropland: DOM+SOM (mineral soils),4Biv Cropland: DOM + SOM (mineral soils),3,subchild,lulucf,4B,Cropland,4
+4Bv,Cropland: DOM+SOM (organic soils),4Bv Cropland: DOM + SOM (organic soils),3,subchild,lulucf,4B,Cropland,4
+4Ci,Grassland: biomass,4Ci Grassland: biomass,3,subchild,lulucf,4C,Grassland,4
+4Civ,Grassland: DOM+SOM (mineral soils),4Civ Grassland: DOM + SOM (mineral soils),3,subchild,lulucf,4C,Grassland,4
+4Cv,Grassland: DOM+SOM (organic soils),4Cv Grassland: DOM + SOM (organic soils),3,subchild,lulucf,4C,Grassland,4
+4Di,Wetlands: biomass,4Di Wetlands: biomass,3,subchild,lulucf,4D,Wetlands,4
+4Diii,Wetlands: dead wood,4Diii Wetlands: dead wood,3,subchild,lulucf,4D,Wetlands,4
+4Dv,Wetlands: SOM,4Dv Wetlands: SOM,3,subchild,lulucf,4D,Wetlands,4
+4Ei,Settlements: biomass,4Ei Settlements: biomass,3,subchild,lulucf,4E,Settlements,4
+4Eiii,Settlements: dead wood,4Eiii Settlements: dead wood,3,subchild,lulucf,4E,Settlements,4
+4Eiv-v,Settlements: SOM and litter,4Eiv-v Settlements: SOM  and litter,3,subchild,lulucf,4E,Settlements,4
+1A3bi,Cars,1A3bi Cars,4,subsubchild,transport,1A3b,Road transportation,1
+1A3bii,Light duty trucks,1A3bii Light duty trucks,4,subsubchild,transport,1A3b,Road transportation,1
+1A3biii,Heavy duty trucks,1A3biii Heavyduty trucks,4,subsubchild,transport,1A3b,Road transportation,1
+1A3biv,Motorcycles,1A3biv Motorcycles,4,subsubchild,transport,1A3b,Road transportation,1
+1A4ai,"Commercial/institutional, stationary","1A4ai Commercial/institutional, stationary",4,subsubchild,buildings,1A4a,Commercial and institutional,1
+1A4aii,"Commercial/institutional, off-road vehicles","1A4aii Commercial/institutional, off-road vehicles and other machinery",4,subsubchild,buildings,1A4a,Commercial and institutional,1
+1A4bi,"Residential, stationary","1A4bi Residential, stationary",4,subsubchild,buildings,1A4b,Residential,1
+1A4bii,"Residential, off-road vehicles","1A4bii Residential, off-road vehicles and other machinery",4,subsubchild,buildings,1A4b,Residential,1
+1A4ci,"Agriculture/forestry, stationary","1A4ci Agriculture/forestry, stationary",4,subsubchild,buildings,1A4c,"Agriculture, forestry and fishing (energy use)",1
+1A4cii,"Agriculture/forestry, off-road vehicles","1A4cii Agriculture/forestry, off-road vehicles and other machinery",4,subsubchild,buildings,1A4c,"Agriculture, forestry and fishing (energy use)",1
+1A4ciii,Fishing,1A4ciii Fishing,4,subsubchild,buildings,1A4c,"Agriculture, forestry and fishing (energy use)",1
+2F1a,Commercial refrigeration,2F1a Commercial refrigeration,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+2F1b,Domestic refrigeration,2F1b Domestic refrigeration,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+2F1c,Industrial refrigeration,2F1c Industrial refrigeration,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+2F1d,Transport refrigeration,2F1d Transport refrigeration,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+2F1e,Mobile air-conditioning,2F1e Mobile air-conditioning,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+2F1f,Stationary air-conditioning,2F1f Stationary air-conditioning,4,subsubchild,industry,2F1,Refrigeration and air conditioning,2
+3A1a,Dairy cattle (enteric),3A1a Dairy cattle,4,subsubchild,agriculture,3A1,Cattle (enteric),3
+3A1b,Non-dairy cattle (enteric),3A1b Non-dairy cattle,4,subsubchild,agriculture,3A1,Cattle (enteric),3
+3B1a,Dairy cattle (manure),3B1a Dairy cattle,4,subsubchild,agriculture,3B1,Cattle (manure),3
+3B1b,Non-dairy cattle (manure),3B1b Non-dairy cattle,4,subsubchild,agriculture,3B1,Cattle (manure),3
+3D1a,Inorganic N fertilizers,3D1a Inorganic N fertilizers,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
+3D1b,Organic N fertilizers,3D1b Organic N fertilizers,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
+3D1c,Urine and dung from grazing animals,3D1c Urine and dung deposited by grazing animals,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
+3D1d,Crop residues,3D1d Crop residues,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
+3D1e,N2O from soil organic matter loss (mineral),3D1e N2O emissions from nitrogen mineralization associated with loss of soil organic matter in mineral soils,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
+3D1f,Cultivation of organic croplands/grasslands,3D1f Cultivation of organic soils of croplands and grasslands,4,subsubchild,agriculture,3D1,Direct N2O from managed soils,3
