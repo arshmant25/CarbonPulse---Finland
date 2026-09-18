@@ -306,10 +306,21 @@ if page == "⚡ Grid Live View":
     hydr_col = next((c for c in ["hydro_mw"] if c in df.columns), None)
 
     with k1:
-        live_val = (current["co2_intensity_gco2kwh"]
-                    if current else df[co2_col].iloc[-1])
+        # NEW: guard against co2_col being None (table has no data
+        # columns yet, e.g. right after creation / before the first
+        # hourly merge has run) and against df being empty even when
+        # co2_col exists. Previously this went straight to
+        # df[co2_col].iloc[-1] with no checks, which raised
+        # "KeyError: None" whenever co2_col was None.
+        if current:
+            live_val = current["co2_intensity_gco2kwh"]
+        elif co2_col and not df.empty:
+            live_val = df[co2_col].iloc[-1]
+        else:
+            live_val = None
+
         metric_card("CO₂ Intensity (live)",
-                    f"{live_val:.1f} gCO₂/kWh",
+                    f"{live_val:.1f} gCO₂/kWh" if live_val is not None else "No data yet",
                     good_direction="down")
     with k2:
         avg_int = df[co2_col].mean() if co2_col else 0

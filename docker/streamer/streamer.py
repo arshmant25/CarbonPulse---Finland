@@ -379,6 +379,22 @@ if __name__ == "__main__":
     import os
     os.makedirs("/data", exist_ok=True)
     log.info("Streamer starting — interval %d min", FETCH_INTERVAL_MIN)
+
+    # NEW: create fingrid_hourly_merged immediately, before the first
+    # fetch cycle runs. On a first-ever run, run_cycle() has to pull
+    # full history (since 2018) for 9 datasets, which can take a while.
+    # Previously the table was only created at the END of that first
+    # cycle (inside update_hourly_merged), so if the dashboard queried
+    # the DB anytime during that window, it got:
+    #   "no such table: fingrid_hourly_merged"
+    # Creating an (empty) table up front means the dashboard's
+    # `SELECT * FROM fingrid_hourly_merged` succeeds immediately —
+    # it'll just return 0 rows until the first cycle finishes and
+    # actually populates it.
+    _conn = get_conn()
+    ensure_hourly_table(_conn)
+    _conn.close()
+
     run_cycle()
     while True:
         time.sleep(FETCH_INTERVAL_MIN * 60)
