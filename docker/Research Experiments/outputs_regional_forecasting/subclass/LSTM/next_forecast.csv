@@ -1,0 +1,984 @@
+series_id,last_known_year,last_known_value_ktco2e,next_year,predicted_value_ktco2e,region,sector,subclass
+Central Finland||Agriculture||Animal digestion,2024,90.1,2025,99.11895395517348,Central Finland,Agriculture,Animal digestion
+Central Finland||Agriculture||Grazing,2024,1.0,2025,1.1484463855624198,Central Finland,Agriculture,Grazing
+Central Finland||Agriculture||Manure treatment,2024,30.5,2025,33.42580999135971,Central Finland,Agriculture,Manure treatment
+Central Finland||Agriculture||Organic fertilizers,2024,6.0,2025,6.470574927330017,Central Finland,Agriculture,Organic fertilizers
+Central Finland||Agriculture||Other emissions from farmland,2024,27.9,2025,28.772156721353536,Central Finland,Agriculture,Other emissions from farmland
+Central Finland||Agriculture||Soil,2024,49.7,2025,47.72543570995331,Central Finland,Agriculture,Soil
+Central Finland||Agriculture||nan,2024,43.1,2025,41.9044294834137,Central Finland,Agriculture,nan
+Central Finland||District heating||Agriculture,2024,0.1,2025,0.1909952998161316,Central Finland,District heating,Agriculture
+Central Finland||District heating||Housing,2024,81.3,2025,136.37212083935736,Central Finland,District heating,Housing
+Central Finland||District heating||Industry,2024,12.1,2025,18.609953117370605,Central Finland,District heating,Industry
+Central Finland||District heating||Services,2024,46.6,2025,72.12780585885048,Central Finland,District heating,Services
+Central Finland||Electric heating||Agriculture,2024,0.5,2025,1.2710250675678252,Central Finland,Electric heating,Agriculture
+Central Finland||Electric heating||Housing,2024,22.0,2025,53.65497503280639,Central Finland,Electric heating,Housing
+Central Finland||Electric heating||Services,2024,2.7,2025,5.542743659019471,Central Finland,Electric heating,Services
+Central Finland||Electricity||Agriculture,2024,0.9,2025,2.4370447129011157,Central Finland,Electricity,Agriculture
+Central Finland||Electricity||Housing,2024,23.6,2025,53.74011116921902,Central Finland,Electricity,Housing
+Central Finland||Electricity||Industry,2024,88.6,2025,177.31550512611864,Central Finland,Electricity,Industry
+Central Finland||Electricity||Services,2024,34.2,2025,52.41506044864655,Central Finland,Electricity,Services
+Central Finland||F-gases||Building air conditioning equipment,2024,6.5,2025,5.740121650695801,Central Finland,F-gases,Building air conditioning equipment
+Central Finland||F-gases||Commercial and professional kitchen refrigeration equipment,2024,15.4,2025,28.28946207761765,Central Finland,F-gases,Commercial and professional kitchen refrigeration equipment
+Central Finland||F-gases||Other sources of F-gases,2024,5.1,2025,6.055098089575767,Central Finland,F-gases,Other sources of F-gases
+Central Finland||F-gases||Vehicle air conditioning equipment,2024,5.1,2025,6.047146636247635,Central Finland,F-gases,Vehicle air conditioning equipment
+Central Finland||Industry||Industrial fuels,2024,94.7,2025,137.72387744188308,Central Finland,Industry,Industrial fuels
+Central Finland||Machinery||Agricultural and forestry machinery,2024,53.2,2025,54.89573004990816,Central Finland,Machinery,Agricultural and forestry machinery
+Central Finland||Machinery||Construction machinery,2024,18.2,2025,19.320743003487586,Central Finland,Machinery,Construction machinery
+Central Finland||Machinery||Mining and industrial machinery,2024,17.6,2025,19.12137424945831,Central Finland,Machinery,Mining and industrial machinery
+Central Finland||Machinery||Other machinery,2024,5.4,2025,5.91804455369711,Central Finland,Machinery,Other machinery
+Central Finland||Machinery||Road construction machinery,2024,35.1,2025,32.65310465097427,Central Finland,Machinery,Road construction machinery
+Central Finland||Oil heating||Agriculture,2024,0.7,2025,1.019581139087677,Central Finland,Oil heating,Agriculture
+Central Finland||Oil heating||Housing,2024,9.2,2025,43.79930882304907,Central Finland,Oil heating,Housing
+Central Finland||Oil heating||Services,2024,28.6,2025,30.38879272341728,Central Finland,Oil heating,Services
+Central Finland||Other heating||Agriculture,2024,1.5,2025,6.579858788847923,Central Finland,Other heating,Agriculture
+Central Finland||Other heating||Housing,2024,30.6,2025,34.10287593603134,Central Finland,Other heating,Housing
+Central Finland||Other heating||Services,2024,6.5,2025,6.852926522493362,Central Finland,Other heating,Services
+Central Finland||Rail transport||Community trains,2024,0.0,2025,0.007460832595825195,Central Finland,Rail transport,Community trains
+Central Finland||Rail transport||Diesel,2024,4.4,2025,4.055394876003265,Central Finland,Rail transport,Diesel
+Central Finland||Rail transport||Electricity,2024,0.7,2025,1.1994690299034119,Central Finland,Rail transport,Electricity
+Central Finland||Rail transport||Metros and trams,2024,0.0,2025,-0.1629238724708557,Central Finland,Rail transport,Metros and trams
+Central Finland||Road transport||Buses,2024,5.5,2025,10.489724797010423,Central Finland,Road transport,Buses
+Central Finland||Road transport||Drive-through traffic,2024,83.6,2025,89.10975872874262,Central Finland,Road transport,Drive-through traffic
+Central Finland||Road transport||Motorcycles and mopeds,2024,5.1,2025,5.206213246285916,Central Finland,Road transport,Motorcycles and mopeds
+Central Finland||Road transport||Passenger cars,2024,264.2,2025,298.0600318431854,Central Finland,Road transport,Passenger cars
+Central Finland||Road transport||Trucks,2024,116.4,2025,142.08785794973375,Central Finland,Road transport,Trucks
+Central Finland||Road transport||Vancouver vans,2024,47.8,2025,48.17493634223938,Central Finland,Road transport,Vancouver vans
+Central Finland||Waste treatment||Industry,2024,8.7,2025,8.976749014854432,Central Finland,Waste treatment,Industry
+Central Finland||Waste treatment||Municipal waste,2024,57.5,2025,62.34740976095201,Central Finland,Waste treatment,Municipal waste
+Central Finland||Water transport||Fishing vessels,2024,0.0,2025,-0.04852890968322754,Central Finland,Water transport,Fishing vessels
+Central Finland||Water transport||Goods traffic,2024,0.0,2025,-0.22635185718536377,Central Finland,Water transport,Goods traffic
+Central Finland||Water transport||Passenger traffic,2024,0.1,2025,0.11035322695970536,Central Finland,Water transport,Passenger traffic
+Central Finland||Water transport||Pleasure boats,2024,5.8,2025,5.389628732204438,Central Finland,Water transport,Pleasure boats
+Central Finland||Water transport||Workboats and ships,2024,1.6,2025,3.405066967010498,Central Finland,Water transport,Workboats and ships
+Central Finland||Water transport||nan,2024,0.0,2025,-0.19077551364898682,Central Finland,Water transport,nan
+Central Ostrobothnia||Agriculture||Animal digestion,2024,119.1,2025,120.3400319814682,Central Ostrobothnia,Agriculture,Animal digestion
+Central Ostrobothnia||Agriculture||Grazing,2024,1.0,2025,1.1226456880569458,Central Ostrobothnia,Agriculture,Grazing
+Central Ostrobothnia||Agriculture||Manure treatment,2024,42.0,2025,52.94532470107079,Central Ostrobothnia,Agriculture,Manure treatment
+Central Ostrobothnia||Agriculture||Organic fertilizers,2024,7.6,2025,8.134124946594238,Central Ostrobothnia,Agriculture,Organic fertilizers
+Central Ostrobothnia||Agriculture||Other emissions from farmland,2024,20.5,2025,20.173105199635028,Central Ostrobothnia,Agriculture,Other emissions from farmland
+Central Ostrobothnia||Agriculture||Soil,2024,99.2,2025,94.25517539978027,Central Ostrobothnia,Agriculture,Soil
+Central Ostrobothnia||Agriculture||nan,2024,27.6,2025,26.081545138359072,Central Ostrobothnia,Agriculture,nan
+Central Ostrobothnia||District heating||Agriculture,2024,0.2,2025,0.1505569338798523,Central Ostrobothnia,District heating,Agriculture
+Central Ostrobothnia||District heating||Housing,2024,19.7,2025,21.623980814218523,Central Ostrobothnia,District heating,Housing
+Central Ostrobothnia||District heating||Industry,2024,4.5,2025,4.422268337011338,Central Ostrobothnia,District heating,Industry
+Central Ostrobothnia||District heating||Services,2024,14.9,2025,17.28232918381691,Central Ostrobothnia,District heating,Services
+Central Ostrobothnia||Electric heating||Agriculture,2024,0.5,2025,1.0721925854682923,Central Ostrobothnia,Electric heating,Agriculture
+Central Ostrobothnia||Electric heating||Housing,2024,7.1,2025,14.1672787129879,Central Ostrobothnia,Electric heating,Housing
+Central Ostrobothnia||Electric heating||Services,2024,0.9,2025,1.588680332899094,Central Ostrobothnia,Electric heating,Services
+Central Ostrobothnia||Electricity||Agriculture,2024,0.7,2025,2.159756147861481,Central Ostrobothnia,Electricity,Agriculture
+Central Ostrobothnia||Electricity||Housing,2024,6.3,2025,13.238088780641556,Central Ostrobothnia,Electricity,Housing
+Central Ostrobothnia||Electricity||Industry,2024,59.8,2025,81.99553840458393,Central Ostrobothnia,Electricity,Industry
+Central Ostrobothnia||Electricity||Services,2024,5.9,2025,11.561099529266356,Central Ostrobothnia,Electricity,Services
+Central Ostrobothnia||F-gases||Building air conditioning equipment,2024,1.6,2025,1.448405146598816,Central Ostrobothnia,F-gases,Building air conditioning equipment
+Central Ostrobothnia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,3.9,2025,6.92328701019287,Central Ostrobothnia,F-gases,Commercial and professional kitchen refrigeration equipment
+Central Ostrobothnia||F-gases||Other sources of F-gases,2024,1.3,2025,1.5246886804699897,Central Ostrobothnia,F-gases,Other sources of F-gases
+Central Ostrobothnia||F-gases||Vehicle air conditioning equipment,2024,1.4,2025,1.6390445053577425,Central Ostrobothnia,F-gases,Vehicle air conditioning equipment
+Central Ostrobothnia||Industry||Industrial fuels,2024,71.0,2025,83.86522288322448,Central Ostrobothnia,Industry,Industrial fuels
+Central Ostrobothnia||Machinery||Agricultural and forestry machinery,2024,18.8,2025,20.280884313583375,Central Ostrobothnia,Machinery,Agricultural and forestry machinery
+Central Ostrobothnia||Machinery||Construction machinery,2024,4.5,2025,4.902786803245545,Central Ostrobothnia,Machinery,Construction machinery
+Central Ostrobothnia||Machinery||Mining and industrial machinery,2024,4.5,2025,4.919798639416694,Central Ostrobothnia,Machinery,Mining and industrial machinery
+Central Ostrobothnia||Machinery||Other machinery,2024,1.5,2025,1.6600698471069335,Central Ostrobothnia,Machinery,Other machinery
+Central Ostrobothnia||Machinery||Road construction machinery,2024,7.2,2025,6.734387707710266,Central Ostrobothnia,Machinery,Road construction machinery
+Central Ostrobothnia||Oil heating||Agriculture,2024,0.6,2025,0.7860811337828637,Central Ostrobothnia,Oil heating,Agriculture
+Central Ostrobothnia||Oil heating||Housing,2024,3.7,2025,14.071208801865577,Central Ostrobothnia,Oil heating,Housing
+Central Ostrobothnia||Oil heating||Services,2024,11.3,2025,11.966577106714247,Central Ostrobothnia,Oil heating,Services
+Central Ostrobothnia||Other heating||Agriculture,2024,3.4,2025,6.758250299096107,Central Ostrobothnia,Other heating,Agriculture
+Central Ostrobothnia||Other heating||Housing,2024,7.4,2025,8.182370966672897,Central Ostrobothnia,Other heating,Housing
+Central Ostrobothnia||Other heating||Services,2024,3.5,2025,2.5584922075271606,Central Ostrobothnia,Other heating,Services
+Central Ostrobothnia||Rail transport||Community trains,2024,0.0,2025,0.005803704261779785,Central Ostrobothnia,Rail transport,Community trains
+Central Ostrobothnia||Rail transport||Diesel,2024,1.0,2025,1.4066612243652343,Central Ostrobothnia,Rail transport,Diesel
+Central Ostrobothnia||Rail transport||Electricity,2024,0.7,2025,1.5095391571521755,Central Ostrobothnia,Rail transport,Electricity
+Central Ostrobothnia||Rail transport||Metros and trams,2024,0.0,2025,-0.14258110523223877,Central Ostrobothnia,Rail transport,Metros and trams
+Central Ostrobothnia||Road transport||Buses,2024,1.3,2025,1.5297884553670884,Central Ostrobothnia,Road transport,Buses
+Central Ostrobothnia||Road transport||Drive-through traffic,2024,5.8,2025,5.869548675417899,Central Ostrobothnia,Road transport,Drive-through traffic
+Central Ostrobothnia||Road transport||Motorcycles and mopeds,2024,1.3,2025,1.3735440403223038,Central Ostrobothnia,Road transport,Motorcycles and mopeds
+Central Ostrobothnia||Road transport||Passenger cars,2024,76.2,2025,83.33186223506928,Central Ostrobothnia,Road transport,Passenger cars
+Central Ostrobothnia||Road transport||Trucks,2024,33.8,2025,43.00314809083939,Central Ostrobothnia,Road transport,Trucks
+Central Ostrobothnia||Road transport||Vancouver vans,2024,12.1,2025,12.117651748657227,Central Ostrobothnia,Road transport,Vancouver vans
+Central Ostrobothnia||Waste treatment||Industry,2024,2.0,2025,2.3038323462009433,Central Ostrobothnia,Waste treatment,Industry
+Central Ostrobothnia||Waste treatment||Municipal waste,2024,20.1,2025,19.97376775145531,Central Ostrobothnia,Waste treatment,Municipal waste
+Central Ostrobothnia||Water transport||Fishing vessels,2024,3.2,2025,3.4973335266113277,Central Ostrobothnia,Water transport,Fishing vessels
+Central Ostrobothnia||Water transport||Goods traffic,2024,1.1,2025,1.294965249300003,Central Ostrobothnia,Water transport,Goods traffic
+Central Ostrobothnia||Water transport||Passenger traffic,2024,0.0,2025,0.007058623433113098,Central Ostrobothnia,Water transport,Passenger traffic
+Central Ostrobothnia||Water transport||Pleasure boats,2024,1.3,2025,1.2533271759748459,Central Ostrobothnia,Water transport,Pleasure boats
+Central Ostrobothnia||Water transport||Workboats and ships,2024,0.8,2025,1.0245920598506928,Central Ostrobothnia,Water transport,Workboats and ships
+Central Ostrobothnia||Water transport||nan,2024,0.0,2025,-0.15990859270095825,Central Ostrobothnia,Water transport,nan
+Kainuu||Agriculture||Animal digestion,2024,44.9,2025,44.93178868293763,Kainuu,Agriculture,Animal digestion
+Kainuu||Agriculture||Grazing,2024,0.4,2025,0.46127620935440067,Kainuu,Agriculture,Grazing
+Kainuu||Agriculture||Manure treatment,2024,14.2,2025,14.351516354084017,Kainuu,Agriculture,Manure treatment
+Kainuu||Agriculture||Organic fertilizers,2024,2.6,2025,2.5659860298037525,Kainuu,Agriculture,Organic fertilizers
+Kainuu||Agriculture||Other emissions from farmland,2024,7.9,2025,7.910668852180242,Kainuu,Agriculture,Other emissions from farmland
+Kainuu||Agriculture||Soil,2024,34.0,2025,33.77810382843018,Kainuu,Agriculture,Soil
+Kainuu||Agriculture||nan,2024,11.9,2025,11.476728987693786,Kainuu,Agriculture,nan
+Kainuu||District heating||Agriculture,2024,0.1,2025,0.1370767205953598,Kainuu,District heating,Agriculture
+Kainuu||District heating||Housing,2024,16.8,2025,29.163644611835483,Kainuu,District heating,Housing
+Kainuu||District heating||Industry,2024,5.9,2025,7.630928552150727,Kainuu,District heating,Industry
+Kainuu||District heating||Services,2024,14.2,2025,21.45466686785221,Kainuu,District heating,Services
+Kainuu||Electric heating||Agriculture,2024,0.3,2025,0.7209767997264862,Kainuu,Electric heating,Agriculture
+Kainuu||Electric heating||Housing,2024,6.8,2025,14.959527182579041,Kainuu,Electric heating,Housing
+Kainuu||Electric heating||Services,2024,1.3,2025,2.4320180416107178,Kainuu,Electric heating,Services
+Kainuu||Electricity||Agriculture,2024,0.2,2025,0.8912919998168944,Kainuu,Electricity,Agriculture
+Kainuu||Electricity||Housing,2024,6.1,2025,12.933457058668134,Kainuu,Electricity,Housing
+Kainuu||Electricity||Industry,2024,29.0,2025,-30.566488975286482,Kainuu,Electricity,Industry
+Kainuu||Electricity||Services,2024,9.2,2025,17.454248571395873,Kainuu,Electricity,Services
+Kainuu||F-gases||Building air conditioning equipment,2024,1.6,2025,1.4966419219970704,Kainuu,F-gases,Building air conditioning equipment
+Kainuu||F-gases||Commercial and professional kitchen refrigeration equipment,2024,4.2,2025,7.969344449043274,Kainuu,F-gases,Commercial and professional kitchen refrigeration equipment
+Kainuu||F-gases||Other sources of F-gases,2024,1.3,2025,1.5640942573547363,Kainuu,F-gases,Other sources of F-gases
+Kainuu||F-gases||Vehicle air conditioning equipment,2024,2.2,2025,2.203240537643433,Kainuu,F-gases,Vehicle air conditioning equipment
+Kainuu||Industry||Industrial fuels,2024,13.5,2025,15.296971678733827,Kainuu,Industry,Industrial fuels
+Kainuu||Machinery||Agricultural and forestry machinery,2024,39.1,2025,39.807693138718605,Kainuu,Machinery,Agricultural and forestry machinery
+Kainuu||Machinery||Construction machinery,2024,5.2,2025,4.504953241348267,Kainuu,Machinery,Construction machinery
+Kainuu||Machinery||Mining and industrial machinery,2024,54.0,2025,41.29373812675477,Kainuu,Machinery,Mining and industrial machinery
+Kainuu||Machinery||Other machinery,2024,2.1,2025,2.274452805519104,Kainuu,Machinery,Other machinery
+Kainuu||Machinery||Road construction machinery,2024,10.5,2025,9.867445302009582,Kainuu,Machinery,Road construction machinery
+Kainuu||Oil heating||Agriculture,2024,0.2,2025,0.28664720356464385,Kainuu,Oil heating,Agriculture
+Kainuu||Oil heating||Housing,2024,1.9,2025,5.960385382175446,Kainuu,Oil heating,Housing
+Kainuu||Oil heating||Services,2024,10.9,2025,10.584715279936791,Kainuu,Oil heating,Services
+Kainuu||Other heating||Agriculture,2024,0.3,2025,1.71221684217453,Kainuu,Other heating,Agriculture
+Kainuu||Other heating||Housing,2024,13.1,2025,14.570649304986,Kainuu,Other heating,Housing
+Kainuu||Other heating||Services,2024,2.1,2025,2.148850029706955,Kainuu,Other heating,Services
+Kainuu||Rail transport||Community trains,2024,0.0,2025,-0.000728607177734375,Kainuu,Rail transport,Community trains
+Kainuu||Rail transport||Diesel,2024,2.7,2025,7.27155568599701,Kainuu,Rail transport,Diesel
+Kainuu||Rail transport||Electricity,2024,0.2,2025,0.8903491020202636,Kainuu,Rail transport,Electricity
+Kainuu||Rail transport||Metros and trams,2024,0.0,2025,-0.11703348159790039,Kainuu,Rail transport,Metros and trams
+Kainuu||Road transport||Buses,2024,1.3,2025,1.622201132774353,Kainuu,Road transport,Buses
+Kainuu||Road transport||Drive-through traffic,2024,18.2,2025,18.86184766292572,Kainuu,Road transport,Drive-through traffic
+Kainuu||Road transport||Motorcycles and mopeds,2024,1.2,2025,1.245712870359421,Kainuu,Road transport,Motorcycles and mopeds
+Kainuu||Road transport||Passenger cars,2024,80.3,2025,89.82023073136807,Kainuu,Road transport,Passenger cars
+Kainuu||Road transport||Trucks,2024,35.6,2025,41.10799698233604,Kainuu,Road transport,Trucks
+Kainuu||Road transport||Vancouver vans,2024,16.3,2025,16.159757834672927,Kainuu,Road transport,Vancouver vans
+Kainuu||Waste treatment||Industry,2024,6.1,2025,3.729790546000004,Kainuu,Waste treatment,Industry
+Kainuu||Waste treatment||Municipal waste,2024,22.9,2025,21.50781809091568,Kainuu,Waste treatment,Municipal waste
+Kainuu||Water transport||Fishing vessels,2024,0.0,2025,-0.08651334047317505,Kainuu,Water transport,Fishing vessels
+Kainuu||Water transport||Goods traffic,2024,0.0,2025,-0.17416250705718994,Kainuu,Water transport,Goods traffic
+Kainuu||Water transport||Passenger traffic,2024,0.0,2025,-0.1699088215827942,Kainuu,Water transport,Passenger traffic
+Kainuu||Water transport||Pleasure boats,2024,1.5,2025,1.3718799263238906,Kainuu,Water transport,Pleasure boats
+Kainuu||Water transport||Workboats and ships,2024,0.6,2025,1.220053172111511,Kainuu,Water transport,Workboats and ships
+Kainuu||Water transport||nan,2024,0.0,2025,-0.13538026809692383,Kainuu,Water transport,nan
+Kanta-Häme||Agriculture||Animal digestion,2024,50.9,2025,50.79391825944185,Kanta-Häme,Agriculture,Animal digestion
+Kanta-Häme||Agriculture||Grazing,2024,0.6,2025,0.6033331036567687,Kanta-Häme,Agriculture,Grazing
+Kanta-Häme||Agriculture||Manure treatment,2024,22.0,2025,22.269423288106918,Kanta-Häme,Agriculture,Manure treatment
+Kanta-Häme||Agriculture||Organic fertilizers,2024,4.2,2025,4.177376401424408,Kanta-Häme,Agriculture,Organic fertilizers
+Kanta-Häme||Agriculture||Other emissions from farmland,2024,31.3,2025,30.913366374373435,Kanta-Häme,Agriculture,Other emissions from farmland
+Kanta-Häme||Agriculture||Soil,2024,38.6,2025,35.33923493623734,Kanta-Häme,Agriculture,Soil
+Kanta-Häme||Agriculture||nan,2024,49.4,2025,47.332778739929196,Kanta-Häme,Agriculture,nan
+Kanta-Häme||District heating||Agriculture,2024,0.7,2025,0.7720841869711875,Kanta-Häme,District heating,Agriculture
+Kanta-Häme||District heating||Housing,2024,27.8,2025,59.21048048734664,Kanta-Häme,District heating,Housing
+Kanta-Häme||District heating||Industry,2024,8.1,2025,14.981286191940308,Kanta-Häme,District heating,Industry
+Kanta-Häme||District heating||Services,2024,20.6,2025,37.40662481784821,Kanta-Häme,District heating,Services
+Kanta-Häme||Electric heating||Agriculture,2024,0.5,2025,1.066370651125908,Kanta-Häme,Electric heating,Agriculture
+Kanta-Häme||Electric heating||Housing,2024,17.8,2025,40.03590590953827,Kanta-Häme,Electric heating,Housing
+Kanta-Häme||Electric heating||Services,2024,2.4,2025,4.092893773317337,Kanta-Häme,Electric heating,Services
+Kanta-Häme||Electricity||Agriculture,2024,0.8,2025,1.9900755137205124,Kanta-Häme,Electricity,Agriculture
+Kanta-Häme||Electricity||Housing,2024,15.5,2025,32.74896847307682,Kanta-Häme,Electricity,Housing
+Kanta-Häme||Electricity||Industry,2024,34.2,2025,41.43680228888989,Kanta-Häme,Electricity,Industry
+Kanta-Häme||Electricity||Services,2024,20.6,2025,32.7790561914444,Kanta-Häme,Electricity,Services
+Kanta-Häme||F-gases||Building air conditioning equipment,2024,4.0,2025,3.640900731086731,Kanta-Häme,F-gases,Building air conditioning equipment
+Kanta-Häme||F-gases||Commercial and professional kitchen refrigeration equipment,2024,9.2,2025,15.717728644609451,Kanta-Häme,F-gases,Commercial and professional kitchen refrigeration equipment
+Kanta-Häme||F-gases||Other sources of F-gases,2024,3.2,2025,3.707253623008728,Kanta-Häme,F-gases,Other sources of F-gases
+Kanta-Häme||F-gases||Vehicle air conditioning equipment,2024,3.4,2025,3.756190049648285,Kanta-Häme,F-gases,Vehicle air conditioning equipment
+Kanta-Häme||Industry||Industrial fuels,2024,149.7,2025,146.59500866830348,Kanta-Häme,Industry,Industrial fuels
+Kanta-Häme||Machinery||Agricultural and forestry machinery,2024,29.1,2025,32.09885489344596,Kanta-Häme,Machinery,Agricultural and forestry machinery
+Kanta-Häme||Machinery||Construction machinery,2024,8.2,2025,8.800166255235672,Kanta-Häme,Machinery,Construction machinery
+Kanta-Häme||Machinery||Mining and industrial machinery,2024,11.1,2025,11.900652757287025,Kanta-Häme,Machinery,Mining and industrial machinery
+Kanta-Häme||Machinery||Other machinery,2024,3.1,2025,3.4000768661499023,Kanta-Häme,Machinery,Other machinery
+Kanta-Häme||Machinery||Road construction machinery,2024,24.2,2025,22.69536337852478,Kanta-Häme,Machinery,Road construction machinery
+Kanta-Häme||Oil heating||Agriculture,2024,1.0,2025,1.2920337587594986,Kanta-Häme,Oil heating,Agriculture
+Kanta-Häme||Oil heating||Housing,2024,6.4,2025,24.127846479415894,Kanta-Häme,Oil heating,Housing
+Kanta-Häme||Oil heating||Services,2024,24.3,2025,23.105759024620056,Kanta-Häme,Oil heating,Services
+Kanta-Häme||Other heating||Agriculture,2024,0.8,2025,6.021209287643432,Kanta-Häme,Other heating,Agriculture
+Kanta-Häme||Other heating||Housing,2024,15.2,2025,17.54509668946266,Kanta-Häme,Other heating,Housing
+Kanta-Häme||Other heating||Services,2024,5.8,2025,5.329786384105683,Kanta-Häme,Other heating,Services
+Kanta-Häme||Rail transport||Community trains,2024,0.3,2025,0.32756081074476245,Kanta-Häme,Rail transport,Community trains
+Kanta-Häme||Rail transport||Diesel,2024,1.6,2025,1.477611218392849,Kanta-Häme,Rail transport,Diesel
+Kanta-Häme||Rail transport||Electricity,2024,1.9,2025,3.604838353395462,Kanta-Häme,Rail transport,Electricity
+Kanta-Häme||Rail transport||Metros and trams,2024,0.0,2025,-0.1491180658340454,Kanta-Häme,Rail transport,Metros and trams
+Kanta-Häme||Road transport||Buses,2024,4.0,2025,7.023346731066704,Kanta-Häme,Road transport,Buses
+Kanta-Häme||Road transport||Drive-through traffic,2024,48.7,2025,51.16149725019932,Kanta-Häme,Road transport,Drive-through traffic
+Kanta-Häme||Road transport||Motorcycles and mopeds,2024,4.1,2025,4.125965508818626,Kanta-Häme,Road transport,Motorcycles and mopeds
+Kanta-Häme||Road transport||Passenger cars,2024,169.1,2025,192.79432921409608,Kanta-Häme,Road transport,Passenger cars
+Kanta-Häme||Road transport||Trucks,2024,85.8,2025,99.3050814986229,Kanta-Häme,Road transport,Trucks
+Kanta-Häme||Road transport||Vancouver vans,2024,31.9,2025,32.12150192260742,Kanta-Häme,Road transport,Vancouver vans
+Kanta-Häme||Waste treatment||Industry,2024,4.8,2025,4.110445821285247,Kanta-Häme,Waste treatment,Industry
+Kanta-Häme||Waste treatment||Municipal waste,2024,36.9,2025,30.679899832606313,Kanta-Häme,Waste treatment,Municipal waste
+Kanta-Häme||Water transport||Fishing vessels,2024,0.0,2025,-0.06036961078643799,Kanta-Häme,Water transport,Fishing vessels
+Kanta-Häme||Water transport||Goods traffic,2024,0.0,2025,-0.20104831457138062,Kanta-Häme,Water transport,Goods traffic
+Kanta-Häme||Water transport||Passenger traffic,2024,0.0,2025,-0.21913886070251465,Kanta-Häme,Water transport,Passenger traffic
+Kanta-Häme||Water transport||Pleasure boats,2024,2.1,2025,1.9489869594573974,Kanta-Häme,Water transport,Pleasure boats
+Kanta-Häme||Water transport||Workboats and ships,2024,0.6,2025,0.762147855758667,Kanta-Häme,Water transport,Workboats and ships
+Kanta-Häme||Water transport||nan,2024,0.0,2025,-0.17653298377990723,Kanta-Häme,Water transport,nan
+Kymenlaakso||Agriculture||Animal digestion,2024,32.7,2025,32.51800442636013,Kymenlaakso,Agriculture,Animal digestion
+Kymenlaakso||Agriculture||Grazing,2024,0.3,2025,0.3399043649435044,Kymenlaakso,Agriculture,Grazing
+Kymenlaakso||Agriculture||Manure treatment,2024,11.3,2025,12.3666671782732,Kymenlaakso,Agriculture,Manure treatment
+Kymenlaakso||Agriculture||Organic fertilizers,2024,2.3,2025,2.3668836146593093,Kymenlaakso,Agriculture,Organic fertilizers
+Kymenlaakso||Agriculture||Other emissions from farmland,2024,20.3,2025,20.292530255019667,Kymenlaakso,Agriculture,Other emissions from farmland
+Kymenlaakso||Agriculture||Soil,2024,18.4,2025,16.881152582168582,Kymenlaakso,Agriculture,Soil
+Kymenlaakso||Agriculture||nan,2024,33.4,2025,31.886843490600583,Kymenlaakso,Agriculture,nan
+Kymenlaakso||District heating||Agriculture,2024,0.1,2025,0.175222647190094,Kymenlaakso,District heating,Agriculture
+Kymenlaakso||District heating||Housing,2024,40.2,2025,45.0859796822071,Kymenlaakso,District heating,Housing
+Kymenlaakso||District heating||Industry,2024,6.4,2025,6.339814648032188,Kymenlaakso,District heating,Industry
+Kymenlaakso||District heating||Services,2024,23.0,2025,24.284047371149065,Kymenlaakso,District heating,Services
+Kymenlaakso||Electric heating||Agriculture,2024,0.3,2025,0.5468818366527557,Kymenlaakso,Electric heating,Agriculture
+Kymenlaakso||Electric heating||Housing,2024,14.2,2025,28.724008047580718,Kymenlaakso,Electric heating,Housing
+Kymenlaakso||Electric heating||Services,2024,2.7,2025,4.485390496253968,Kymenlaakso,Electric heating,Services
+Kymenlaakso||Electricity||Agriculture,2024,0.5,2025,1.3014300674200057,Kymenlaakso,Electricity,Agriculture
+Kymenlaakso||Electricity||Housing,2024,15.4,2025,30.60257732868195,Kymenlaakso,Electricity,Housing
+Kymenlaakso||Electricity||Industry,2024,80.1,2025,51.55986500382425,Kymenlaakso,Electricity,Industry
+Kymenlaakso||Electricity||Services,2024,42.2,2025,58.05751055777073,Kymenlaakso,Electricity,Services
+Kymenlaakso||F-gases||Building air conditioning equipment,2024,3.7,2025,3.4021270811557764,Kymenlaakso,F-gases,Building air conditioning equipment
+Kymenlaakso||F-gases||Commercial and professional kitchen refrigeration equipment,2024,9.6,2025,21.223284220695493,Kymenlaakso,F-gases,Commercial and professional kitchen refrigeration equipment
+Kymenlaakso||F-gases||Other sources of F-gases,2024,2.9,2025,3.3710936933755873,Kymenlaakso,F-gases,Other sources of F-gases
+Kymenlaakso||F-gases||Vehicle air conditioning equipment,2024,2.9,2025,3.165293598175049,Kymenlaakso,F-gases,Vehicle air conditioning equipment
+Kymenlaakso||Industry||Industrial fuels,2024,272.5,2025,282.11915522813797,Kymenlaakso,Industry,Industrial fuels
+Kymenlaakso||Machinery||Agricultural and forestry machinery,2024,21.1,2025,22.729918280243876,Kymenlaakso,Machinery,Agricultural and forestry machinery
+Kymenlaakso||Machinery||Construction machinery,2024,7.7,2025,7.416731914877891,Kymenlaakso,Machinery,Construction machinery
+Kymenlaakso||Machinery||Mining and industrial machinery,2024,11.0,2025,11.80784496665001,Kymenlaakso,Machinery,Mining and industrial machinery
+Kymenlaakso||Machinery||Other machinery,2024,2.9,2025,3.186054754257202,Kymenlaakso,Machinery,Other machinery
+Kymenlaakso||Machinery||Road construction machinery,2024,16.8,2025,15.678102606534958,Kymenlaakso,Machinery,Road construction machinery
+Kymenlaakso||Oil heating||Agriculture,2024,0.6,2025,0.7341670840978622,Kymenlaakso,Oil heating,Agriculture
+Kymenlaakso||Oil heating||Housing,2024,7.5,2025,27.046361517906192,Kymenlaakso,Oil heating,Housing
+Kymenlaakso||Oil heating||Services,2024,22.0,2025,21.881424498558044,Kymenlaakso,Oil heating,Services
+Kymenlaakso||Other heating||Agriculture,2024,3.2,2025,5.092817369103432,Kymenlaakso,Other heating,Agriculture
+Kymenlaakso||Other heating||Housing,2024,20.0,2025,36.00980358123779,Kymenlaakso,Other heating,Housing
+Kymenlaakso||Other heating||Services,2024,18.3,2025,31.24855933189392,Kymenlaakso,Other heating,Services
+Kymenlaakso||Rail transport||Community trains,2024,0.2,2025,0.04813730716705322,Kymenlaakso,Rail transport,Community trains
+Kymenlaakso||Rail transport||Diesel,2024,5.9,2025,5.677219459414482,Kymenlaakso,Rail transport,Diesel
+Kymenlaakso||Rail transport||Electricity,2024,1.3,2025,2.867893767356873,Kymenlaakso,Rail transport,Electricity
+Kymenlaakso||Rail transport||Metros and trams,2024,0.0,2025,-0.2079523801803589,Kymenlaakso,Rail transport,Metros and trams
+Kymenlaakso||Road transport||Buses,2024,5.2,2025,5.385664278268814,Kymenlaakso,Road transport,Buses
+Kymenlaakso||Road transport||Drive-through traffic,2024,11.4,2025,21.622437208890915,Kymenlaakso,Road transport,Drive-through traffic
+Kymenlaakso||Road transport||Motorcycles and mopeds,2024,3.6,2025,3.666783540695906,Kymenlaakso,Road transport,Motorcycles and mopeds
+Kymenlaakso||Road transport||Passenger cars,2024,160.2,2025,184.74264647960666,Kymenlaakso,Road transport,Passenger cars
+Kymenlaakso||Road transport||Trucks,2024,76.9,2025,99.2579271286726,Kymenlaakso,Road transport,Trucks
+Kymenlaakso||Road transport||Vancouver vans,2024,26.5,2025,26.7789563536644,Kymenlaakso,Road transport,Vancouver vans
+Kymenlaakso||Waste treatment||Industry,2024,65.4,2025,66.20292581319809,Kymenlaakso,Waste treatment,Industry
+Kymenlaakso||Waste treatment||Municipal waste,2024,65.9,2025,61.71033100187778,Kymenlaakso,Waste treatment,Municipal waste
+Kymenlaakso||Water transport||Fishing vessels,2024,4.2,2025,4.900667068362236,Kymenlaakso,Water transport,Fishing vessels
+Kymenlaakso||Water transport||Goods traffic,2024,0.7,2025,-0.44298096299171463,Kymenlaakso,Water transport,Goods traffic
+Kymenlaakso||Water transport||Passenger traffic,2024,0.4,2025,0.39669592976570134,Kymenlaakso,Water transport,Passenger traffic
+Kymenlaakso||Water transport||Pleasure boats,2024,5.3,2025,4.999490666389466,Kymenlaakso,Water transport,Pleasure boats
+Kymenlaakso||Water transport||Workboats and ships,2024,1.7,2025,3.736360549926758,Kymenlaakso,Water transport,Workboats and ships
+Kymenlaakso||Water transport||nan,2024,0.3,2025,0.300240258872509,Kymenlaakso,Water transport,nan
+Lapland||Agriculture||Animal digestion,2024,155.6,2025,166.53900943398475,Lapland,Agriculture,Animal digestion
+Lapland||Agriculture||Grazing,2024,2.8,2025,2.915119916200638,Lapland,Agriculture,Grazing
+Lapland||Agriculture||Manure treatment,2024,22.1,2025,23.35869806408882,Lapland,Agriculture,Manure treatment
+Lapland||Agriculture||Organic fertilizers,2024,4.1,2025,4.294732832908632,Lapland,Agriculture,Organic fertilizers
+Lapland||Agriculture||Other emissions from farmland,2024,15.1,2025,15.665279494225977,Lapland,Agriculture,Other emissions from farmland
+Lapland||Agriculture||Soil,2024,84.4,2025,84.42248646616936,Lapland,Agriculture,Soil
+Lapland||Agriculture||nan,2024,20.4,2025,19.582632797956467,Lapland,Agriculture,nan
+Lapland||District heating||Agriculture,2024,0.2,2025,0.4118423730134964,Lapland,District heating,Agriculture
+Lapland||District heating||Housing,2024,65.3,2025,108.48584489524364,Lapland,District heating,Housing
+Lapland||District heating||Industry,2024,13.6,2025,12.894270813465116,Lapland,District heating,Industry
+Lapland||District heating||Services,2024,48.8,2025,74.54186751842498,Lapland,District heating,Services
+Lapland||Electric heating||Agriculture,2024,0.6,2025,1.5652336001396177,Lapland,Electric heating,Agriculture
+Lapland||Electric heating||Housing,2024,30.7,2025,65.12973909378051,Lapland,Electric heating,Housing
+Lapland||Electric heating||Services,2024,5.5,2025,12.2725366294384,Lapland,Electric heating,Services
+Lapland||Electricity||Agriculture,2024,0.4,2025,1.2913849771022796,Lapland,Electricity,Agriculture
+Lapland||Electricity||Housing,2024,19.0,2025,36.639783734083174,Lapland,Electricity,Housing
+Lapland||Electricity||Industry,2024,177.0,2025,348.6275725781918,Lapland,Electricity,Industry
+Lapland||Electricity||Services,2024,24.3,2025,43.46231638789177,Lapland,Electricity,Services
+Lapland||F-gases||Building air conditioning equipment,2024,4.2,2025,3.825128483772278,Lapland,F-gases,Building air conditioning equipment
+Lapland||F-gases||Commercial and professional kitchen refrigeration equipment,2024,14.1,2025,23.226995521783827,Lapland,F-gases,Commercial and professional kitchen refrigeration equipment
+Lapland||F-gases||Other sources of F-gases,2024,3.4,2025,3.8678136289119722,Lapland,F-gases,Other sources of F-gases
+Lapland||F-gases||Vehicle air conditioning equipment,2024,4.7,2025,4.995501548051834,Lapland,F-gases,Vehicle air conditioning equipment
+Lapland||Industry||Industrial fuels,2024,299.5,2025,419.99626226425164,Lapland,Industry,Industrial fuels
+Lapland||Machinery||Agricultural and forestry machinery,2024,72.3,2025,73.41354346871375,Lapland,Machinery,Agricultural and forestry machinery
+Lapland||Machinery||Construction machinery,2024,17.6,2025,17.30789371728897,Lapland,Machinery,Construction machinery
+Lapland||Machinery||Mining and industrial machinery,2024,54.6,2025,48.24077242016792,Lapland,Machinery,Mining and industrial machinery
+Lapland||Machinery||Other machinery,2024,4.9,2025,5.317276573181153,Lapland,Machinery,Other machinery
+Lapland||Machinery||Road construction machinery,2024,26.2,2025,24.508477687835693,Lapland,Machinery,Road construction machinery
+Lapland||Oil heating||Agriculture,2024,0.5,2025,0.6578128576278687,Lapland,Oil heating,Agriculture
+Lapland||Oil heating||Housing,2024,8.7,2025,29.257853591442107,Lapland,Oil heating,Housing
+Lapland||Oil heating||Services,2024,42.8,2025,43.32369578629732,Lapland,Oil heating,Services
+Lapland||Other heating||Agriculture,2024,0.7,2025,3.4325691223144528,Lapland,Other heating,Agriculture
+Lapland||Other heating||Housing,2024,27.0,2025,31.38182296156883,Lapland,Other heating,Housing
+Lapland||Other heating||Services,2024,9.1,2025,9.189687570929527,Lapland,Other heating,Services
+Lapland||Rail transport||Community trains,2024,0.0,2025,-0.01796281337738037,Lapland,Rail transport,Community trains
+Lapland||Rail transport||Diesel,2024,5.7,2025,5.3089857801795,Lapland,Rail transport,Diesel
+Lapland||Rail transport||Electricity,2024,0.5,2025,0.8692377567291261,Lapland,Rail transport,Electricity
+Lapland||Rail transport||Metros and trams,2024,0.0,2025,-0.13614201545715332,Lapland,Rail transport,Metros and trams
+Lapland||Road transport||Buses,2024,12.6,2025,13.606540840864183,Lapland,Road transport,Buses
+Lapland||Road transport||Drive-through traffic,2024,71.0,2025,64.60277909040451,Lapland,Road transport,Drive-through traffic
+Lapland||Road transport||Motorcycles and mopeds,2024,2.5,2025,2.7906076908111572,Lapland,Road transport,Motorcycles and mopeds
+Lapland||Road transport||Passenger cars,2024,196.8,2025,215.18035778999328,Lapland,Road transport,Passenger cars
+Lapland||Road transport||Trucks,2024,103.8,2025,112.59237351417543,Lapland,Road transport,Trucks
+Lapland||Road transport||Vancouver vans,2024,46.2,2025,44.18800927996636,Lapland,Road transport,Vancouver vans
+Lapland||Waste treatment||Industry,2024,18.0,2025,18.728549301624295,Lapland,Waste treatment,Industry
+Lapland||Waste treatment||Municipal waste,2024,79.1,2025,86.10932236909866,Lapland,Waste treatment,Municipal waste
+Lapland||Water transport||Fishing vessels,2024,2.9,2025,2.916825848817825,Lapland,Water transport,Fishing vessels
+Lapland||Water transport||Goods traffic,2024,1.0,2025,1.2424983322620393,Lapland,Water transport,Goods traffic
+Lapland||Water transport||Passenger traffic,2024,0.2,2025,0.18048951625823975,Lapland,Water transport,Passenger traffic
+Lapland||Water transport||Pleasure boats,2024,5.0,2025,4.753793859481811,Lapland,Water transport,Pleasure boats
+Lapland||Water transport||Workboats and ships,2024,1.4,2025,3.0011641025543216,Lapland,Water transport,Workboats and ships
+Lapland||Water transport||nan,2024,0.0,2025,-0.1855648159980774,Lapland,Water transport,nan
+North Karelia||Agriculture||Animal digestion,2024,99.8,2025,113.38421363830565,North Karelia,Agriculture,Animal digestion
+North Karelia||Agriculture||Grazing,2024,1.0,2025,1.2013556480407714,North Karelia,Agriculture,Grazing
+North Karelia||Agriculture||Manure treatment,2024,33.2,2025,37.50651287138462,North Karelia,Agriculture,Manure treatment
+North Karelia||Agriculture||Organic fertilizers,2024,6.4,2025,7.32303312420845,North Karelia,Agriculture,Organic fertilizers
+North Karelia||Agriculture||Other emissions from farmland,2024,26.2,2025,26.284773656725882,North Karelia,Agriculture,Other emissions from farmland
+North Karelia||Agriculture||Soil,2024,65.1,2025,62.9328270316124,North Karelia,Agriculture,Soil
+North Karelia||Agriculture||nan,2024,40.0,2025,38.34481983184815,North Karelia,Agriculture,nan
+North Karelia||District heating||Agriculture,2024,0.0,2025,0.16048699617385864,North Karelia,District heating,Agriculture
+North Karelia||District heating||Housing,2024,27.3,2025,54.48740947544575,North Karelia,District heating,Housing
+North Karelia||District heating||Industry,2024,4.8,2025,8.838566035032272,North Karelia,District heating,Industry
+North Karelia||District heating||Services,2024,18.7,2025,32.02688064575195,North Karelia,District heating,Services
+North Karelia||Electric heating||Agriculture,2024,1.3,2025,3.0103622376918797,North Karelia,Electric heating,Agriculture
+North Karelia||Electric heating||Housing,2024,15.7,2025,35.8628397345543,North Karelia,Electric heating,Housing
+North Karelia||Electric heating||Services,2024,2.4,2025,4.2752118706703195,North Karelia,Electric heating,Services
+North Karelia||Electricity||Agriculture,2024,0.6,2025,1.902756330370903,North Karelia,Electricity,Agriculture
+North Karelia||Electricity||Housing,2024,12.8,2025,27.677538335323334,North Karelia,Electricity,Housing
+North Karelia||Electricity||Industry,2024,53.8,2025,105.16109131872653,North Karelia,Electricity,Industry
+North Karelia||Electricity||Services,2024,16.9,2025,24.696112954616545,North Karelia,Electricity,Services
+North Karelia||F-gases||Building air conditioning equipment,2024,3.8,2025,3.4203845977783205,North Karelia,F-gases,Building air conditioning equipment
+North Karelia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,10.1,2025,16.445477485656742,North Karelia,F-gases,Commercial and professional kitchen refrigeration equipment
+North Karelia||F-gases||Other sources of F-gases,2024,3.0,2025,3.5110946834087366,North Karelia,F-gases,Other sources of F-gases
+North Karelia||F-gases||Vehicle air conditioning equipment,2024,3.4,2025,3.9140225410461427,North Karelia,F-gases,Vehicle air conditioning equipment
+North Karelia||Industry||Industrial fuels,2024,93.1,2025,85.65029423832893,North Karelia,Industry,Industrial fuels
+North Karelia||Machinery||Agricultural and forestry machinery,2024,59.0,2025,59.82841985821724,North Karelia,Machinery,Agricultural and forestry machinery
+North Karelia||Machinery||Construction machinery,2024,9.2,2025,10.188792276382447,North Karelia,Machinery,Construction machinery
+North Karelia||Machinery||Mining and industrial machinery,2024,14.8,2025,15.936507499217985,North Karelia,Machinery,Mining and industrial machinery
+North Karelia||Machinery||Other machinery,2024,5.2,2025,5.6797367334365845,North Karelia,Machinery,Other machinery
+North Karelia||Machinery||Road construction machinery,2024,21.1,2025,19.630506968498228,North Karelia,Machinery,Road construction machinery
+North Karelia||Oil heating||Agriculture,2024,0.5,2025,0.6571386754512786,North Karelia,Oil heating,Agriculture
+North Karelia||Oil heating||Housing,2024,4.6,2025,17.19017767906189,North Karelia,Oil heating,Housing
+North Karelia||Oil heating||Services,2024,18.4,2025,19.355470293760295,North Karelia,Oil heating,Services
+North Karelia||Other heating||Agriculture,2024,3.3,2025,6.250304675102234,North Karelia,Other heating,Agriculture
+North Karelia||Other heating||Housing,2024,25.1,2025,27.587785375118255,North Karelia,Other heating,Housing
+North Karelia||Other heating||Services,2024,5.2,2025,5.3037145137786865,North Karelia,Other heating,Services
+North Karelia||Rail transport||Community trains,2024,0.0,2025,-0.06910741329193115,North Karelia,Rail transport,Community trains
+North Karelia||Rail transport||Diesel,2024,5.7,2025,5.081796431541443,North Karelia,Rail transport,Diesel
+North Karelia||Rail transport||Electricity,2024,0.3,2025,0.574937480688095,North Karelia,Rail transport,Electricity
+North Karelia||Rail transport||Metros and trams,2024,0.0,2025,-0.20078063011169434,North Karelia,Rail transport,Metros and trams
+North Karelia||Road transport||Buses,2024,6.0,2025,7.625521963834763,North Karelia,Road transport,Buses
+North Karelia||Road transport||Drive-through traffic,2024,31.6,2025,33.58976945877075,North Karelia,Road transport,Drive-through traffic
+North Karelia||Road transport||Motorcycles and mopeds,2024,2.8,2025,2.9278951674699787,North Karelia,Road transport,Motorcycles and mopeds
+North Karelia||Road transport||Passenger cars,2024,172.9,2025,196.26341631412507,North Karelia,Road transport,Passenger cars
+North Karelia||Road transport||Trucks,2024,59.5,2025,78.41327331811189,North Karelia,Road transport,Trucks
+North Karelia||Road transport||Vancouver vans,2024,29.1,2025,29.61158102154732,North Karelia,Road transport,Vancouver vans
+North Karelia||Waste treatment||Industry,2024,3.2,2025,3.049793064594269,North Karelia,Waste treatment,Industry
+North Karelia||Waste treatment||Municipal waste,2024,52.1,2025,55.97524290084839,North Karelia,Waste treatment,Municipal waste
+North Karelia||Water transport||Fishing vessels,2024,0.0,2025,-0.1159600019454956,North Karelia,Water transport,Fishing vessels
+North Karelia||Water transport||Goods traffic,2024,0.1,2025,0.0767636239528656,North Karelia,Water transport,Goods traffic
+North Karelia||Water transport||Passenger traffic,2024,0.1,2025,0.1067993924021721,North Karelia,Water transport,Passenger traffic
+North Karelia||Water transport||Pleasure boats,2024,4.4,2025,4.281847178936005,North Karelia,Water transport,Pleasure boats
+North Karelia||Water transport||Workboats and ships,2024,1.1,2025,2.362876570224762,North Karelia,Water transport,Workboats and ships
+North Karelia||Water transport||nan,2024,0.4,2025,0.320668888092041,North Karelia,Water transport,nan
+North Ostrobothnia||Agriculture||Animal digestion,2024,316.0,2025,311.2206154793501,North Ostrobothnia,Agriculture,Animal digestion
+North Ostrobothnia||Agriculture||Grazing,2024,3.0,2025,3.3704039096832275,North Ostrobothnia,Agriculture,Grazing
+North Ostrobothnia||Agriculture||Manure treatment,2024,107.1,2025,111.2758018374443,North Ostrobothnia,Agriculture,Manure treatment
+North Ostrobothnia||Agriculture||Organic fertilizers,2024,19.8,2025,19.396490335464478,North Ostrobothnia,Agriculture,Organic fertilizers
+North Ostrobothnia||Agriculture||Other emissions from farmland,2024,75.8,2025,73.34763563573361,North Ostrobothnia,Agriculture,Other emissions from farmland
+North Ostrobothnia||Agriculture||Soil,2024,386.5,2025,364.2163471698761,North Ostrobothnia,Agriculture,Soil
+North Ostrobothnia||Agriculture||nan,2024,113.9,2025,106.59463858604431,North Ostrobothnia,Agriculture,nan
+North Ostrobothnia||District heating||Agriculture,2024,0.7,2025,1.0630760848522187,North Ostrobothnia,District heating,Agriculture
+North Ostrobothnia||District heating||Housing,2024,101.0,2025,231.21672723293304,North Ostrobothnia,District heating,Housing
+North Ostrobothnia||District heating||Industry,2024,15.9,2025,27.839804077148436,North Ostrobothnia,District heating,Industry
+North Ostrobothnia||District heating||Services,2024,70.4,2025,135.92702822685243,North Ostrobothnia,District heating,Services
+North Ostrobothnia||Electric heating||Agriculture,2024,1.6,2025,4.0080193996429445,North Ostrobothnia,Electric heating,Agriculture
+North Ostrobothnia||Electric heating||Housing,2024,37.7,2025,85.68872214406728,North Ostrobothnia,Electric heating,Housing
+North Ostrobothnia||Electric heating||Services,2024,5.9,2025,11.813504686951637,North Ostrobothnia,Electric heating,Services
+North Ostrobothnia||Electricity||Agriculture,2024,1.8,2025,5.701582282781601,North Ostrobothnia,Electricity,Agriculture
+North Ostrobothnia||Electricity||Housing,2024,34.7,2025,74.52430325746538,North Ostrobothnia,Electricity,Housing
+North Ostrobothnia||Electricity||Industry,2024,92.0,2025,185.15922894477842,North Ostrobothnia,Electricity,Industry
+North Ostrobothnia||Electricity||Services,2024,48.0,2025,84.07550041973592,North Ostrobothnia,Electricity,Services
+North Ostrobothnia||F-gases||Building air conditioning equipment,2024,9.9,2025,8.608707904815674,North Ostrobothnia,F-gases,Building air conditioning equipment
+North Ostrobothnia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,22.3,2025,43.18746346235276,North Ostrobothnia,F-gases,Commercial and professional kitchen refrigeration equipment
+North Ostrobothnia||F-gases||Other sources of F-gases,2024,7.8,2025,8.83260564506054,North Ostrobothnia,F-gases,Other sources of F-gases
+North Ostrobothnia||F-gases||Vehicle air conditioning equipment,2024,8.3,2025,9.485849046707154,North Ostrobothnia,F-gases,Vehicle air conditioning equipment
+North Ostrobothnia||Industry||Industrial fuels,2024,1856.4,2025,1993.2517674714327,North Ostrobothnia,Industry,Industrial fuels
+North Ostrobothnia||Machinery||Agricultural and forestry machinery,2024,103.8,2025,106.58366446271539,North Ostrobothnia,Machinery,Agricultural and forestry machinery
+North Ostrobothnia||Machinery||Construction machinery,2024,36.3,2025,36.11126089692116,North Ostrobothnia,Machinery,Construction machinery
+North Ostrobothnia||Machinery||Mining and industrial machinery,2024,26.6,2025,30.52871360629797,North Ostrobothnia,Machinery,Mining and industrial machinery
+North Ostrobothnia||Machinery||Other machinery,2024,7.5,2025,8.258030158281327,North Ostrobothnia,Machinery,Other machinery
+North Ostrobothnia||Machinery||Road construction machinery,2024,49.1,2025,45.65871162414551,North Ostrobothnia,Machinery,Road construction machinery
+North Ostrobothnia||Oil heating||Agriculture,2024,1.4,2025,1.882398009300232,North Ostrobothnia,Oil heating,Agriculture
+North Ostrobothnia||Oil heating||Housing,2024,11.9,2025,49.141089332103725,North Ostrobothnia,Oil heating,Housing
+North Ostrobothnia||Oil heating||Services,2024,37.3,2025,39.11775773614645,North Ostrobothnia,Oil heating,Services
+North Ostrobothnia||Other heating||Agriculture,2024,3.1,2025,15.956968212127684,North Ostrobothnia,Other heating,Agriculture
+North Ostrobothnia||Other heating||Housing,2024,39.9,2025,45.766703939437875,North Ostrobothnia,Other heating,Housing
+North Ostrobothnia||Other heating||Services,2024,8.7,2025,9.05409034192562,North Ostrobothnia,Other heating,Services
+North Ostrobothnia||Rail transport||Community trains,2024,0.0,2025,-0.06614267826080322,North Ostrobothnia,Rail transport,Community trains
+North Ostrobothnia||Rail transport||Diesel,2024,5.9,2025,8.133558309078218,North Ostrobothnia,Rail transport,Diesel
+North Ostrobothnia||Rail transport||Electricity,2024,1.5,2025,4.421388876438142,North Ostrobothnia,Rail transport,Electricity
+North Ostrobothnia||Rail transport||Metros and trams,2024,0.0,2025,-0.17279255390167236,North Ostrobothnia,Rail transport,Metros and trams
+North Ostrobothnia||Road transport||Buses,2024,16.1,2025,15.913364782929422,North Ostrobothnia,Road transport,Buses
+North Ostrobothnia||Road transport||Drive-through traffic,2024,88.4,2025,98.81610317528248,North Ostrobothnia,Road transport,Drive-through traffic
+North Ostrobothnia||Road transport||Motorcycles and mopeds,2024,7.2,2025,7.7631392002105715,North Ostrobothnia,Road transport,Motorcycles and mopeds
+North Ostrobothnia||Road transport||Passenger cars,2024,425.0,2025,466.57162669301033,North Ostrobothnia,Road transport,Passenger cars
+North Ostrobothnia||Road transport||Trucks,2024,175.2,2025,208.46979801654814,North Ostrobothnia,Road transport,Trucks
+North Ostrobothnia||Road transport||Vancouver vans,2024,73.7,2025,72.73911683559419,North Ostrobothnia,Road transport,Vancouver vans
+North Ostrobothnia||Waste treatment||Industry,2024,11.4,2025,13.01358454823494,North Ostrobothnia,Waste treatment,Industry
+North Ostrobothnia||Waste treatment||Municipal waste,2024,111.5,2025,122.37668392658234,North Ostrobothnia,Waste treatment,Municipal waste
+North Ostrobothnia||Water transport||Fishing vessels,2024,18.6,2025,16.292338240146638,North Ostrobothnia,Water transport,Fishing vessels
+North Ostrobothnia||Water transport||Goods traffic,2024,1.3,2025,2.899265158176422,North Ostrobothnia,Water transport,Goods traffic
+North Ostrobothnia||Water transport||Passenger traffic,2024,0.2,2025,0.18919491171836852,North Ostrobothnia,Water transport,Passenger traffic
+North Ostrobothnia||Water transport||Pleasure boats,2024,4.6,2025,4.2011079609394075,North Ostrobothnia,Water transport,Pleasure boats
+North Ostrobothnia||Water transport||Workboats and ships,2024,5.1,2025,10.431009948253633,North Ostrobothnia,Water transport,Workboats and ships
+North Ostrobothnia||Water transport||nan,2024,2.3,2025,2.1652765035629273,North Ostrobothnia,Water transport,nan
+North Savo||Agriculture||Animal digestion,2024,257.4,2025,255.43681719899172,North Savo,Agriculture,Animal digestion
+North Savo||Agriculture||Grazing,2024,2.3,2025,2.655188900232315,North Savo,Agriculture,Grazing
+North Savo||Agriculture||Manure treatment,2024,85.8,2025,86.2328682422638,North Savo,Agriculture,Manure treatment
+North Savo||Agriculture||Organic fertilizers,2024,16.2,2025,15.871037125587463,North Savo,Agriculture,Organic fertilizers
+North Savo||Agriculture||Other emissions from farmland,2024,51.4,2025,50.49044973552227,North Savo,Agriculture,Other emissions from farmland
+North Savo||Agriculture||Soil,2024,102.0,2025,98.30094769001008,North Savo,Agriculture,Soil
+North Savo||Agriculture||nan,2024,72.8,2025,69.79465779066086,North Savo,Agriculture,nan
+North Savo||District heating||Agriculture,2024,0.3,2025,0.47076168283820147,North Savo,District heating,Agriculture
+North Savo||District heating||Housing,2024,81.4,2025,118.78881588578223,North Savo,District heating,Housing
+North Savo||District heating||Industry,2024,14.8,2025,17.688126182556154,North Savo,District heating,Industry
+North Savo||District heating||Services,2024,43.1,2025,68.79263014793395,North Savo,District heating,Services
+North Savo||Electric heating||Agriculture,2024,1.0,2025,2.4420821011066436,North Savo,Electric heating,Agriculture
+North Savo||Electric heating||Housing,2024,20.9,2025,43.96126529872418,North Savo,Electric heating,Housing
+North Savo||Electric heating||Services,2024,2.9,2025,5.51205518245697,North Savo,Electric heating,Services
+North Savo||Electricity||Agriculture,2024,2.5,2025,7.322014594078064,North Savo,Electricity,Agriculture
+North Savo||Electricity||Housing,2024,22.1,2025,45.0543970823288,North Savo,Electricity,Housing
+North Savo||Electricity||Industry,2024,51.9,2025,58.30936005711556,North Savo,Electricity,Industry
+North Savo||Electricity||Services,2024,29.5,2025,53.05007920861245,North Savo,Electricity,Services
+North Savo||F-gases||Building air conditioning equipment,2024,5.9,2025,5.324546790122985,North Savo,F-gases,Building air conditioning equipment
+North Savo||F-gases||Commercial and professional kitchen refrigeration equipment,2024,13.5,2025,21.129788398742676,North Savo,F-gases,Commercial and professional kitchen refrigeration equipment
+North Savo||F-gases||Other sources of F-gases,2024,4.7,2025,5.375971981883049,North Savo,F-gases,Other sources of F-gases
+North Savo||F-gases||Vehicle air conditioning equipment,2024,5.3,2025,5.877856612205505,North Savo,F-gases,Vehicle air conditioning equipment
+North Savo||Industry||Industrial fuels,2024,113.0,2025,116.47595376968384,North Savo,Industry,Industrial fuels
+North Savo||Machinery||Agricultural and forestry machinery,2024,71.2,2025,74.57093451619149,North Savo,Machinery,Agricultural and forestry machinery
+North Savo||Machinery||Construction machinery,2024,23.2,2025,20.363415503501894,North Savo,Machinery,Construction machinery
+North Savo||Machinery||Mining and industrial machinery,2024,39.1,2025,40.99116464555264,North Savo,Machinery,Mining and industrial machinery
+North Savo||Machinery||Other machinery,2024,6.2,2025,6.842990428209305,North Savo,Machinery,Other machinery
+North Savo||Machinery||Road construction machinery,2024,30.7,2025,28.772033601999283,North Savo,Machinery,Road construction machinery
+North Savo||Oil heating||Agriculture,2024,1.0,2025,1.6614646524190901,North Savo,Oil heating,Agriculture
+North Savo||Oil heating||Housing,2024,6.7,2025,26.66058606952429,North Savo,Oil heating,Housing
+North Savo||Oil heating||Services,2024,25.9,2025,26.354677200317383,North Savo,Oil heating,Services
+North Savo||Other heating||Agriculture,2024,2.4,2025,10.20825378894806,North Savo,Other heating,Agriculture
+North Savo||Other heating||Housing,2024,32.4,2025,34.93144700527192,North Savo,Other heating,Housing
+North Savo||Other heating||Services,2024,6.0,2025,5.9311097145080565,North Savo,Other heating,Services
+North Savo||Rail transport||Community trains,2024,0.0,2025,0.01723957061767578,North Savo,Rail transport,Community trains
+North Savo||Rail transport||Diesel,2024,4.8,2025,4.359718132019043,North Savo,Rail transport,Diesel
+North Savo||Rail transport||Electricity,2024,0.9,2025,1.2846720695495606,North Savo,Rail transport,Electricity
+North Savo||Rail transport||Metros and trams,2024,0.0,2025,-0.12124907970428467,North Savo,Rail transport,Metros and trams
+North Savo||Road transport||Buses,2024,7.5,2025,9.853574101626874,North Savo,Road transport,Buses
+North Savo||Road transport||Drive-through traffic,2024,45.6,2025,46.81344399452209,North Savo,Road transport,Drive-through traffic
+North Savo||Road transport||Motorcycles and mopeds,2024,4.7,2025,4.825960397720337,North Savo,Road transport,Motorcycles and mopeds
+North Savo||Road transport||Passenger cars,2024,253.3,2025,286.14502407610416,North Savo,Road transport,Passenger cars
+North Savo||Road transport||Trucks,2024,105.5,2025,126.55746558904647,North Savo,Road transport,Trucks
+North Savo||Road transport||Vancouver vans,2024,45.0,2025,45.21359001994133,North Savo,Road transport,Vancouver vans
+North Savo||Waste treatment||Industry,2024,11.2,2025,11.920013263821602,North Savo,Waste treatment,Industry
+North Savo||Waste treatment||Municipal waste,2024,79.5,2025,74.46745767593384,North Savo,Waste treatment,Municipal waste
+North Savo||Water transport||Fishing vessels,2024,0.0,2025,-0.05116802453994751,North Savo,Water transport,Fishing vessels
+North Savo||Water transport||Goods traffic,2024,0.4,2025,0.3542314574122429,North Savo,Water transport,Goods traffic
+North Savo||Water transport||Passenger traffic,2024,0.1,2025,0.5234940528869629,North Savo,Water transport,Passenger traffic
+North Savo||Water transport||Pleasure boats,2024,6.2,2025,5.742762890458107,North Savo,Water transport,Pleasure boats
+North Savo||Water transport||Workboats and ships,2024,2.8,2025,5.902444949746132,North Savo,Water transport,Workboats and ships
+North Savo||Water transport||nan,2024,0.2,2025,0.22457699924707414,North Savo,Water transport,nan
+Ostrobothnia||Agriculture||Animal digestion,2024,113.9,2025,108.60977981686592,Ostrobothnia,Agriculture,Animal digestion
+Ostrobothnia||Agriculture||Grazing,2024,1.1,2025,1.107945227622986,Ostrobothnia,Agriculture,Grazing
+Ostrobothnia||Agriculture||Manure treatment,2024,71.5,2025,107.20138815045358,Ostrobothnia,Agriculture,Manure treatment
+Ostrobothnia||Agriculture||Organic fertilizers,2024,11.7,2025,13.465481069684026,Ostrobothnia,Agriculture,Organic fertilizers
+Ostrobothnia||Agriculture||Other emissions from farmland,2024,42.3,2025,41.523383578658105,Ostrobothnia,Agriculture,Other emissions from farmland
+Ostrobothnia||Agriculture||Soil,2024,62.0,2025,56.26481807231903,Ostrobothnia,Agriculture,Soil
+Ostrobothnia||Agriculture||nan,2024,60.3,2025,57.3223852276802,Ostrobothnia,Agriculture,nan
+Ostrobothnia||District heating||Agriculture,2024,2.5,2025,1.8341770529747008,Ostrobothnia,District heating,Agriculture
+Ostrobothnia||District heating||Housing,2024,40.9,2025,49.43880748003721,Ostrobothnia,District heating,Housing
+Ostrobothnia||District heating||Industry,2024,10.1,2025,9.818754273653031,Ostrobothnia,District heating,Industry
+Ostrobothnia||District heating||Services,2024,27.6,2025,31.15812594145536,Ostrobothnia,District heating,Services
+Ostrobothnia||Electric heating||Agriculture,2024,1.0,2025,2.544872704148293,Ostrobothnia,Electric heating,Agriculture
+Ostrobothnia||Electric heating||Housing,2024,15.1,2025,32.30421152114869,Ostrobothnia,Electric heating,Housing
+Ostrobothnia||Electric heating||Services,2024,2.8,2025,4.691851270198823,Ostrobothnia,Electric heating,Services
+Ostrobothnia||Electricity||Agriculture,2024,18.1,2025,35.921124714612965,Ostrobothnia,Electricity,Agriculture
+Ostrobothnia||Electricity||Housing,2024,15.9,2025,34.23412149846554,Ostrobothnia,Electricity,Housing
+Ostrobothnia||Electricity||Industry,2024,48.9,2025,65.16586624979975,Ostrobothnia,Electricity,Industry
+Ostrobothnia||Electricity||Services,2024,25.0,2025,33.685223484039305,Ostrobothnia,Electricity,Services
+Ostrobothnia||F-gases||Building air conditioning equipment,2024,4.2,2025,3.6949485301971436,Ostrobothnia,F-gases,Building air conditioning equipment
+Ostrobothnia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,12.6,2025,22.498773431777956,Ostrobothnia,F-gases,Commercial and professional kitchen refrigeration equipment
+Ostrobothnia||F-gases||Other sources of F-gases,2024,3.3,2025,3.7816682130098345,Ostrobothnia,F-gases,Other sources of F-gases
+Ostrobothnia||F-gases||Vehicle air conditioning equipment,2024,3.4,2025,3.9035286068916313,Ostrobothnia,F-gases,Vehicle air conditioning equipment
+Ostrobothnia||Industry||Industrial fuels,2024,71.7,2025,80.30721541196108,Ostrobothnia,Industry,Industrial fuels
+Ostrobothnia||Machinery||Agricultural and forestry machinery,2024,36.1,2025,37.896633696556094,Ostrobothnia,Machinery,Agricultural and forestry machinery
+Ostrobothnia||Machinery||Construction machinery,2024,14.8,2025,15.038543650507926,Ostrobothnia,Machinery,Construction machinery
+Ostrobothnia||Machinery||Mining and industrial machinery,2024,12.9,2025,14.002990531921387,Ostrobothnia,Machinery,Mining and industrial machinery
+Ostrobothnia||Machinery||Other machinery,2024,4.2,2025,4.600260525941849,Ostrobothnia,Machinery,Other machinery
+Ostrobothnia||Machinery||Road construction machinery,2024,18.6,2025,17.247447991371153,Ostrobothnia,Machinery,Road construction machinery
+Ostrobothnia||Oil heating||Agriculture,2024,4.6,2025,6.774598428606986,Ostrobothnia,Oil heating,Agriculture
+Ostrobothnia||Oil heating||Housing,2024,9.5,2025,38.073223906755445,Ostrobothnia,Oil heating,Housing
+Ostrobothnia||Oil heating||Services,2024,30.4,2025,29.835911731421948,Ostrobothnia,Oil heating,Services
+Ostrobothnia||Other heating||Agriculture,2024,61.2,2025,73.49469637274743,Ostrobothnia,Other heating,Agriculture
+Ostrobothnia||Other heating||Housing,2024,19.2,2025,20.091059368848804,Ostrobothnia,Other heating,Housing
+Ostrobothnia||Other heating||Services,2024,9.6,2025,9.168394643068314,Ostrobothnia,Other heating,Services
+Ostrobothnia||Rail transport||Community trains,2024,0.0,2025,-0.07670211791992188,Ostrobothnia,Rail transport,Community trains
+Ostrobothnia||Rail transport||Diesel,2024,0.6,2025,0.5454504609107971,Ostrobothnia,Rail transport,Diesel
+Ostrobothnia||Rail transport||Electricity,2024,0.3,2025,0.5473903000354767,Ostrobothnia,Rail transport,Electricity
+Ostrobothnia||Rail transport||Metros and trams,2024,0.0,2025,-0.17908740043640137,Ostrobothnia,Rail transport,Metros and trams
+Ostrobothnia||Road transport||Buses,2024,3.7,2025,5.647770726680756,Ostrobothnia,Road transport,Buses
+Ostrobothnia||Road transport||Drive-through traffic,2024,15.8,2025,12.779368865489959,Ostrobothnia,Road transport,Drive-through traffic
+Ostrobothnia||Road transport||Motorcycles and mopeds,2024,3.4,2025,3.520298531651497,Ostrobothnia,Road transport,Motorcycles and mopeds
+Ostrobothnia||Road transport||Passenger cars,2024,185.2,2025,202.08614375591276,Ostrobothnia,Road transport,Passenger cars
+Ostrobothnia||Road transport||Trucks,2024,81.6,2025,94.60921812057495,Ostrobothnia,Road transport,Trucks
+Ostrobothnia||Road transport||Vancouver vans,2024,30.4,2025,30.133765316009523,Ostrobothnia,Road transport,Vancouver vans
+Ostrobothnia||Waste treatment||Industry,2024,14.1,2025,16.02065430879593,Ostrobothnia,Waste treatment,Industry
+Ostrobothnia||Waste treatment||Municipal waste,2024,41.6,2025,41.989311414957044,Ostrobothnia,Waste treatment,Municipal waste
+Ostrobothnia||Water transport||Fishing vessels,2024,25.4,2025,25.65478654205799,Ostrobothnia,Water transport,Fishing vessels
+Ostrobothnia||Water transport||Goods traffic,2024,0.4,2025,1.4715196728706361,Ostrobothnia,Water transport,Goods traffic
+Ostrobothnia||Water transport||Passenger traffic,2024,0.1,2025,0.10199996083974838,Ostrobothnia,Water transport,Passenger traffic
+Ostrobothnia||Water transport||Pleasure boats,2024,8.4,2025,8.181513148546218,Ostrobothnia,Water transport,Pleasure boats
+Ostrobothnia||Water transport||Workboats and ships,2024,1.7,2025,3.6031118109822278,Ostrobothnia,Water transport,Workboats and ships
+Ostrobothnia||Water transport||nan,2024,0.4,2025,0.3770512878894806,Ostrobothnia,Water transport,nan
+Pirkanmaa||Agriculture||Animal digestion,2024,115.1,2025,116.72724217176439,Pirkanmaa,Agriculture,Animal digestion
+Pirkanmaa||Agriculture||Grazing,2024,1.3,2025,1.412644511461258,Pirkanmaa,Agriculture,Grazing
+Pirkanmaa||Agriculture||Manure treatment,2024,48.2,2025,48.74396584630012,Pirkanmaa,Agriculture,Manure treatment
+Pirkanmaa||Agriculture||Organic fertilizers,2024,9.0,2025,8.9367139428854,Pirkanmaa,Agriculture,Organic fertilizers
+Pirkanmaa||Agriculture||Other emissions from farmland,2024,50.1,2025,49.88754063546658,Pirkanmaa,Agriculture,Other emissions from farmland
+Pirkanmaa||Agriculture||Soil,2024,65.2,2025,59.615827441215515,Pirkanmaa,Agriculture,Soil
+Pirkanmaa||Agriculture||nan,2024,79.2,2025,75.68796859979629,Pirkanmaa,Agriculture,nan
+Pirkanmaa||District heating||Agriculture,2024,0.3,2025,0.3229752279818058,Pirkanmaa,District heating,Agriculture
+Pirkanmaa||District heating||Housing,2024,146.4,2025,212.22546631097794,Pirkanmaa,District heating,Housing
+Pirkanmaa||District heating||Industry,2024,25.9,2025,36.35392410755158,Pirkanmaa,District heating,Industry
+Pirkanmaa||District heating||Services,2024,73.6,2025,105.4821778535843,Pirkanmaa,District heating,Services
+Pirkanmaa||Electric heating||Agriculture,2024,0.7,2025,1.5019338607788084,Pirkanmaa,Electric heating,Agriculture
+Pirkanmaa||Electric heating||Housing,2024,40.7,2025,81.5678048223257,Pirkanmaa,Electric heating,Housing
+Pirkanmaa||Electric heating||Services,2024,4.4,2025,7.770913770794868,Pirkanmaa,Electric heating,Services
+Pirkanmaa||Electricity||Agriculture,2024,1.3,2025,3.594762355089188,Pirkanmaa,Electricity,Agriculture
+Pirkanmaa||Electricity||Housing,2024,50.0,2025,94.83527572154999,Pirkanmaa,Electricity,Housing
+Pirkanmaa||Electricity||Industry,2024,84.4,2025,92.96791914105418,Pirkanmaa,Electricity,Industry
+Pirkanmaa||Electricity||Services,2024,61.6,2025,93.47547279894351,Pirkanmaa,Electricity,Services
+Pirkanmaa||F-gases||Building air conditioning equipment,2024,12.9,2025,11.218674373626708,Pirkanmaa,F-gases,Building air conditioning equipment
+Pirkanmaa||F-gases||Commercial and professional kitchen refrigeration equipment,2024,26.4,2025,45.68760576248169,Pirkanmaa,F-gases,Commercial and professional kitchen refrigeration equipment
+Pirkanmaa||F-gases||Other sources of F-gases,2024,10.1,2025,11.270092201232908,Pirkanmaa,F-gases,Other sources of F-gases
+Pirkanmaa||F-gases||Vehicle air conditioning equipment,2024,9.1,2025,10.431771409511565,Pirkanmaa,F-gases,Vehicle air conditioning equipment
+Pirkanmaa||Industry||Industrial fuels,2024,210.0,2025,257.02604415416715,Pirkanmaa,Industry,Industrial fuels
+Pirkanmaa||Machinery||Agricultural and forestry machinery,2024,59.1,2025,61.41292566657066,Pirkanmaa,Machinery,Agricultural and forestry machinery
+Pirkanmaa||Machinery||Construction machinery,2024,47.6,2025,43.29225751757622,Pirkanmaa,Machinery,Construction machinery
+Pirkanmaa||Machinery||Mining and industrial machinery,2024,26.2,2025,28.12232345342636,Pirkanmaa,Machinery,Mining and industrial machinery
+Pirkanmaa||Machinery||Other machinery,2024,6.7,2025,7.328854903578758,Pirkanmaa,Machinery,Other machinery
+Pirkanmaa||Machinery||Road construction machinery,2024,54.2,2025,50.584873676300056,Pirkanmaa,Machinery,Road construction machinery
+Pirkanmaa||Oil heating||Agriculture,2024,2.5,2025,3.2769895553588873,Pirkanmaa,Oil heating,Agriculture
+Pirkanmaa||Oil heating||Housing,2024,17.5,2025,67.7573801010847,Pirkanmaa,Oil heating,Housing
+Pirkanmaa||Oil heating||Services,2024,48.2,2025,48.60414152741432,Pirkanmaa,Oil heating,Services
+Pirkanmaa||Other heating||Agriculture,2024,4.6,2025,13.392185038328172,Pirkanmaa,Other heating,Agriculture
+Pirkanmaa||Other heating||Housing,2024,35.5,2025,40.973287677764894,Pirkanmaa,Other heating,Housing
+Pirkanmaa||Other heating||Services,2024,12.8,2025,13.28490839600563,Pirkanmaa,Other heating,Services
+Pirkanmaa||Rail transport||Community trains,2024,0.5,2025,0.45656335055828096,Pirkanmaa,Rail transport,Community trains
+Pirkanmaa||Rail transport||Diesel,2024,4.2,2025,3.943418407440185,Pirkanmaa,Rail transport,Diesel
+Pirkanmaa||Rail transport||Electricity,2024,2.8,2025,5.05089123249054,Pirkanmaa,Rail transport,Electricity
+Pirkanmaa||Rail transport||Metros and trams,2024,0.4,2025,0.06578588485717773,Pirkanmaa,Rail transport,Metros and trams
+Pirkanmaa||Road transport||Buses,2024,19.5,2025,24.813784763216972,Pirkanmaa,Road transport,Buses
+Pirkanmaa||Road transport||Drive-through traffic,2024,64.5,2025,72.88240990638734,Pirkanmaa,Road transport,Drive-through traffic
+Pirkanmaa||Road transport||Motorcycles and mopeds,2024,10.2,2025,10.196311491727828,Pirkanmaa,Road transport,Motorcycles and mopeds
+Pirkanmaa||Road transport||Passenger cars,2024,479.0,2025,526.8742215514184,Pirkanmaa,Road transport,Passenger cars
+Pirkanmaa||Road transport||Trucks,2024,190.6,2025,223.02937134206297,Pirkanmaa,Road transport,Trucks
+Pirkanmaa||Road transport||Vancouver vans,2024,83.0,2025,82.90391820669174,Pirkanmaa,Road transport,Vancouver vans
+Pirkanmaa||Waste treatment||Industry,2024,18.2,2025,19.259790790081023,Pirkanmaa,Waste treatment,Industry
+Pirkanmaa||Waste treatment||Municipal waste,2024,139.5,2025,142.20861372947692,Pirkanmaa,Waste treatment,Municipal waste
+Pirkanmaa||Water transport||Fishing vessels,2024,0.0,2025,-0.04534435272216797,Pirkanmaa,Water transport,Fishing vessels
+Pirkanmaa||Water transport||Goods traffic,2024,0.0,2025,-0.19391518831253052,Pirkanmaa,Water transport,Goods traffic
+Pirkanmaa||Water transport||Passenger traffic,2024,0.1,2025,0.10575170665979386,Pirkanmaa,Water transport,Passenger traffic
+Pirkanmaa||Water transport||Pleasure boats,2024,9.1,2025,8.295559430122376,Pirkanmaa,Water transport,Pleasure boats
+Pirkanmaa||Water transport||Workboats and ships,2024,2.5,2025,4.583424758911133,Pirkanmaa,Water transport,Workboats and ships
+Pirkanmaa||Water transport||nan,2024,0.0,2025,-0.19765228033065796,Pirkanmaa,Water transport,nan
+Päijät-Häme||Agriculture||Animal digestion,2024,47.9,2025,57.199577558040616,Päijät-Häme,Agriculture,Animal digestion
+Päijät-Häme||Agriculture||Grazing,2024,0.5,2025,0.5742239043116569,Päijät-Häme,Agriculture,Grazing
+Päijät-Häme||Agriculture||Manure treatment,2024,18.4,2025,21.19657208621502,Päijät-Häme,Agriculture,Manure treatment
+Päijät-Häme||Agriculture||Organic fertilizers,2024,3.4,2025,3.837218737602234,Päijät-Häme,Agriculture,Organic fertilizers
+Päijät-Häme||Agriculture||Other emissions from farmland,2024,27.4,2025,27.983910384774205,Päijät-Häme,Agriculture,Other emissions from farmland
+Päijät-Häme||Agriculture||Soil,2024,22.1,2025,20.55015299320221,Päijät-Häme,Agriculture,Soil
+Päijät-Häme||Agriculture||nan,2024,44.4,2025,42.771813774108885,Päijät-Häme,Agriculture,nan
+Päijät-Häme||District heating||Agriculture,2024,0.1,2025,0.14060117900371552,Päijät-Häme,District heating,Agriculture
+Päijät-Häme||District heating||Housing,2024,62.7,2025,152.35214755535125,Päijät-Häme,District heating,Housing
+Päijät-Häme||District heating||Industry,2024,15.1,2025,31.3095597833395,Päijät-Häme,District heating,Industry
+Päijät-Häme||District heating||Services,2024,30.1,2025,60.55870370864867,Päijät-Häme,District heating,Services
+Päijät-Häme||Electric heating||Agriculture,2024,0.4,2025,1.0162930458784103,Päijät-Häme,Electric heating,Agriculture
+Päijät-Häme||Electric heating||Housing,2024,15.7,2025,37.99812857806683,Päijät-Häme,Electric heating,Housing
+Päijät-Häme||Electric heating||Services,2024,2.1,2025,3.7998748064041137,Päijät-Häme,Electric heating,Services
+Päijät-Häme||Electricity||Agriculture,2024,0.6,2025,1.704249441623688,Päijät-Häme,Electricity,Agriculture
+Päijät-Häme||Electricity||Housing,2024,19.4,2025,45.07680920362473,Päijät-Häme,Electricity,Housing
+Päijät-Häme||Electricity||Industry,2024,30.0,2025,44.38222518265247,Päijät-Häme,Electricity,Industry
+Päijät-Häme||Electricity||Services,2024,21.0,2025,39.95990273952485,Päijät-Häme,Electricity,Services
+Päijät-Häme||F-gases||Building air conditioning equipment,2024,4.8,2025,4.288703298568726,Päijät-Häme,F-gases,Building air conditioning equipment
+Päijät-Häme||F-gases||Commercial and professional kitchen refrigeration equipment,2024,10.5,2025,17.6529527425766,Päijät-Häme,F-gases,Commercial and professional kitchen refrigeration equipment
+Päijät-Häme||F-gases||Other sources of F-gases,2024,3.8,2025,4.578062242269516,Päijät-Häme,F-gases,Other sources of F-gases
+Päijät-Häme||F-gases||Vehicle air conditioning equipment,2024,3.6,2025,4.367355930805207,Päijät-Häme,F-gases,Vehicle air conditioning equipment
+Päijät-Häme||Industry||Industrial fuels,2024,135.6,2025,142.11364820972085,Päijät-Häme,Industry,Industrial fuels
+Päijät-Häme||Machinery||Agricultural and forestry machinery,2024,29.3,2025,32.20760372877121,Päijät-Häme,Machinery,Agricultural and forestry machinery
+Päijät-Häme||Machinery||Construction machinery,2024,9.6,2025,11.068604981899261,Päijät-Häme,Machinery,Construction machinery
+Päijät-Häme||Machinery||Mining and industrial machinery,2024,12.1,2025,13.161637794971465,Päijät-Häme,Machinery,Mining and industrial machinery
+Päijät-Häme||Machinery||Other machinery,2024,3.2,2025,3.5282940328121186,Päijät-Häme,Machinery,Other machinery
+Päijät-Häme||Machinery||Road construction machinery,2024,26.2,2025,24.310081005096436,Päijät-Häme,Machinery,Road construction machinery
+Päijät-Häme||Oil heating||Agriculture,2024,1.1,2025,1.4854733645915985,Päijät-Häme,Oil heating,Agriculture
+Päijät-Häme||Oil heating||Housing,2024,5.9,2025,27.950803875923157,Päijät-Häme,Oil heating,Housing
+Päijät-Häme||Oil heating||Services,2024,15.1,2025,15.529705592989922,Päijät-Häme,Oil heating,Services
+Päijät-Häme||Other heating||Agriculture,2024,1.0,2025,4.807478260993957,Päijät-Häme,Other heating,Agriculture
+Päijät-Häme||Other heating||Housing,2024,15.7,2025,19.18752672672272,Päijät-Häme,Other heating,Housing
+Päijät-Häme||Other heating||Services,2024,8.1,2025,7.904482841491699,Päijät-Häme,Other heating,Services
+Päijät-Häme||Rail transport||Community trains,2024,0.6,2025,0.8279288947582246,Päijät-Häme,Rail transport,Community trains
+Päijät-Häme||Rail transport||Diesel,2024,1.4,2025,1.4518478363752365,Päijät-Häme,Rail transport,Diesel
+Päijät-Häme||Rail transport||Electricity,2024,0.4,2025,1.0186747908592226,Päijät-Häme,Rail transport,Electricity
+Päijät-Häme||Rail transport||Metros and trams,2024,0.0,2025,-0.16677802801132202,Päijät-Häme,Rail transport,Metros and trams
+Päijät-Häme||Road transport||Buses,2024,6.8,2025,12.478329572081567,Päijät-Häme,Road transport,Buses
+Päijät-Häme||Road transport||Drive-through traffic,2024,49.5,2025,49.62675731182098,Päijät-Häme,Road transport,Drive-through traffic
+Päijät-Häme||Road transport||Motorcycles and mopeds,2024,4.5,2025,4.601979160308838,Päijät-Häme,Road transport,Motorcycles and mopeds
+Päijät-Häme||Road transport||Passenger cars,2024,187.0,2025,216.2498719573021,Päijät-Häme,Road transport,Passenger cars
+Päijät-Häme||Road transport||Trucks,2024,87.6,2025,113.1794834598899,Päijät-Häme,Road transport,Trucks
+Päijät-Häme||Road transport||Vancouver vans,2024,35.2,2025,36.2037347137928,Päijät-Häme,Road transport,Vancouver vans
+Päijät-Häme||Waste treatment||Industry,2024,28.3,2025,24.999170184135437,Päijät-Häme,Waste treatment,Industry
+Päijät-Häme||Waste treatment||Municipal waste,2024,55.0,2025,54.95091533660889,Päijät-Häme,Waste treatment,Municipal waste
+Päijät-Häme||Water transport||Fishing vessels,2024,0.0,2025,-0.04780542850494385,Päijät-Häme,Water transport,Fishing vessels
+Päijät-Häme||Water transport||Goods traffic,2024,0.0,2025,-0.2454596757888794,Päijät-Häme,Water transport,Goods traffic
+Päijät-Häme||Water transport||Passenger traffic,2024,0.0,2025,0.006788980960845947,Päijät-Häme,Water transport,Passenger traffic
+Päijät-Häme||Water transport||Pleasure boats,2024,4.9,2025,4.584677466750145,Päijät-Häme,Water transport,Pleasure boats
+Päijät-Häme||Water transport||Workboats and ships,2024,0.5,2025,0.7394662618637085,Päijät-Häme,Water transport,Workboats and ships
+Päijät-Häme||Water transport||nan,2024,0.0,2025,-0.2339092493057251,Päijät-Häme,Water transport,nan
+Satakunta||Agriculture||Animal digestion,2024,67.8,2025,67.62867623269558,Satakunta,Agriculture,Animal digestion
+Satakunta||Agriculture||Grazing,2024,0.7,2025,0.7722925662994385,Satakunta,Agriculture,Grazing
+Satakunta||Agriculture||Manure treatment,2024,40.7,2025,41.71778770685196,Satakunta,Agriculture,Manure treatment
+Satakunta||Agriculture||Organic fertilizers,2024,8.4,2025,8.116465759277345,Satakunta,Agriculture,Organic fertilizers
+Satakunta||Agriculture||Other emissions from farmland,2024,44.6,2025,44.243660423159604,Satakunta,Agriculture,Other emissions from farmland
+Satakunta||Agriculture||Soil,2024,75.6,2025,70.67109251022339,Satakunta,Agriculture,Soil
+Satakunta||Agriculture||nan,2024,65.9,2025,63.46759958267212,Satakunta,Agriculture,nan
+Satakunta||District heating||Agriculture,2024,1.1,2025,2.005880266427994,Satakunta,District heating,Agriculture
+Satakunta||District heating||Housing,2024,30.0,2025,65.18215567469598,Satakunta,District heating,Housing
+Satakunta||District heating||Industry,2024,12.9,2025,19.3927674651146,Satakunta,District heating,Industry
+Satakunta||District heating||Services,2024,20.1,2025,43.26158605217934,Satakunta,District heating,Services
+Satakunta||Electric heating||Agriculture,2024,0.4,2025,1.0585040599107742,Satakunta,Electric heating,Agriculture
+Satakunta||Electric heating||Housing,2024,21.8,2025,47.01680011153221,Satakunta,Electric heating,Housing
+Satakunta||Electric heating||Services,2024,3.4,2025,5.989215016365052,Satakunta,Electric heating,Services
+Satakunta||Electricity||Agriculture,2024,2.1,2025,6.937903115153313,Satakunta,Electricity,Agriculture
+Satakunta||Electricity||Housing,2024,20.6,2025,43.576533865928646,Satakunta,Electricity,Housing
+Satakunta||Electricity||Industry,2024,120.2,2025,153.30729141235344,Satakunta,Electricity,Industry
+Satakunta||Electricity||Services,2024,27.9,2025,41.01845961809158,Satakunta,Electricity,Services
+Satakunta||F-gases||Building air conditioning equipment,2024,5.0,2025,4.581129741668701,Satakunta,F-gases,Building air conditioning equipment
+Satakunta||F-gases||Commercial and professional kitchen refrigeration equipment,2024,12.5,2025,20.610029029846196,Satakunta,F-gases,Commercial and professional kitchen refrigeration equipment
+Satakunta||F-gases||Other sources of F-gases,2024,4.0,2025,4.633784255385399,Satakunta,F-gases,Other sources of F-gases
+Satakunta||F-gases||Vehicle air conditioning equipment,2024,4.3,2025,4.789974927902221,Satakunta,F-gases,Vehicle air conditioning equipment
+Satakunta||Industry||Industrial fuels,2024,292.4,2025,311.9923933386803,Satakunta,Industry,Industrial fuels
+Satakunta||Machinery||Agricultural and forestry machinery,2024,41.5,2025,43.782597211003306,Satakunta,Machinery,Agricultural and forestry machinery
+Satakunta||Machinery||Construction machinery,2024,20.3,2025,18.528541493415833,Satakunta,Machinery,Construction machinery
+Satakunta||Machinery||Mining and industrial machinery,2024,18.8,2025,20.28340223133564,Satakunta,Machinery,Mining and industrial machinery
+Satakunta||Machinery||Other machinery,2024,4.6,2025,4.99542991220951,Satakunta,Machinery,Other machinery
+Satakunta||Machinery||Road construction machinery,2024,23.5,2025,22.010675716400147,Satakunta,Machinery,Road construction machinery
+Satakunta||Oil heating||Agriculture,2024,3.6,2025,5.252721223235131,Satakunta,Oil heating,Agriculture
+Satakunta||Oil heating||Housing,2024,12.7,2025,50.302081322669984,Satakunta,Oil heating,Housing
+Satakunta||Oil heating||Services,2024,42.4,2025,41.62595165967941,Satakunta,Oil heating,Services
+Satakunta||Other heating||Agriculture,2024,17.6,2025,32.70649161338807,Satakunta,Other heating,Agriculture
+Satakunta||Other heating||Housing,2024,22.1,2025,23.97962473928928,Satakunta,Other heating,Housing
+Satakunta||Other heating||Services,2024,7.4,2025,7.2232526242733,Satakunta,Other heating,Services
+Satakunta||Rail transport||Community trains,2024,0.0,2025,0.0038672685623168945,Satakunta,Rail transport,Community trains
+Satakunta||Rail transport||Diesel,2024,1.1,2025,1.035540556907654,Satakunta,Rail transport,Diesel
+Satakunta||Rail transport||Electricity,2024,0.2,2025,0.477430346608162,Satakunta,Rail transport,Electricity
+Satakunta||Rail transport||Metros and trams,2024,0.0,2025,-0.12784862518310547,Satakunta,Rail transport,Metros and trams
+Satakunta||Road transport||Buses,2024,7.3,2025,10.362508207559586,Satakunta,Road transport,Buses
+Satakunta||Road transport||Drive-through traffic,2024,19.3,2025,19.933617106080053,Satakunta,Road transport,Drive-through traffic
+Satakunta||Road transport||Motorcycles and mopeds,2024,4.7,2025,4.774155288934708,Satakunta,Road transport,Motorcycles and mopeds
+Satakunta||Road transport||Passenger cars,2024,230.9,2025,256.9008882582188,Satakunta,Road transport,Passenger cars
+Satakunta||Road transport||Trucks,2024,113.0,2025,135.62835270762446,Satakunta,Road transport,Trucks
+Satakunta||Road transport||Vancouver vans,2024,39.2,2025,39.46981677412987,Satakunta,Road transport,Vancouver vans
+Satakunta||Waste treatment||Industry,2024,16.8,2025,19.21414872407913,Satakunta,Waste treatment,Industry
+Satakunta||Waste treatment||Municipal waste,2024,70.2,2025,67.94228098988533,Satakunta,Waste treatment,Municipal waste
+Satakunta||Water transport||Fishing vessels,2024,6.9,2025,8.005047714710235,Satakunta,Water transport,Fishing vessels
+Satakunta||Water transport||Goods traffic,2024,1.1,2025,1.4008991420269015,Satakunta,Water transport,Goods traffic
+Satakunta||Water transport||Passenger traffic,2024,0.1,2025,0.081268572807312,Satakunta,Water transport,Passenger traffic
+Satakunta||Water transport||Pleasure boats,2024,5.4,2025,5.032893121242523,Satakunta,Water transport,Pleasure boats
+Satakunta||Water transport||Workboats and ships,2024,2.4,2025,5.090991127490997,Satakunta,Water transport,Workboats and ships
+Satakunta||Water transport||nan,2024,0.0,2025,-0.15076112747192383,Satakunta,Water transport,nan
+South Karelia||Agriculture||Animal digestion,2024,38.5,2025,42.36815100312233,South Karelia,Agriculture,Animal digestion
+South Karelia||Agriculture||Grazing,2024,0.4,2025,0.46282347440719607,South Karelia,Agriculture,Grazing
+South Karelia||Agriculture||Manure treatment,2024,13.2,2025,15.974778319895268,South Karelia,Agriculture,Manure treatment
+South Karelia||Agriculture||Organic fertilizers,2024,2.6,2025,2.834734243154526,South Karelia,Agriculture,Organic fertilizers
+South Karelia||Agriculture||Other emissions from farmland,2024,15.6,2025,16.116989110410213,South Karelia,Agriculture,Other emissions from farmland
+South Karelia||Agriculture||Soil,2024,36.2,2025,35.19869281053543,South Karelia,Agriculture,Soil
+South Karelia||Agriculture||nan,2024,24.7,2025,23.806883311271665,South Karelia,Agriculture,nan
+South Karelia||District heating||Agriculture,2024,0.1,2025,0.08866443037986756,South Karelia,District heating,Agriculture
+South Karelia||District heating||Housing,2024,21.0,2025,35.75345703363419,South Karelia,District heating,Housing
+South Karelia||District heating||Industry,2024,4.2,2025,6.421472549438477,South Karelia,District heating,Industry
+South Karelia||District heating||Services,2024,12.0,2025,19.78201491236687,South Karelia,District heating,Services
+South Karelia||Electric heating||Agriculture,2024,0.2,2025,0.5173686027526855,South Karelia,Electric heating,Agriculture
+South Karelia||Electric heating||Housing,2024,9.3,2025,22.352462196350096,South Karelia,Electric heating,Housing
+South Karelia||Electric heating||Services,2024,1.3,2025,2.625176477432251,South Karelia,Electric heating,Services
+South Karelia||Electricity||Agriculture,2024,0.6,2025,1.8654609441757202,South Karelia,Electricity,Agriculture
+South Karelia||Electricity||Housing,2024,11.1,2025,25.93674079179764,South Karelia,Electricity,Housing
+South Karelia||Electricity||Industry,2024,144.1,2025,253.1757678568363,South Karelia,Electricity,Industry
+South Karelia||Electricity||Services,2024,16.2,2025,33.39897291958333,South Karelia,Electricity,Services
+South Karelia||F-gases||Building air conditioning equipment,2024,3.0,2025,2.729555416107178,South Karelia,F-gases,Building air conditioning equipment
+South Karelia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,8.7,2025,14.252059525251385,South Karelia,F-gases,Commercial and professional kitchen refrigeration equipment
+South Karelia||F-gases||Other sources of F-gases,2024,2.3,2025,2.7580841600894925,South Karelia,F-gases,Other sources of F-gases
+South Karelia||F-gases||Vehicle air conditioning equipment,2024,2.3,2025,2.6843635559082033,South Karelia,F-gases,Vehicle air conditioning equipment
+South Karelia||Industry||Industrial fuels,2024,370.7,2025,384.6259315498173,South Karelia,Industry,Industrial fuels
+South Karelia||Machinery||Agricultural and forestry machinery,2024,20.9,2025,22.810830530524257,South Karelia,Machinery,Agricultural and forestry machinery
+South Karelia||Machinery||Construction machinery,2024,4.2,2025,5.804777139425278,South Karelia,Machinery,Construction machinery
+South Karelia||Machinery||Mining and industrial machinery,2024,11.6,2025,12.396744304895401,South Karelia,Machinery,Mining and industrial machinery
+South Karelia||Machinery||Other machinery,2024,2.8,2025,3.1119203567504883,South Karelia,Machinery,Other machinery
+South Karelia||Machinery||Road construction machinery,2024,14.4,2025,13.405138075351715,South Karelia,Machinery,Road construction machinery
+South Karelia||Oil heating||Agriculture,2024,0.5,2025,0.6831713914871216,South Karelia,Oil heating,Agriculture
+South Karelia||Oil heating||Housing,2024,5.5,2025,21.496647208929062,South Karelia,Oil heating,Housing
+South Karelia||Oil heating||Services,2024,12.4,2025,11.860546934604644,South Karelia,Oil heating,Services
+South Karelia||Other heating||Agriculture,2024,5.4,2025,5.87059618383646,South Karelia,Other heating,Agriculture
+South Karelia||Other heating||Housing,2024,15.7,2025,20.986043816804884,South Karelia,Other heating,Housing
+South Karelia||Other heating||Services,2024,5.6,2025,5.996195614337921,South Karelia,Other heating,Services
+South Karelia||Rail transport||Community trains,2024,0.0,2025,-0.006042361259460449,South Karelia,Rail transport,Community trains
+South Karelia||Rail transport||Diesel,2024,4.3,2025,4.319249385595322,South Karelia,Rail transport,Diesel
+South Karelia||Rail transport||Electricity,2024,1.1,2025,2.6279739081859588,South Karelia,Rail transport,Electricity
+South Karelia||Rail transport||Metros and trams,2024,0.0,2025,-0.12511157989501953,South Karelia,Rail transport,Metros and trams
+South Karelia||Road transport||Buses,2024,1.4,2025,3.1984310269355776,South Karelia,Road transport,Buses
+South Karelia||Road transport||Drive-through traffic,2024,28.2,2025,33.41819603443145,South Karelia,Road transport,Drive-through traffic
+South Karelia||Road transport||Motorcycles and mopeds,2024,2.4,2025,2.50106742978096,South Karelia,Road transport,Motorcycles and mopeds
+South Karelia||Road transport||Passenger cars,2024,124.2,2025,143.24051861763,South Karelia,Road transport,Passenger cars
+South Karelia||Road transport||Trucks,2024,53.5,2025,75.71651841402054,South Karelia,Road transport,Trucks
+South Karelia||Road transport||Vancouver vans,2024,19.4,2025,19.38700444698334,South Karelia,Road transport,Vancouver vans
+South Karelia||Waste treatment||Industry,2024,105.5,2025,107.66139369606971,South Karelia,Waste treatment,Industry
+South Karelia||Waste treatment||Municipal waste,2024,43.0,2025,44.13660002946854,South Karelia,Waste treatment,Municipal waste
+South Karelia||Water transport||Fishing vessels,2024,0.0,2025,-0.0027686357498168945,South Karelia,Water transport,Fishing vessels
+South Karelia||Water transport||Goods traffic,2024,0.5,2025,0.44960652291774755,South Karelia,Water transport,Goods traffic
+South Karelia||Water transport||Passenger traffic,2024,0.1,2025,0.14118749499320984,South Karelia,Water transport,Passenger traffic
+South Karelia||Water transport||Pleasure boats,2024,4.4,2025,4.290175586938858,South Karelia,Water transport,Pleasure boats
+South Karelia||Water transport||Workboats and ships,2024,0.7,2025,1.2897035241127013,South Karelia,Water transport,Workboats and ships
+South Karelia||Water transport||nan,2024,0.1,2025,-0.10779776573181155,South Karelia,Water transport,nan
+South Ostrobothnia||Agriculture||Animal digestion,2024,269.7,2025,260.1389712572098,South Ostrobothnia,Agriculture,Animal digestion
+South Ostrobothnia||Agriculture||Grazing,2024,2.3,2025,2.5032124251127246,South Ostrobothnia,Agriculture,Grazing
+South Ostrobothnia||Agriculture||Manure treatment,2024,121.3,2025,126.3861707687378,South Ostrobothnia,Agriculture,Manure treatment
+South Ostrobothnia||Agriculture||Organic fertilizers,2024,23.0,2025,22.453466272354127,South Ostrobothnia,Agriculture,Organic fertilizers
+South Ostrobothnia||Agriculture||Other emissions from farmland,2024,87.0,2025,84.68008939772844,South Ostrobothnia,Agriculture,Other emissions from farmland
+South Ostrobothnia||Agriculture||Soil,2024,260.0,2025,240.38309726715087,South Ostrobothnia,Agriculture,Soil
+South Ostrobothnia||Agriculture||nan,2024,126.0,2025,119.15301690101623,South Ostrobothnia,Agriculture,nan
+South Ostrobothnia||District heating||Agriculture,2024,1.6,2025,2.494247925281525,South Ostrobothnia,District heating,Agriculture
+South Ostrobothnia||District heating||Housing,2024,66.9,2025,87.6182689011097,South Ostrobothnia,District heating,Housing
+South Ostrobothnia||District heating||Industry,2024,21.1,2025,21.835741841793062,South Ostrobothnia,District heating,Industry
+South Ostrobothnia||District heating||Services,2024,57.8,2025,73.14382047653199,South Ostrobothnia,District heating,Services
+South Ostrobothnia||Electric heating||Agriculture,2024,0.7,2025,1.671766185760498,South Ostrobothnia,Electric heating,Agriculture
+South Ostrobothnia||Electric heating||Housing,2024,18.1,2025,39.23841353803873,South Ostrobothnia,Electric heating,Housing
+South Ostrobothnia||Electric heating||Services,2024,2.8,2025,5.111360859870911,South Ostrobothnia,Electric heating,Services
+South Ostrobothnia||Electricity||Agriculture,2024,3.0,2025,9.170965576171875,South Ostrobothnia,Electricity,Agriculture
+South Ostrobothnia||Electricity||Housing,2024,17.3,2025,38.17966680526733,South Ostrobothnia,Electricity,Housing
+South Ostrobothnia||Electricity||Industry,2024,21.5,2025,32.812730592489245,South Ostrobothnia,Electricity,Industry
+South Ostrobothnia||Electricity||Services,2024,23.2,2025,36.770070081949235,South Ostrobothnia,Electricity,Services
+South Ostrobothnia||F-gases||Building air conditioning equipment,2024,4.5,2025,4.080721378326416,South Ostrobothnia,F-gases,Building air conditioning equipment
+South Ostrobothnia||F-gases||Commercial and professional kitchen refrigeration equipment,2024,11.4,2025,19.949367380142213,South Ostrobothnia,F-gases,Commercial and professional kitchen refrigeration equipment
+South Ostrobothnia||F-gases||Other sources of F-gases,2024,3.6,2025,4.306372392177582,South Ostrobothnia,F-gases,Other sources of F-gases
+South Ostrobothnia||F-gases||Vehicle air conditioning equipment,2024,4.8,2025,5.385273551940918,South Ostrobothnia,F-gases,Vehicle air conditioning equipment
+South Ostrobothnia||Industry||Industrial fuels,2024,101.1,2025,107.20008643865586,South Ostrobothnia,Industry,Industrial fuels
+South Ostrobothnia||Machinery||Agricultural and forestry machinery,2024,70.7,2025,75.88569107800723,South Ostrobothnia,Machinery,Agricultural and forestry machinery
+South Ostrobothnia||Machinery||Construction machinery,2024,18.3,2025,17.848159043490888,South Ostrobothnia,Machinery,Construction machinery
+South Ostrobothnia||Machinery||Mining and industrial machinery,2024,18.8,2025,20.328953820466992,South Ostrobothnia,Machinery,Mining and industrial machinery
+South Ostrobothnia||Machinery||Other machinery,2024,5.4,2025,5.8934620946645735,South Ostrobothnia,Machinery,Other machinery
+South Ostrobothnia||Machinery||Road construction machinery,2024,26.9,2025,25.024287462234497,South Ostrobothnia,Machinery,Road construction machinery
+South Ostrobothnia||Oil heating||Agriculture,2024,4.8,2025,6.970833243429661,South Ostrobothnia,Oil heating,Agriculture
+South Ostrobothnia||Oil heating||Housing,2024,11.0,2025,44.67030344903469,South Ostrobothnia,Oil heating,Housing
+South Ostrobothnia||Oil heating||Services,2024,41.8,2025,40.89264934360981,South Ostrobothnia,Oil heating,Services
+South Ostrobothnia||Other heating||Agriculture,2024,65.0,2025,68.91504925340413,South Ostrobothnia,Other heating,Agriculture
+South Ostrobothnia||Other heating||Housing,2024,31.5,2025,40.32317328453065,South Ostrobothnia,Other heating,Housing
+South Ostrobothnia||Other heating||Services,2024,11.3,2025,11.092312091588974,South Ostrobothnia,Other heating,Services
+South Ostrobothnia||Rail transport||Community trains,2024,0.0,2025,-0.03978264331817627,South Ostrobothnia,Rail transport,Community trains
+South Ostrobothnia||Rail transport||Diesel,2024,1.6,2025,1.5199588090181353,South Ostrobothnia,Rail transport,Diesel
+South Ostrobothnia||Rail transport||Electricity,2024,1.5,2025,2.636699855327606,South Ostrobothnia,Rail transport,Electricity
+South Ostrobothnia||Rail transport||Metros and trams,2024,0.0,2025,-0.16476523876190186,South Ostrobothnia,Rail transport,Metros and trams
+South Ostrobothnia||Road transport||Buses,2024,6.2,2025,8.1823265761137,South Ostrobothnia,Road transport,Buses
+South Ostrobothnia||Road transport||Drive-through traffic,2024,16.3,2025,16.40295559763908,South Ostrobothnia,Road transport,Drive-through traffic
+South Ostrobothnia||Road transport||Motorcycles and mopeds,2024,5.1,2025,5.365832046419381,South Ostrobothnia,Road transport,Motorcycles and mopeds
+South Ostrobothnia||Road transport||Passenger cars,2024,232.0,2025,254.70453294515607,South Ostrobothnia,Road transport,Passenger cars
+South Ostrobothnia||Road transport||Trucks,2024,122.2,2025,140.56975902616978,South Ostrobothnia,Road transport,Trucks
+South Ostrobothnia||Road transport||Vancouver vans,2024,42.9,2025,42.584585326910016,South Ostrobothnia,Road transport,Vancouver vans
+South Ostrobothnia||Waste treatment||Industry,2024,4.2,2025,5.265629923343659,South Ostrobothnia,Waste treatment,Industry
+South Ostrobothnia||Waste treatment||Municipal waste,2024,58.6,2025,60.71612189114095,South Ostrobothnia,Waste treatment,Municipal waste
+South Ostrobothnia||Water transport||Fishing vessels,2024,0.0,2025,-0.05602234601974487,South Ostrobothnia,Water transport,Fishing vessels
+South Ostrobothnia||Water transport||Goods traffic,2024,0.0,2025,-0.22718346118927002,South Ostrobothnia,Water transport,Goods traffic
+South Ostrobothnia||Water transport||Passenger traffic,2024,0.0,2025,-0.25532352924346924,South Ostrobothnia,Water transport,Passenger traffic
+South Ostrobothnia||Water transport||Pleasure boats,2024,1.4,2025,1.1802007496356963,South Ostrobothnia,Water transport,Pleasure boats
+South Ostrobothnia||Water transport||Workboats and ships,2024,0.3,2025,0.4691866397857666,South Ostrobothnia,Water transport,Workboats and ships
+South Ostrobothnia||Water transport||nan,2024,0.0,2025,-0.213276207447052,South Ostrobothnia,Water transport,nan
+South Savo||Agriculture||Animal digestion,2024,85.4,2025,86.76117355525494,South Savo,Agriculture,Animal digestion
+South Savo||Agriculture||Grazing,2024,0.9,2025,0.9709258526563644,South Savo,Agriculture,Grazing
+South Savo||Agriculture||Manure treatment,2024,28.8,2025,29.803715547919275,South Savo,Agriculture,Manure treatment
+South Savo||Agriculture||Organic fertilizers,2024,5.6,2025,5.669921635091304,South Savo,Agriculture,Organic fertilizers
+South Savo||Agriculture||Other emissions from farmland,2024,20.3,2025,20.397257810831068,South Savo,Agriculture,Other emissions from farmland
+South Savo||Agriculture||Soil,2024,30.4,2025,29.211964249610897,South Savo,Agriculture,Soil
+South Savo||Agriculture||nan,2024,30.0,2025,29.101372939348224,South Savo,Agriculture,nan
+South Savo||District heating||Agriculture,2024,1.0,2025,0.7226641237735749,South Savo,District heating,Agriculture
+South Savo||District heating||Housing,2024,32.3,2025,49.972623333334916,South Savo,District heating,Housing
+South Savo||District heating||Industry,2024,4.4,2025,6.111076098680497,South Savo,District heating,Industry
+South Savo||District heating||Services,2024,18.9,2025,27.615371990203858,South Savo,District heating,Services
+South Savo||Electric heating||Agriculture,2024,0.4,2025,1.1319702684879303,South Savo,Electric heating,Agriculture
+South Savo||Electric heating||Housing,2024,14.4,2025,34.21091510951519,South Savo,Electric heating,Housing
+South Savo||Electric heating||Services,2024,2.3,2025,4.268706348538399,South Savo,Electric heating,Services
+South Savo||Electricity||Agriculture,2024,0.7,2025,1.821925127506256,South Savo,Electricity,Agriculture
+South Savo||Electricity||Housing,2024,13.5,2025,30.444642066955563,South Savo,Electricity,Housing
+South Savo||Electricity||Industry,2024,13.2,2025,21.426980400085448,South Savo,Electricity,Industry
+South Savo||Electricity||Services,2024,15.7,2025,26.321612167358396,South Savo,Electricity,Services
+South Savo||F-gases||Building air conditioning equipment,2024,3.1,2025,2.856382513046264,South Savo,F-gases,Building air conditioning equipment
+South Savo||F-gases||Commercial and professional kitchen refrigeration equipment,2024,9.3,2025,15.681914699077605,South Savo,F-gases,Commercial and professional kitchen refrigeration equipment
+South Savo||F-gases||Other sources of F-gases,2024,2.5,2025,3.0227229222655296,South Savo,F-gases,Other sources of F-gases
+South Savo||F-gases||Vehicle air conditioning equipment,2024,2.8,2025,3.1866440773010254,South Savo,F-gases,Vehicle air conditioning equipment
+South Savo||Industry||Industrial fuels,2024,20.4,2025,21.926285450160503,South Savo,Industry,Industrial fuels
+South Savo||Machinery||Agricultural and forestry machinery,2024,44.2,2025,46.14777208864688,South Savo,Machinery,Agricultural and forestry machinery
+South Savo||Machinery||Construction machinery,2024,7.1,2025,7.601480868458748,South Savo,Machinery,Construction machinery
+South Savo||Machinery||Mining and industrial machinery,2024,8.8,2025,9.823221084475517,South Savo,Machinery,Mining and industrial machinery
+South Savo||Machinery||Other machinery,2024,3.9,2025,4.2514413535594935,South Savo,Machinery,Other machinery
+South Savo||Machinery||Road construction machinery,2024,20.2,2025,18.834800839424133,South Savo,Machinery,Road construction machinery
+South Savo||Oil heating||Agriculture,2024,0.7,2025,1.1326006174087524,South Savo,Oil heating,Agriculture
+South Savo||Oil heating||Housing,2024,5.5,2025,20.94556785821915,South Savo,Oil heating,Housing
+South Savo||Oil heating||Services,2024,20.2,2025,20.331240606307986,South Savo,Oil heating,Services
+South Savo||Other heating||Agriculture,2024,0.4,2025,3.584534442424774,South Savo,Other heating,Agriculture
+South Savo||Other heating||Housing,2024,26.4,2025,28.093721416592597,South Savo,Other heating,Housing
+South Savo||Other heating||Services,2024,4.8,2025,5.661000049114227,South Savo,Other heating,Services
+South Savo||Rail transport||Community trains,2024,0.0,2025,-0.01923978328704834,South Savo,Rail transport,Community trains
+South Savo||Rail transport||Diesel,2024,2.9,2025,2.716071271896362,South Savo,Rail transport,Diesel
+South Savo||Rail transport||Electricity,2024,0.8,2025,1.3032525658607481,South Savo,Rail transport,Electricity
+South Savo||Rail transport||Metros and trams,2024,0.0,2025,-0.17214429378509521,South Savo,Rail transport,Metros and trams
+South Savo||Road transport||Buses,2024,4.0,2025,7.576746508479118,South Savo,Road transport,Buses
+South Savo||Road transport||Drive-through traffic,2024,35.4,2025,41.7068442106247,South Savo,Road transport,Drive-through traffic
+South Savo||Road transport||Motorcycles and mopeds,2024,2.7,2025,2.831431323289871,South Savo,Road transport,Motorcycles and mopeds
+South Savo||Road transport||Passenger cars,2024,134.0,2025,154.74216119050982,South Savo,Road transport,Passenger cars
+South Savo||Road transport||Trucks,2024,67.5,2025,80.85307254195213,South Savo,Road transport,Trucks
+South Savo||Road transport||Vancouver vans,2024,29.2,2025,29.303267097473146,South Savo,Road transport,Vancouver vans
+South Savo||Waste treatment||Industry,2024,1.6,2025,1.6376808643341065,South Savo,Waste treatment,Industry
+South Savo||Waste treatment||Municipal waste,2024,57.1,2025,56.78723378181457,South Savo,Waste treatment,Municipal waste
+South Savo||Water transport||Fishing vessels,2024,0.0,2025,-0.09592056274414062,South Savo,Water transport,Fishing vessels
+South Savo||Water transport||Goods traffic,2024,0.1,2025,0.05928055644035339,South Savo,Water transport,Goods traffic
+South Savo||Water transport||Passenger traffic,2024,0.2,2025,0.3351239010691643,South Savo,Water transport,Passenger traffic
+South Savo||Water transport||Pleasure boats,2024,7.6,2025,7.226105780899525,South Savo,Water transport,Pleasure boats
+South Savo||Water transport||Workboats and ships,2024,1.7,2025,3.509446084499359,South Savo,Water transport,Workboats and ships
+South Savo||Water transport||nan,2024,0.4,2025,0.4628454506397247,South Savo,Water transport,nan
+Southwest Finland||Agriculture||Animal digestion,2024,94.7,2025,90.29099844694137,Southwest Finland,Agriculture,Animal digestion
+Southwest Finland||Agriculture||Grazing,2024,1.0,2025,1.0711058199405672,Southwest Finland,Agriculture,Grazing
+Southwest Finland||Agriculture||Manure treatment,2024,78.0,2025,79.09865431189537,Southwest Finland,Agriculture,Manure treatment
+Southwest Finland||Agriculture||Organic fertilizers,2024,14.2,2025,13.870697557926178,Southwest Finland,Agriculture,Organic fertilizers
+Southwest Finland||Agriculture||Other emissions from farmland,2024,89.6,2025,86.56470642089843,Southwest Finland,Agriculture,Other emissions from farmland
+Southwest Finland||Agriculture||Soil,2024,39.8,2025,35.80148320198059,Southwest Finland,Agriculture,Soil
+Southwest Finland||Agriculture||nan,2024,138.4,2025,132.7845563530922,Southwest Finland,Agriculture,nan
+Southwest Finland||District heating||Agriculture,2024,0.9,2025,2.4737417817115785,Southwest Finland,District heating,Agriculture
+Southwest Finland||District heating||Housing,2024,72.2,2025,228.63124419748783,Southwest Finland,District heating,Housing
+Southwest Finland||District heating||Industry,2024,10.2,2025,26.93222176134586,Southwest Finland,District heating,Industry
+Southwest Finland||District heating||Services,2024,39.8,2025,106.37779322862626,Southwest Finland,District heating,Services
+Southwest Finland||Electric heating||Agriculture,2024,0.9,2025,1.9938909083604812,Southwest Finland,Electric heating,Agriculture
+Southwest Finland||Electric heating||Housing,2024,39.1,2025,85.10397045612335,Southwest Finland,Electric heating,Housing
+Southwest Finland||Electric heating||Services,2024,5.4,2025,9.557187747955323,Southwest Finland,Electric heating,Services
+Southwest Finland||Electricity||Agriculture,2024,3.6,2025,9.469817408919335,Southwest Finland,Electricity,Agriculture
+Southwest Finland||Electricity||Housing,2024,45.9,2025,96.85903841853143,Southwest Finland,Electricity,Housing
+Southwest Finland||Electricity||Industry,2024,41.7,2025,65.1943815290928,Southwest Finland,Electricity,Industry
+Southwest Finland||Electricity||Services,2024,62.9,2025,95.87282838225366,Southwest Finland,Electricity,Services
+Southwest Finland||F-gases||Building air conditioning equipment,2024,11.7,2025,10.249326705932617,Southwest Finland,F-gases,Building air conditioning equipment
+Southwest Finland||F-gases||Commercial and professional kitchen refrigeration equipment,2024,26.5,2025,44.86678521633148,Southwest Finland,F-gases,Commercial and professional kitchen refrigeration equipment
+Southwest Finland||F-gases||Other sources of F-gases,2024,9.2,2025,10.570234727859498,Southwest Finland,F-gases,Other sources of F-gases
+Southwest Finland||F-gases||Vehicle air conditioning equipment,2024,8.3,2025,9.594237250089646,Southwest Finland,F-gases,Vehicle air conditioning equipment
+Southwest Finland||Industry||Industrial fuels,2024,216.8,2025,301.1096235156059,Southwest Finland,Industry,Industrial fuels
+Southwest Finland||Machinery||Agricultural and forestry machinery,2024,66.5,2025,73.46850576251745,Southwest Finland,Machinery,Agricultural and forestry machinery
+Southwest Finland||Machinery||Construction machinery,2024,50.6,2025,43.22572829127312,Southwest Finland,Machinery,Construction machinery
+Southwest Finland||Machinery||Mining and industrial machinery,2024,26.0,2025,28.49093565195799,Southwest Finland,Machinery,Mining and industrial machinery
+Southwest Finland||Machinery||Other machinery,2024,7.6,2025,8.339292097091674,Southwest Finland,Machinery,Other machinery
+Southwest Finland||Machinery||Road construction machinery,2024,50.8,2025,47.467154008150096,Southwest Finland,Machinery,Road construction machinery
+Southwest Finland||Oil heating||Agriculture,2024,6.3,2025,9.108104515075683,Southwest Finland,Oil heating,Agriculture
+Southwest Finland||Oil heating||Housing,2024,18.6,2025,79.84478318691255,Southwest Finland,Oil heating,Housing
+Southwest Finland||Oil heating||Services,2024,65.8,2025,66.9220992743969,Southwest Finland,Oil heating,Services
+Southwest Finland||Other heating||Agriculture,2024,8.3,2025,27.609794065356255,Southwest Finland,Other heating,Agriculture
+Southwest Finland||Other heating||Housing,2024,33.4,2025,38.96063146293163,Southwest Finland,Other heating,Housing
+Southwest Finland||Other heating||Services,2024,15.7,2025,16.03367371559143,Southwest Finland,Other heating,Services
+Southwest Finland||Rail transport||Community trains,2024,0.0,2025,0.017889022827148438,Southwest Finland,Rail transport,Community trains
+Southwest Finland||Rail transport||Diesel,2024,1.1,2025,1.1480189919471742,Southwest Finland,Rail transport,Diesel
+Southwest Finland||Rail transport||Electricity,2024,0.6,2025,1.2577112555503844,Southwest Finland,Rail transport,Electricity
+Southwest Finland||Rail transport||Metros and trams,2024,0.0,2025,-0.13550126552581787,Southwest Finland,Rail transport,Metros and trams
+Southwest Finland||Road transport||Buses,2024,14.9,2025,20.12880550920963,Southwest Finland,Road transport,Buses
+Southwest Finland||Road transport||Drive-through traffic,2024,55.9,2025,50.42826251983642,Southwest Finland,Road transport,Drive-through traffic
+Southwest Finland||Road transport||Motorcycles and mopeds,2024,9.1,2025,9.305465510487556,Southwest Finland,Road transport,Motorcycles and mopeds
+Southwest Finland||Road transport||Passenger cars,2024,427.3,2025,474.25135276317593,Southwest Finland,Road transport,Passenger cars
+Southwest Finland||Road transport||Trucks,2024,175.2,2025,219.67720525860784,Southwest Finland,Road transport,Trucks
+Southwest Finland||Road transport||Vancouver vans,2024,76.4,2025,75.64252481460571,Southwest Finland,Road transport,Vancouver vans
+Southwest Finland||Waste treatment||Industry,2024,8.3,2025,8.76728459596634,Southwest Finland,Waste treatment,Industry
+Southwest Finland||Waste treatment||Municipal waste,2024,108.9,2025,109.20078394412994,Southwest Finland,Waste treatment,Municipal waste
+Southwest Finland||Water transport||Fishing vessels,2024,15.6,2025,17.3091762304306,Southwest Finland,Water transport,Fishing vessels
+Southwest Finland||Water transport||Goods traffic,2024,9.6,2025,17.62900936603546,Southwest Finland,Water transport,Goods traffic
+Southwest Finland||Water transport||Passenger traffic,2024,6.4,2025,9.387659096717835,Southwest Finland,Water transport,Passenger traffic
+Southwest Finland||Water transport||Pleasure boats,2024,18.3,2025,18.087093806266786,Southwest Finland,Water transport,Pleasure boats
+Southwest Finland||Water transport||Workboats and ships,2024,1.5,2025,3.2577648401260375,Southwest Finland,Water transport,Workboats and ships
+Southwest Finland||Water transport||nan,2024,6.2,2025,6.188996893167495,Southwest Finland,Water transport,nan
+Uusimaa||Agriculture||Animal digestion,2024,57.6,2025,57.554015225172044,Uusimaa,Agriculture,Animal digestion
+Uusimaa||Agriculture||Grazing,2024,0.7,2025,0.7075491018593311,Uusimaa,Agriculture,Grazing
+Uusimaa||Agriculture||Manure treatment,2024,22.8,2025,22.533667516708373,Uusimaa,Agriculture,Manure treatment
+Uusimaa||Agriculture||Organic fertilizers,2024,4.7,2025,4.612335968017578,Uusimaa,Agriculture,Organic fertilizers
+Uusimaa||Agriculture||Other emissions from farmland,2024,50.0,2025,51.39084364250302,Uusimaa,Agriculture,Other emissions from farmland
+Uusimaa||Agriculture||Soil,2024,28.9,2025,26.39709739685058,Uusimaa,Agriculture,Soil
+Uusimaa||Agriculture||nan,2024,84.9,2025,81.8448769569397,Uusimaa,Agriculture,nan
+Uusimaa||District heating||Agriculture,2024,0.7,2025,0.9812499642372131,Uusimaa,District heating,Agriculture
+Uusimaa||District heating||Housing,2024,811.2,2025,1230.0109840512275,Uusimaa,District heating,Housing
+Uusimaa||District heating||Industry,2024,75.3,2025,114.7588089644909,Uusimaa,District heating,Industry
+Uusimaa||District heating||Services,2024,472.1,2025,628.2403285980224,Uusimaa,District heating,Services
+Uusimaa||Electric heating||Agriculture,2024,0.7,2025,1.5665400743484494,Uusimaa,Electric heating,Agriculture
+Uusimaa||Electric heating||Housing,2024,90.8,2025,205.72840393483636,Uusimaa,Electric heating,Housing
+Uusimaa||Electric heating||Services,2024,14.0,2025,22.61801702678203,Uusimaa,Electric heating,Services
+Uusimaa||Electricity||Agriculture,2024,1.3,2025,3.3386708736419677,Uusimaa,Electricity,Agriculture
+Uusimaa||Electricity||Housing,2024,142.2,2025,307.60332337915895,Uusimaa,Electricity,Housing
+Uusimaa||Electricity||Industry,2024,167.2,2025,243.3001679420471,Uusimaa,Electricity,Industry
+Uusimaa||Electricity||Services,2024,287.7,2025,408.27415909767154,Uusimaa,Electricity,Services
+Uusimaa||F-gases||Building air conditioning equipment,2024,42.1,2025,36.03421077728272,Uusimaa,F-gases,Building air conditioning equipment
+Uusimaa||F-gases||Commercial and professional kitchen refrigeration equipment,2024,81.1,2025,139.62959998846054,Uusimaa,F-gases,Commercial and professional kitchen refrigeration equipment
+Uusimaa||F-gases||Other sources of F-gases,2024,35.3,2025,39.82102361917496,Uusimaa,F-gases,Other sources of F-gases
+Uusimaa||F-gases||Vehicle air conditioning equipment,2024,23.2,2025,27.318312400579455,Uusimaa,F-gases,Vehicle air conditioning equipment
+Uusimaa||Industry||Industrial fuels,2024,1469.9,2025,2024.1168247699736,Uusimaa,Industry,Industrial fuels
+Uusimaa||Machinery||Agricultural and forestry machinery,2024,42.2,2025,46.85592346191406,Uusimaa,Machinery,Agricultural and forestry machinery
+Uusimaa||Machinery||Construction machinery,2024,171.4,2025,145.62431926727294,Uusimaa,Machinery,Construction machinery
+Uusimaa||Machinery||Mining and industrial machinery,2024,40.5,2025,43.968756553530696,Uusimaa,Machinery,Mining and industrial machinery
+Uusimaa||Machinery||Other machinery,2024,10.5,2025,11.457132941484451,Uusimaa,Machinery,Other machinery
+Uusimaa||Machinery||Road construction machinery,2024,132.9,2025,123.44102709293365,Uusimaa,Machinery,Road construction machinery
+Uusimaa||Oil heating||Agriculture,2024,2.0,2025,2.6388976484537126,Uusimaa,Oil heating,Agriculture
+Uusimaa||Oil heating||Housing,2024,27.7,2025,123.33334801197053,Uusimaa,Oil heating,Housing
+Uusimaa||Oil heating||Services,2024,94.2,2025,93.88382671177388,Uusimaa,Oil heating,Services
+Uusimaa||Other heating||Agriculture,2024,1.3,2025,11.315309295058249,Uusimaa,Other heating,Agriculture
+Uusimaa||Other heating||Housing,2024,30.6,2025,40.20110045671463,Uusimaa,Other heating,Housing
+Uusimaa||Other heating||Services,2024,44.2,2025,38.66020336151123,Uusimaa,Other heating,Services
+Uusimaa||Rail transport||Community trains,2024,4.2,2025,6.2974891662597665,Uusimaa,Rail transport,Community trains
+Uusimaa||Rail transport||Diesel,2024,1.0,2025,1.4594037294387818,Uusimaa,Rail transport,Diesel
+Uusimaa||Rail transport||Electricity,2024,1.0,2025,1.999473798274994,Uusimaa,Rail transport,Electricity
+Uusimaa||Rail transport||Metros and trams,2024,4.3,2025,8.581691187620162,Uusimaa,Rail transport,Metros and trams
+Uusimaa||Road transport||Buses,2024,59.9,2025,93.99817503094674,Uusimaa,Road transport,Buses
+Uusimaa||Road transport||Drive-through traffic,2024,144.7,2025,131.44626727104188,Uusimaa,Road transport,Drive-through traffic
+Uusimaa||Road transport||Motorcycles and mopeds,2024,28.1,2025,28.5759610414505,Uusimaa,Road transport,Motorcycles and mopeds
+Uusimaa||Road transport||Passenger cars,2024,1180.2,2025,1367.7922670960425,Uusimaa,Road transport,Passenger cars
+Uusimaa||Road transport||Trucks,2024,443.6,2025,517.8260279417038,Uusimaa,Road transport,Trucks
+Uusimaa||Road transport||Vancouver vans,2024,192.9,2025,195.73885369300842,Uusimaa,Road transport,Vancouver vans
+Uusimaa||Waste treatment||Industry,2024,12.1,2025,11.237995845079421,Uusimaa,Waste treatment,Industry
+Uusimaa||Waste treatment||Municipal waste,2024,164.7,2025,180.61277576088904,Uusimaa,Waste treatment,Municipal waste
+Uusimaa||Water transport||Fishing vessels,2024,7.0,2025,9.126043486595155,Uusimaa,Water transport,Fishing vessels
+Uusimaa||Water transport||Goods traffic,2024,10.6,2025,9.652591288089752,Uusimaa,Water transport,Goods traffic
+Uusimaa||Water transport||Passenger traffic,2024,5.5,2025,7.527509689331055,Uusimaa,Water transport,Passenger traffic
+Uusimaa||Water transport||Pleasure boats,2024,28.0,2025,27.357656079530717,Uusimaa,Water transport,Pleasure boats
+Uusimaa||Water transport||Workboats and ships,2024,16.9,2025,32.40508354008198,Uusimaa,Water transport,Workboats and ships
+Uusimaa||Water transport||nan,2024,0.4,2025,0.383500462770462,Uusimaa,Water transport,nan
+Åland||Agriculture||Animal digestion,2024,18.9,2025,18.180909538269045,Åland,Agriculture,Animal digestion
+Åland||Agriculture||Grazing,2024,0.2,2025,0.20562051236629486,Åland,Agriculture,Grazing
+Åland||Agriculture||Manure treatment,2024,6.2,2025,6.0878164052963255,Åland,Agriculture,Manure treatment
+Åland||Agriculture||Organic fertilizers,2024,1.2,2025,1.1552313327789308,Åland,Agriculture,Organic fertilizers
+Åland||Agriculture||Other emissions from farmland,2024,4.7,2025,5.026406888663769,Åland,Agriculture,Other emissions from farmland
+Åland||Agriculture||Soil,2024,1.6,2025,1.6148479223251342,Åland,Agriculture,Soil
+Åland||Agriculture||nan,2024,6.7,2025,6.82561121955514,Åland,Agriculture,nan
+Åland||District heating||Agriculture,2024,0.0,2025,-0.22970062494277954,Åland,District heating,Agriculture
+Åland||District heating||Housing,2024,2.0,2025,3.428241524100304,Åland,District heating,Housing
+Åland||District heating||Industry,2024,0.1,2025,0.09988367408514023,Åland,District heating,Industry
+Åland||District heating||Services,2024,1.2,2025,1.7932832598686217,Åland,District heating,Services
+Åland||Electric heating||Agriculture,2024,0.1,2025,0.24279553890228273,Åland,Electric heating,Agriculture
+Åland||Electric heating||Housing,2024,2.7,2025,5.747399032115936,Åland,Electric heating,Housing
+Åland||Electric heating||Services,2024,0.6,2025,1.0697826385498046,Åland,Electric heating,Services
+Åland||Electricity||Agriculture,2024,0.2,2025,0.49586728066205976,Åland,Electricity,Agriculture
+Åland||Electricity||Housing,2024,2.8,2025,5.957833540439606,Åland,Electricity,Housing
+Åland||Electricity||Industry,2024,1.2,2025,1.5553387641906737,Åland,Electricity,Industry
+Åland||Electricity||Services,2024,3.6,2025,6.06817409992218,Åland,Electricity,Services
+Åland||F-gases||Building air conditioning equipment,2024,0.7,2025,0.6235811233520507,Åland,F-gases,Building air conditioning equipment
+Åland||F-gases||Commercial and professional kitchen refrigeration equipment,2024,2.5,2025,4.57835922241211,Åland,F-gases,Commercial and professional kitchen refrigeration equipment
+Åland||F-gases||Other sources of F-gases,2024,0.6,2025,0.6618654519319535,Åland,F-gases,Other sources of F-gases
+Åland||F-gases||Vehicle air conditioning equipment,2024,0.5,2025,0.5585873275995256,Åland,F-gases,Vehicle air conditioning equipment
+Åland||Industry||Industrial fuels,2024,3.6,2025,3.367223203182221,Åland,Industry,Industrial fuels
+Åland||Machinery||Agricultural and forestry machinery,2024,2.3,2025,2.6748349547386168,Åland,Machinery,Agricultural and forestry machinery
+Åland||Machinery||Construction machinery,2024,3.4,2025,3.3289472520351406,Åland,Machinery,Construction machinery
+Åland||Machinery||Mining and industrial machinery,2024,1.8,2025,1.9561464071273804,Åland,Machinery,Mining and industrial machinery
+Åland||Machinery||Other machinery,2024,0.9,2025,0.9896521687507629,Åland,Machinery,Other machinery
+Åland||Machinery||Road construction machinery,2024,0.0,2025,0.009864091873168945,Åland,Machinery,Road construction machinery
+Åland||Oil heating||Agriculture,2024,0.5,2025,0.6712387025356292,Åland,Oil heating,Agriculture
+Åland||Oil heating||Housing,2024,2.4,2025,8.062180817127228,Åland,Oil heating,Housing
+Åland||Oil heating||Services,2024,6.2,2025,5.962305271625518,Åland,Oil heating,Services
+Åland||Other heating||Agriculture,2024,0.1,2025,1.0647087574005127,Åland,Other heating,Agriculture
+Åland||Other heating||Housing,2024,2.5,2025,2.573175163567066,Åland,Other heating,Housing
+Åland||Other heating||Services,2024,0.5,2025,0.5415525883436203,Åland,Other heating,Services
+Åland||Road transport||Buses,2024,0.8,2025,0.7608269333839417,Åland,Road transport,Buses
+Åland||Road transport||Motorcycles and mopeds,2024,1.3,2025,1.1432944536209106,Åland,Road transport,Motorcycles and mopeds
+Åland||Road transport||Passenger cars,2024,25.5,2025,31.944751518964768,Åland,Road transport,Passenger cars
+Åland||Road transport||Trucks,2024,12.1,2025,10.978961622714998,Åland,Road transport,Trucks
+Åland||Road transport||Vancouver vans,2024,3.6,2025,4.386125791072845,Åland,Road transport,Vancouver vans
+Åland||Waste treatment||Industry,2024,0.2,2025,-0.21007751226425175,Åland,Waste treatment,Industry
+Åland||Waste treatment||Municipal waste,2024,7.3,2025,7.743997490406037,Åland,Waste treatment,Municipal waste
+Åland||Water transport||Fishing vessels,2024,8.1,2025,8.013772970438003,Åland,Water transport,Fishing vessels
+Åland||Water transport||Goods traffic,2024,4.7,2025,12.81213436126709,Åland,Water transport,Goods traffic
+Åland||Water transport||Passenger traffic,2024,6.1,2025,9.795125317573548,Åland,Water transport,Passenger traffic
+Åland||Water transport||Pleasure boats,2024,2.8,2025,2.9269488573074343,Åland,Water transport,Pleasure boats
+Åland||Water transport||Workboats and ships,2024,0.3,2025,0.4456409692764282,Åland,Water transport,Workboats and ships
+Åland||Water transport||nan,2024,9.2,2025,9.450461149215698,Åland,Water transport,nan

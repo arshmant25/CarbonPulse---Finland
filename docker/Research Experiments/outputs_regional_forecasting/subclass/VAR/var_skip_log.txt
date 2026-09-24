@@ -1,0 +1,227 @@
+('Central Finland', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Central Finland', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Kainuu', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Lapland', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('North Karelia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('North Savo', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Satakunta', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('South Karelia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('South Savo', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Rail transport'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Road transport'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Uusimaa', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Agriculture'): k=6 variables, n_train=14 obs, need >= 234 for a reliable VAR(2) fit -- skipped.
+('Åland', 'District heating'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Electric heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Electricity'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Åland', 'F-gases'): k=4 variables, n_train=14 obs, need >= 108 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Machinery'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Oil heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Other heating'): k=3 variables, n_train=14 obs, need >= 63 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Road transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Waste treatment'): k=2 variables, n_train=14 obs, need >= 30 for a reliable VAR(2) fit -- skipped.
+('Åland', 'Water transport'): k=5 variables, n_train=14 obs, need >= 165 for a reliable VAR(2) fit -- skipped.

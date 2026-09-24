@@ -35,6 +35,59 @@ SECTOR_ROWS = [
     "Waste treatment", "F-gases", "Emission credits",
 ]
 
+def parse_subclass_blocks(path: str, region_name: str) -> pd.DataFrame:
+    """Parse the 'emissions and energy' sheet, which holds one or more
+    stacked tables (blocks) of the form:
+        class | subclass | unit | 1990 | 2005 | 2006 | ... | 2024
+    Each region's real file has (at least) two blocks: one with
+    unit='ktCO2e' (emissions by class/subclass -- what we want for the
+    sectoral breakdown) and one with unit='GWh' (underlying energy use by
+    the same class/subclass -- kept too, useful for "did emissions per unit
+    of energy fall" questions later). Any further blocks the site adds are
+    picked up automatically since we detect blocks generically by their
+    header row rather than assuming exactly two.
+    """
+    df = pd.read_excel(path, sheet_name="emissions and energy", header=None)
+
+    header_rows = df.index[
+        (df[0].astype(str).str.strip().str.lower() == "class")
+        & (df[1].astype(str).str.strip().str.lower() == "subclass")
+    ].tolist()
+
+    records = []
+    for h in header_rows:
+        header = df.loc[h]
+        year_cols = {}
+        for c in range(3, df.shape[1]):
+            val = header[c]
+            if pd.notna(val):
+                try:
+                    year_cols[c] = int(float(val))
+                except (ValueError, TypeError):
+                    continue
+
+        r = h + 1
+        while r < len(df):
+            cls = df.loc[r, 0]
+            if pd.isna(cls):
+                break  # blank row ends this block
+            subclass = df.loc[r, 1]
+            unit = df.loc[r, 2]
+            for c, year in year_cols.items():
+                val = df.loc[r, c]
+                if pd.notna(val):
+                    records.append({
+                        "region": region_name,
+                        "sector": str(cls).strip(),
+                        "subclass": str(subclass).strip() if pd.notna(subclass) else None,
+                        "unit": str(unit).strip() if pd.notna(unit) else None,
+                        "year": year,
+                        "value": float(val),
+                    })
+            r += 1
+
+    return pd.DataFrame(records)
+
 def clean_region_name(raw: str) -> str:
     """Strip the <FONT DIR="AUTO" ...>...</FONT> wrapper the site exports and
     normalise to title case, e.g. 'CENTRAL FINLAND' -> 'Central Finland'."""
@@ -97,6 +150,7 @@ def main():
         return
 
     all_long, all_summary, found = [], [], []
+    all_subclass_emissions, all_subclass_energy = [], []
 
     for path in sorted(files):
         try:
@@ -105,7 +159,16 @@ def main():
             all_summary.append(summary_df)
             found.append({"file": os.path.basename(path), "region": region_name,
                           "sector_rows": len(long_df), "years": long_df["year"].nunique()})
-            print(f"  OK   {os.path.basename(path):45s} -> {region_name}")
+
+            sub_df = parse_subclass_blocks(path, region_name)
+            if not sub_df.empty:
+                is_emissions = sub_df["unit"].str.lower() == "ktco2e"
+                all_subclass_emissions.append(sub_df[is_emissions].drop(columns=["unit"])
+                                               .rename(columns={"value": "value_ktco2e"}))
+                all_subclass_energy.append(sub_df[~is_emissions])
+
+            print(f"  OK   {os.path.basename(path):45s} -> {region_name}"
+                  f"  (+{len(sub_df):,} subclass rows)")
         except Exception as e:
             print(f"  FAIL {os.path.basename(path):45s} -> {e}")
 
@@ -113,22 +176,49 @@ def main():
     master_summary = pd.concat(all_summary, ignore_index=True)
     found_df = pd.DataFrame(found)
 
+    master_subclass_emissions = (pd.concat(all_subclass_emissions, ignore_index=True)
+                                  if all_subclass_emissions else pd.DataFrame())
+    master_subclass_energy = (pd.concat(all_subclass_energy, ignore_index=True)
+                               if all_subclass_energy else pd.DataFrame())
+
     # ── Save as CSV ──────────────────────────────────────────
     master_long.to_csv(os.path.join(OUT_DIR, "ghg_emissions_long.csv"), index=False)
     master_summary.to_csv(os.path.join(OUT_DIR, "region_year_summary.csv"), index=False)
     found_df.to_csv(os.path.join(OUT_DIR, "regions_found.csv"), index=False)
+    if not master_subclass_emissions.empty:
+        master_subclass_emissions.to_csv(
+            os.path.join(OUT_DIR, "emissions_subclass_long.csv"), index=False)
+    if not master_subclass_energy.empty:
+        master_subclass_energy.to_csv(
+            os.path.join(OUT_DIR, "energy_subclass_long.csv"), index=False)
 
     # ── Save into the shared SQLite database ────────────────
     conn = sqlite3.connect(DB_PATH)
     master_long.to_sql("ghg_emissions_long", conn, if_exists="replace", index=False)
     master_summary.to_sql("region_year_summary", conn, if_exists="replace", index=False)
+    if not master_subclass_emissions.empty:
+        master_subclass_emissions.to_sql("emissions_subclass_long", conn,
+                                          if_exists="replace", index=False)
+    if not master_subclass_energy.empty:
+        master_subclass_energy.to_sql("energy_subclass_long", conn,
+                                       if_exists="replace", index=False)
     conn.close()
 
     n_regions = master_long["region"].nunique()
     print(f"\nParsed {len(files)} files -> {n_regions} unique regions.")
-    print(f"Master long table   : {master_long.shape}  -> {OUT_DIR}/ghg_emissions_long.csv")
-    print(f"Region-year summary : {master_summary.shape}  -> {OUT_DIR}/region_year_summary.csv")
-    print(f"Also written to DB  : {DB_PATH} (tables: ghg_emissions_long, region_year_summary)")
+    print(f"Master long table    : {master_long.shape}  -> {OUT_DIR}/ghg_emissions_long.csv")
+    print(f"Region-year summary  : {master_summary.shape}  -> {OUT_DIR}/region_year_summary.csv")
+    if not master_subclass_emissions.empty:
+        print(f"Subclass emissions   : {master_subclass_emissions.shape}  "
+              f"-> {OUT_DIR}/emissions_subclass_long.csv"
+              f"  (units found: {sorted(master_subclass_emissions['sector'].unique())[:3]}...)")
+    if not master_subclass_energy.empty:
+        print(f"Subclass energy      : {master_subclass_energy.shape}  "
+              f"-> {OUT_DIR}/energy_subclass_long.csv"
+              f"  (units found: {sorted(master_subclass_energy['unit'].dropna().unique())})")
+    print(f"Also written to DB   : {DB_PATH}")
+    print("  tables: ghg_emissions_long, region_year_summary, "
+          "emissions_subclass_long, energy_subclass_long")
     if n_regions < 19:
         print(f"\nNOTE: expecting 19 regions, found {n_regions}. "
               f"Add the remaining files to '{RAW_DIR}/' and re-run — nothing else needs to change.")

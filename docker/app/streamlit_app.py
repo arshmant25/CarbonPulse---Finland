@@ -217,10 +217,114 @@ def load_carbon_monitor():
     return df
 
 
+@st.cache_data(ttl=3600)
+def load_regional_data():
+    """Loads every regional table this page needs in one connection.
+    Missing tables (e.g. GDP/subclass not generated yet) degrade gracefully
+    to empty DataFrames rather than crashing the page."""
+    conn = sqlite3.connect(DB_PATH)
+    def _try(query):
+        try:
+            return pd.read_sql(query, conn)
+        except Exception:
+            return pd.DataFrame()
+    out = dict(
+        summary            = _try("SELECT * FROM region_year_summary"),
+        ghg_long           = _try("SELECT * FROM ghg_emissions_long"),
+        subclass_emissions = _try("SELECT * FROM emissions_subclass_long"),
+        gdp_merged         = _try("SELECT * FROM region_year_with_gdp"),
+    )
+    conn.close()
+    return out
+
+
+def normalize_region_name(name):
+    """Matches region names across the emissions file, the GDP file, and the
+    geometry file, regardless of diacritics/hyphens/casing."""
+    name = str(name).strip()
+    trans = str.maketrans("åäöÅÄÖ", "aaoAAO")
+    name = name.translate(trans)
+    name = name.replace("-", " ")
+    name = " ".join(name.split()).lower()
+    name = name.replace("southern ostrobothnia", "south ostrobothnia")
+    return name
+
+
+GEOJSON_PATH = os.getenv(
+    "REGION_GEOJSON_PATH",
+    os.path.join(os.path.dirname(DB_PATH), "region_data", "maakunta4500k.json"),
+)
+
+
+def _finalize_geo(geo):
+    """Shared post-processing for geometry loaded either from the local file
+    or the live WFS call: tag region_key, and make sure we end up in
+    EPSG:4326 (lon/lat) for plotly regardless of what CRS the source had."""
+    if geo.crs is None:
+        # Statistics Finland's exports are ETRS89/TM35FIN (EPSG:3067) -- large
+        # metre-scale coordinates. If a downloaded local file doesn't carry
+        # CRS metadata, assume 3067 rather than plotly-breaking degrees.
+        bounds = geo.total_bounds
+        if (abs(bounds) > 180).any():
+            geo = geo.set_crs("EPSG:3067")
+        else:
+            geo = geo.set_crs("EPSG:4326")
+    name_col = next(c for c in ["name", "nimi", "namn"] if c in geo.columns)
+    geo["region_key"] = geo[name_col].apply(normalize_region_name)
+    return geo.to_crs("EPSG:4326")
+
+
+@st.cache_data(ttl=86400)
+def fetch_region_geometry():
+    """Loads Finland's 19-region boundaries. Tries the local file first
+    (GEOJSON_PATH / REGION_GEOJSON_PATH env var) -- this is the reliable path
+    for a Docker container with no outbound internet -- and falls back to
+    Statistics Finland's live WFS service if no local file is found. Returns
+    None (never raises) if neither works, so callers can fall back to a
+    non-map visualisation.
+    """
+    import geopandas as gpd
+
+    if os.path.exists(GEOJSON_PATH):
+        try:
+            geo = gpd.read_file(GEOJSON_PATH)
+            if len(geo) == 0:
+                raise ValueError("File has no features")
+            if len(geo) < 5:
+                # A real region layer has 19 rows; a handful or fewer strongly
+                # suggests this isn't the right file (e.g. a webpage saved
+                # with a .json extension, or a different, smaller layer).
+                raise ValueError(
+                    f"Only {len(geo)} feature(s) in {GEOJSON_PATH} -- expected 19 regions. "
+                    f"This usually means the file isn't the real WFS GeoJSON "
+                    f"(see fetch_region_geojson.py for the correct way to download it)."
+                )
+            return _finalize_geo(geo)
+        except Exception as e:
+            st.sidebar.warning(f"Local region file at {GEOJSON_PATH} couldn't be used ({e}). "
+                              f"Trying the live WFS service instead.")
+
+    try:
+        WFS_URL = "http://geo.stat.fi/geoserver/tilastointialueet/wfs"
+        params = dict(service="WFS", version="2.0.0", request="GetFeature",
+                      typeName="tilastointialueet:maakunta4500k", outputFormat="json")
+        r = requests.get(WFS_URL, params=params, timeout=20)
+        r.raise_for_status()
+        geo = gpd.GeoDataFrame.from_features(r.json()["features"], crs="EPSG:3067")
+        return _finalize_geo(geo)
+    except Exception:
+        return None
+
+
+
+def year_or_all_options(years):
+    return ["All years (average)"] + [str(y) for y in sorted(years)]
+
+
 @st.cache_data(ttl=900)
 def get_forecast(steps=96):
     try:
-        r = requests.get(f"{API_URL}/forecast?steps={steps}", timeout=30)
+        r = requests.get(f"{API_URL}/forecast?steps={steps}", timeout=90)
         r.raise_for_status()
         data = r.json()
         df = pd.DataFrame(data["forecasts"])
@@ -264,6 +368,7 @@ with st.sidebar:
         "⚡ Grid Live View",
         "🌍 Sectoral Data",
         "📡 Carbon Monitor",
+        "🗺️ Regional Analysis",
     ])
     st.markdown("---")
     st.markdown(f"**Data source:** Fingrid Open Data API  \n"
@@ -817,3 +922,587 @@ elif page == "📡 Carbon Monitor":
         "daily power emissions and Carbon Monitor's independent estimate. "
         "This confirms the data pipeline is accurate."
     )
+
+
+# ══════════════════════════════════════════════════════════════
+# PAGE 4 — REGIONAL ANALYSIS
+# ══════════════════════════════════════════════════════════════
+elif page == "🗺️ Regional Analysis":
+    st.markdown("# 🗺️ Regional Emissions, GDP & Sectoral Carbon Economy")
+
+    _data = load_regional_data()
+    summary            = _data["summary"]
+    ghg_long           = _data["ghg_long"]
+    subclass_emissions = _data["subclass_emissions"]
+    gdp_merged         = _data["gdp_merged"]
+
+    if summary.empty:
+        st.error("No regional data found. Run `01_consolidate_regions.py` (and optionally "
+                 "`02_merge_gdp.py`) to populate `region_year_summary` in the shared database.")
+        st.stop()
+
+    all_regions = sorted(summary["region"].unique())
+    all_years   = sorted(summary["year"].unique())
+
+    if len(all_regions) < 19:
+        st.warning(f"{len(all_regions)}/19 regions loaded so far — everything below still "
+                  f"works, it'll just get richer (more lines/rows/map colour) as more region "
+                  f"files are consolidated.")
+
+    # ── Global filters — shared by every tab below ──────────────────
+    st.markdown("### Filters")
+    f1, f2, f3, f4 = st.columns(4, gap="small")
+    with f1:
+        BASE_YEAR = st.selectbox("Base year", all_years,
+                                 index=all_years.index(2005) if 2005 in all_years else 0)
+    with f2:
+        default_compare_idx = len(all_years) - 1
+        COMPARE_YEAR = st.selectbox("Compare year", all_years, index=default_compare_idx)
+    with f3:
+        BASE_REGION = st.selectbox("Base region", all_regions, index=0)
+    with f4:
+        compare_default = 1 if len(all_regions) > 1 else 0
+        COMPARE_REGION = st.selectbox("Compare region", all_regions, index=compare_default)
+
+    if BASE_YEAR == COMPARE_YEAR:
+        st.caption("⚠️ Base year and compare year are the same — comparison charts will show zero change.")
+    st.markdown("---")
+
+    tabs = st.tabs([
+        "📊 Ranking & Map", "🏭 Sectors & Subclasses", "🔗 Region Similarity",
+        "📈 Sector Trends", "🔄 Year Comparison", "💶 GDP vs CO₂",
+        "🔍 Subclass Drill-down", "🧬 Sector Similarity", "🌐 Geographic Proximity",
+    ])
+
+    # A small reusable helper: several sections only need ONE year, and the
+    # ask was "by default base year works" -- so give each such section a
+    # lightweight toggle defaulting to Base, rather than another selectbox.
+    def snapshot_year_picker(key):
+        choice = st.radio("Snapshot year", [f"Base ({BASE_YEAR})", f"Compare ({COMPARE_YEAR})"],
+                          horizontal=True, key=key)
+        return BASE_YEAR if choice.startswith("Base") else COMPARE_YEAR
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 1 — RANKING & MAP
+    # ══════════════════════════════════════════════════════════
+    with tabs[0]:
+        snap_year = snapshot_year_picker("snap_ranking")
+        snap = summary[summary["year"] == snap_year].sort_values("total_ktco2e", ascending=False)
+
+        st.markdown(f"#### Regional ranking — {snap_year}")
+        c1, c2 = st.columns(2, gap="medium")
+        with c1:
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            fig.add_trace(go.Bar(
+                x=snap["total_ktco2e"], y=snap["region"], orientation="h",
+                marker=dict(color=snap["total_ktco2e"], colorscale="RdYlGn_r"),
+            ))
+            fig.update_layout(title=f"Total emissions by region ({snap_year})",
+                              yaxis=dict(autorange="reversed"), height=max(400, len(snap)*28))
+            fig.update_xaxes(title_text="ktCO2e")
+            st.plotly_chart(fig, width="stretch")
+        with c2:
+            snap_pc = snap.sort_values("per_capita_tco2e", ascending=False)
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            fig.add_trace(go.Bar(
+                x=snap_pc["per_capita_tco2e"], y=snap_pc["region"], orientation="h",
+                marker=dict(color=snap_pc["per_capita_tco2e"], colorscale="RdYlGn_r"),
+            ))
+            fig.update_layout(title=f"Per-capita emissions by region ({snap_year})",
+                              yaxis=dict(autorange="reversed"), height=max(400, len(snap)*28))
+            fig.update_xaxes(title_text="tCO2e / person")
+            st.plotly_chart(fig, width="stretch")
+
+        st.markdown(f"#### Choropleth map — {snap_year}")
+        map_metric = st.radio("Colour by", ["total_ktco2e", "per_capita_tco2e"],
+                              horizontal=True, key="map_metric")
+        geo = fetch_region_geometry()
+        if geo is None:
+            st.warning("Couldn't load region boundaries from Statistics Finland's WFS service "
+                      "right now (needs outbound internet access to geo.stat.fi from this "
+                      "server) — showing the ranking bar chart above instead.")
+        else:
+            snap_map = snap.copy()
+            snap_map["region_key"] = snap_map["region"].apply(normalize_region_name)
+            geojson = geo.set_index("region_key").__geo_interface__
+
+            # Plotly renamed the mapbox-based choropleth to a maplibre-based
+            # one (choropleth_map) in newer releases and dropped
+            # choropleth_mapbox entirely in some builds -- support both so
+            # this doesn't break depending on which Plotly version is
+            # actually installed on the deployment server.
+            common_kwargs = dict(
+                data_frame=snap_map, geojson=geojson, locations="region_key",
+                featureidkey="id", color=map_metric,
+                color_continuous_scale="RdYlGn_r",
+                center={"lat": 64.5, "lon": 26.0}, zoom=4.2, opacity=0.85,
+                hover_name="region",
+                hover_data={"region_key": False, "total_ktco2e": ":.0f",
+                           "per_capita_tco2e": ":.2f"},
+            )
+            if hasattr(px, "choropleth_map"):
+                fig = px.choropleth_map(map_style="carto-darkmatter", **common_kwargs)
+            else:
+                fig = px.choropleth_mapbox(mapbox_style="carto-darkmatter", **common_kwargs)
+
+            fig.update_layout(margin=dict(l=0, r=0, t=10, b=0), height=650,
+                              paper_bgcolor="rgba(0,0,0,0)",
+                              font=dict(color="#c3e0ec"))
+            st.plotly_chart(fig, width="stretch")
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 2 — SECTORS & SUBCLASSES
+    # ══════════════════════════════════════════════════════════
+    with tabs[1]:
+        snap_year2 = snapshot_year_picker("snap_sectors")
+        region_scope = st.multiselect("Regions to include", all_regions, default=all_regions,
+                                      key="sector_region_scope")
+
+        st.markdown(f"#### Sector emissions by region — {snap_year2}")
+        snap_sec = ghg_long[(ghg_long["year"] == snap_year2) & (ghg_long["region"].isin(region_scope))]
+        if snap_sec.empty:
+            st.info("No sector data for this selection.")
+        else:
+            pivot = snap_sec.pivot_table(index="region", columns="sector",
+                                         values="value_ktco2e", aggfunc="sum").fillna(0)
+            pivot = pivot.loc[pivot.sum(axis=1).sort_values(ascending=False).index]
+            pivot = pivot[pivot.sum(axis=0).sort_values(ascending=False).index]
+            fig = px.imshow(pivot, color_continuous_scale="YlOrRd",
+                            labels=dict(color="ktCO2e"), aspect="auto")
+            fig.update_layout(**PLOTLY_LAYOUT, height=max(400, len(pivot)*32))
+            st.plotly_chart(fig, width="stretch")
+
+        st.markdown(f"#### Top 5 sectors and subclasses, per region — {snap_year2}")
+        top_n = 5
+        rows = []
+        for region in region_scope:
+            rdf = ghg_long[(ghg_long["region"] == region) & (ghg_long["year"] == snap_year2)]
+            rdf = rdf.sort_values("value_ktco2e", ascending=False).head(top_n)
+            for rank, (_, r) in enumerate(rdf.iterrows(), start=1):
+                rows.append({"Region": region, "Rank": rank, "Sector": r["sector"],
+                            "ktCO2e": round(r["value_ktco2e"], 1)})
+        top_sectors_df = pd.DataFrame(rows)
+        c1, c2 = st.columns(2, gap="medium")
+        with c1:
+            st.markdown("**Top 5 sectors**")
+            st.dataframe(top_sectors_df, width="stretch", hide_index=True, height=420)
+
+        with c2:
+            st.markdown("**Top 5 subclasses**")
+            if subclass_emissions.empty:
+                st.info("Subclass data not loaded — re-run the updated "
+                       "`01_consolidate_regions.py` to populate `emissions_subclass_long`.")
+            else:
+                rows2 = []
+                for region in region_scope:
+                    rdf = subclass_emissions[(subclass_emissions["region"] == region)
+                                             & (subclass_emissions["year"] == snap_year2)]
+                    rdf = rdf.sort_values("value_ktco2e", ascending=False).head(top_n)
+                    for rank, (_, r) in enumerate(rdf.iterrows(), start=1):
+                        rows2.append({"Region": region, "Rank": rank, "Sector": r["sector"],
+                                     "Subclass": r["subclass"], "ktCO2e": round(r["value_ktco2e"], 1)})
+                top_subclass_df = pd.DataFrame(rows2)
+                st.dataframe(top_subclass_df, width="stretch", hide_index=True, height=420)
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 3 — REGION SIMILARITY
+    # ══════════════════════════════════════════════════════════
+    with tabs[2]:
+        st.markdown("#### Which regions rise and fall together? (correlation of total emissions, all years)")
+        pivot_total = summary.pivot_table(index="year", columns="region", values="total_ktco2e")
+        if pivot_total.shape[1] < 2:
+            st.info("Need at least 2 regions loaded to compute correlation.")
+        else:
+            corr = pivot_total.corr()
+            fig = px.imshow(corr, color_continuous_scale="RdYlGn", zmin=0, zmax=1,
+                            text_auto=".2f" if len(corr) <= 14 else False,
+                            labels=dict(color="Pearson r"))
+            fig.update_layout(**PLOTLY_LAYOUT, height=max(450, len(corr)*32))
+            st.plotly_chart(fig, width="stretch")
+
+            st.markdown("**All region pairs, ranked by similarity**")
+            corr_flat = corr.where(np.triu(np.ones(corr.shape), k=1).astype(bool)).stack()
+            corr_flat.index = corr_flat.index.set_names(["Region A", "Region B"])
+            pair_df = corr_flat.reset_index()
+            pair_df.columns = ["Region A", "Region B", "Correlation (r)"]
+            pair_df = pair_df.sort_values("Correlation (r)", ascending=False).reset_index(drop=True)
+            pair_df["Correlation (r)"] = pair_df["Correlation (r)"].round(3)
+            st.dataframe(pair_df, width="stretch", hide_index=True, height=400)
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 4 — SECTOR TRENDS OVER TIME
+    # ══════════════════════════════════════════════════════════
+    with tabs[3]:
+        st.markdown("#### Sector emissions over time")
+        all_sectors = sorted(ghg_long["sector"].unique())
+        c1, c2 = st.columns([1, 2], gap="medium")
+        with c1:
+            trend_sector = st.selectbox("Sector", all_sectors, key="trend_sector")
+        with c2:
+            trend_regions = st.multiselect("Regions", all_regions, default=all_regions,
+                                           key="trend_regions")
+
+        trend_df = ghg_long[(ghg_long["sector"] == trend_sector) & (ghg_long["region"].isin(trend_regions))]
+        if trend_df.empty:
+            st.info("No data for this sector/region selection.")
+        else:
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            for region, g in trend_df.groupby("region"):
+                g = g.sort_values("year")
+                fig.add_trace(go.Scatter(x=g["year"], y=g["value_ktco2e"], mode="lines+markers",
+                                        name=region, line=dict(width=2)))
+            fig.update_layout(title=f"{trend_sector} emissions over time", height=520)
+            fig.update_yaxes(title_text="ktCO2e")
+            st.plotly_chart(fig, width="stretch")
+            st.caption("Tip: narrow the region multiselect to one region to focus on a single "
+                      "region's trend for this sector.")
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 5 — YEAR COMPARISON (BASE_YEAR vs COMPARE_YEAR)
+    # ══════════════════════════════════════════════════════════
+    with tabs[4]:
+        if BASE_YEAR == COMPARE_YEAR:
+            st.info("Base year and compare year are the same — pick two different years in "
+                    "the Filters above to see a comparison here.")
+        else:
+            st.markdown(f"#### Decarbonisation ranking, {BASE_YEAR} → {COMPARE_YEAR}")
+            change = (summary[summary["year"] == BASE_YEAR][["region", "total_ktco2e"]]
+                      .rename(columns={"total_ktco2e": "base"})
+                      .merge(summary[summary["year"] == COMPARE_YEAR][["region", "total_ktco2e"]]
+                             .rename(columns={"total_ktco2e": "latest"}), on="region"))
+            change["pct_change"] = (change["latest"] - change["base"]) / change["base"] * 100
+            change = change.sort_values("pct_change")
+
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            fig.add_trace(go.Bar(x=change["pct_change"], y=change["region"], orientation="h",
+                                 marker=dict(color=change["pct_change"], colorscale="RdYlGn_r")))
+            fig.add_vline(x=0, line_color="white", opacity=0.5)
+            fig.update_layout(title=f"% change in total emissions, {BASE_YEAR} → {COMPARE_YEAR}",
+                              yaxis=dict(autorange="reversed"), height=max(400, len(change)*28))
+            st.plotly_chart(fig, width="stretch")
+
+            st.markdown(f"#### Direct comparison, {BASE_YEAR} vs {COMPARE_YEAR}")
+            direct = change.rename(columns={"base": str(BASE_YEAR), "latest": str(COMPARE_YEAR),
+                                            "pct_change": "pct_change"})
+            direct["abs_change"] = direct[str(COMPARE_YEAR)] - direct[str(BASE_YEAR)]
+            direct = direct[["region", str(BASE_YEAR), str(COMPARE_YEAR), "abs_change", "pct_change"]]
+            direct = direct.set_index("region").round(1).sort_values("pct_change")
+            st.dataframe(direct, width="stretch", height=400)
+
+            st.markdown(f"#### What's driving the change? Sector-by-sector, {BASE_YEAR} vs {COMPARE_YEAR}")
+            driver_region_sel = st.selectbox("Region", all_regions,
+                                             index=all_regions.index(BASE_REGION),
+                                             key="driver_region")
+            driver_data = ghg_long[(ghg_long["region"] == driver_region_sel)
+                                   & (ghg_long["year"].isin([BASE_YEAR, COMPARE_YEAR]))]
+            driver_pivot = driver_data.pivot_table(index="sector", columns="year",
+                                                   values="value_ktco2e", aggfunc="sum")
+            if BASE_YEAR in driver_pivot.columns and COMPARE_YEAR in driver_pivot.columns:
+                driver_pivot["delta"] = driver_pivot[COMPARE_YEAR] - driver_pivot[BASE_YEAR]
+                driver_pivot = driver_pivot.sort_values("delta")
+
+                c1, c2 = st.columns([3, 2], gap="medium")
+                with c1:
+                    fig = go.Figure(layout=PLOTLY_LAYOUT)
+                    colors = [C_TEAL if v < 0 else C_CORAL for v in driver_pivot["delta"]]
+                    fig.add_trace(go.Bar(x=driver_pivot["delta"], y=driver_pivot.index,
+                                        orientation="h", marker=dict(color=colors)))
+                    fig.add_vline(x=0, line_color="white", opacity=0.5)
+                    total_delta = driver_pivot["delta"].sum()
+                    fig.update_layout(
+                        title=f"{driver_region_sel}: sector drivers of change "
+                              f"(total: {total_delta:+.0f} ktCO2e)",
+                        height=max(350, len(driver_pivot)*32))
+                    st.plotly_chart(fig, width="stretch")
+                with c2:
+                    st.markdown("**Sector delta table**")
+                    st.dataframe(driver_pivot.round(1).rename(columns=str), width="stretch", height=420)
+            else:
+                st.info(f"Missing sector data for {BASE_YEAR} or {COMPARE_YEAR} for this region.")
+
+        st.markdown("#### Year-on-year change (any two years, at a glance)")
+        yoy_pivot = summary.pivot_table(index="region", columns="year", values="total_ktco2e")
+        yoy_pct = yoy_pivot.pct_change(axis=1) * 100
+        fig = px.imshow(yoy_pct, color_continuous_scale="RdYlGn_r", zmin=-30, zmax=30,
+                        labels=dict(color="% change vs prev. year"), aspect="auto")
+        fig.update_layout(**PLOTLY_LAYOUT, height=max(400, len(yoy_pivot)*30))
+        st.plotly_chart(fig, width="stretch")
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 6 — GDP vs CO2
+    # ══════════════════════════════════════════════════════════
+    with tabs[5]:
+        if gdp_merged.empty or gdp_merged["gdp_per_capita_eur"].notna().sum() == 0:
+            st.info("Run `02_merge_gdp.py` to populate `region_year_with_gdp` and unlock this tab.")
+        else:
+            with st.expander("What do the GDP columns mean? (click to expand)"):
+                st.markdown("""
+| Column | What it is | Unit | Use it for |
+|---|---|---|---|
+| `gdp_per_capita_eur` | **Nominal** GDP per person ("At current prices, euro") | EUR, that year's own prices | Comparing regions **within one year** |
+| `gdp_per_capita_real_2015eur` | **Real** GDP per person ("Volume series, ref. year 2015") | EUR, constant 2015 prices | Comparing **across years** (inflation removed) |
+                """)
+
+            gdp_years = gdp_merged.dropna(subset=["gdp_per_capita_eur"])["year"]
+            LATEST_GDP_YEAR = int(gdp_years.max())
+            eff_compare = min(COMPARE_YEAR, LATEST_GDP_YEAR)
+            if eff_compare != COMPARE_YEAR:
+                st.caption(f"GDP data ends {LATEST_GDP_YEAR}; using it instead of {COMPARE_YEAR} below.")
+
+            view_mode = st.radio("View", ["Absolute levels", "Year-on-year % change"],
+                                 horizontal=True, key="gdp_view_mode")
+
+            gdp_pivot = gdp_merged.pivot_table(index="year", columns="region",
+                                               values="gdp_per_capita_real_2015eur")
+            co2_pivot = gdp_merged.pivot_table(index="year", columns="region", values="per_capita_tco2e")
+            if view_mode == "Year-on-year % change":
+                gdp_pivot = gdp_pivot.pct_change() * 100
+                co2_pivot = co2_pivot.pct_change() * 100
+
+            c1, c2 = st.columns(2, gap="medium")
+            with c1:
+                fig = go.Figure(layout=PLOTLY_LAYOUT)
+                for region in gdp_pivot.columns:
+                    fig.add_trace(go.Scatter(x=gdp_pivot.index, y=gdp_pivot[region],
+                                            mode="lines", name=region))
+                ylabel = "EUR per capita (real, 2015)" if view_mode == "Absolute levels" else "% change vs prev. year"
+                fig.update_layout(title=f"GDP per capita — {view_mode}", height=450)
+                fig.update_yaxes(title_text=ylabel)
+                fig.add_vrect(x0=BASE_YEAR, x1=eff_compare, fillcolor="grey", opacity=0.1, line_width=0)
+                st.plotly_chart(fig, width="stretch")
+            with c2:
+                fig = go.Figure(layout=PLOTLY_LAYOUT)
+                for region in co2_pivot.columns:
+                    fig.add_trace(go.Scatter(x=co2_pivot.index, y=co2_pivot[region],
+                                            mode="lines", name=region))
+                ylabel = "tCO2e per capita" if view_mode == "Absolute levels" else "% change vs prev. year"
+                fig.update_layout(title=f"CO2 per capita — {view_mode}", height=450)
+                fig.update_yaxes(title_text=ylabel)
+                fig.add_vrect(x0=BASE_YEAR, x1=eff_compare, fillcolor="grey", opacity=0.1, line_width=0)
+                st.plotly_chart(fig, width="stretch")
+
+            st.markdown(f"#### Trajectory: {BASE_YEAR} → {eff_compare}")
+            traj = gdp_merged[gdp_merged["year"].isin([BASE_YEAR, eff_compare])].dropna(
+                subset=["gdp_per_capita_real_2015eur", "per_capita_tco2e"])
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            for region, g in traj.groupby("region"):
+                g = g.sort_values("year")
+                if len(g) < 2:
+                    continue
+                x0, y0 = g.iloc[0][["gdp_per_capita_real_2015eur", "per_capita_tco2e"]]
+                x1, y1 = g.iloc[1][["gdp_per_capita_real_2015eur", "per_capita_tco2e"]]
+                decoupling = x1 > x0 and y1 < y0
+                color = C_TEAL if decoupling else C_CORAL
+                fig.add_trace(go.Scatter(x=[x0, x1], y=[y0, y1], mode="lines+markers+text",
+                                        line=dict(color=color, width=2),
+                                        marker=dict(size=[8, 12], symbol=["circle", "triangle-up"]),
+                                        text=["", region], textposition="top center",
+                                        showlegend=False))
+            fig.update_layout(title="Teal = richer & cleaner (decoupling). Orange = any other direction.",
+                              height=600)
+            fig.update_xaxes(title_text="GDP per capita, real 2015 EUR")
+            fig.update_yaxes(title_text="CO2 per capita (tCO2e)")
+            st.plotly_chart(fig, width="stretch")
+
+            st.markdown("#### Carbon intensity of GDP over time")
+            intensity_pivot = gdp_merged.pivot_table(index="year", columns="region",
+                                                     values="co2_tonnes_per_million_eur_gdp")
+            fig = go.Figure(layout=PLOTLY_LAYOUT)
+            for region in intensity_pivot.columns:
+                fig.add_trace(go.Scatter(x=intensity_pivot.index, y=intensity_pivot[region],
+                                        mode="lines", name=region))
+            fig.update_layout(title="tCO2e per million EUR of (nominal) GDP", height=450)
+            st.plotly_chart(fig, width="stretch")
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 7 — SUBCLASS DRILL-DOWN (base region vs compare region)
+    # ══════════════════════════════════════════════════════════
+    with tabs[6]:
+        if subclass_emissions.empty:
+            st.info("Subclass data not loaded — re-run the updated `01_consolidate_regions.py`.")
+        else:
+            st.markdown(f"#### Comparing **{BASE_REGION}** vs **{COMPARE_REGION}**")
+            common_sectors = sorted(
+                set(subclass_emissions[subclass_emissions["region"] == BASE_REGION]["sector"].unique())
+                | set(subclass_emissions[subclass_emissions["region"] == COMPARE_REGION]["sector"].unique())
+            )
+            drill_sector = st.selectbox("Sector", common_sectors, key="drill_sector")
+            drill_year = snapshot_year_picker("snap_drill")
+
+            sub_both = subclass_emissions[
+                (subclass_emissions["region"].isin([BASE_REGION, COMPARE_REGION]))
+                & (subclass_emissions["sector"].str.strip() == drill_sector.strip())
+            ]
+
+            if sub_both.empty:
+                st.info("No subclass rows for this sector in either region.")
+            else:
+                c1, c2 = st.columns([3, 2], gap="medium")
+                with c1:
+                    snap_sub = sub_both[sub_both["year"] == drill_year]
+                    fig = px.bar(snap_sub, x="subclass", y="value_ktco2e", color="region",
+                                barmode="group",
+                                color_discrete_map={BASE_REGION: C_TEAL, COMPARE_REGION: C_CORAL})
+                    fig.update_layout(**PLOTLY_LAYOUT,
+                                      title=f"{drill_sector} subclasses — {drill_year}", height=450)
+                    st.plotly_chart(fig, width="stretch")
+                with c2:
+                    fig = go.Figure(layout=PLOTLY_LAYOUT)
+                    for region, dash in [(BASE_REGION, "solid"), (COMPARE_REGION, "dash")]:
+                        rdf = sub_both[sub_both["region"] == region]
+                        for subclass, g in rdf.groupby("subclass"):
+                            g = g.sort_values("year")
+                            fig.add_trace(go.Scatter(x=g["year"], y=g["value_ktco2e"],
+                                                    mode="lines", name=f"{region} — {subclass}",
+                                                    line=dict(dash=dash)))
+                    fig.update_layout(title=f"{drill_sector} subclasses over time\\n"
+                                            "(solid = base region, dashed = compare region)",
+                                      height=450, showlegend=(len(fig.data) <= 10))
+                    st.plotly_chart(fig, width="stretch")
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 8 — SECTOR SIMILARITY
+    # ══════════════════════════════════════════════════════════
+    with tabs[7]:
+        st.markdown("#### Which sectors move together nationally?")
+        national_sector_year = (ghg_long.groupby(["year", "sector"])["value_ktco2e"]
+                                .sum().reset_index()
+                                .pivot(index="year", columns="sector", values="value_ktco2e"))
+        sector_std = national_sector_year.std()
+        national_sector_year = national_sector_year.drop(columns=sector_std[sector_std == 0].index)
+
+        if national_sector_year.shape[1] < 2:
+            st.info("Need at least 2 non-constant sectors to compute correlation.")
+        else:
+            corr_mode = st.radio("Correlation of", ["Raw levels", "Year-on-year % change (detrended)"],
+                                 horizontal=True, key="sector_corr_mode")
+            if corr_mode == "Raw levels":
+                sector_corr = national_sector_year.corr()
+                st.caption("Raw levels: two sectors that both trended downward for 20 years will "
+                          "look highly correlated even without sharing a real short-term driver.")
+            else:
+                sector_corr = national_sector_year.pct_change().replace(
+                    [np.inf, -np.inf], np.nan).corr()
+                st.caption("Detrended: strips out the shared long-term decline, showing which "
+                          "sectors actually move together in the SAME year for the same reason.")
+
+            fig = px.imshow(sector_corr, color_continuous_scale="RdBu_r", zmin=-1, zmax=1,
+                            text_auto=".2f", labels=dict(color="Pearson r"))
+            fig.update_layout(**PLOTLY_LAYOUT, height=550)
+            st.plotly_chart(fig, width="stretch")
+
+            st.markdown("**All sector pairs, ranked**")
+            sc_flat = sector_corr.where(np.triu(np.ones(sector_corr.shape), k=1).astype(bool)).stack()
+            sc_flat.index = sc_flat.index.set_names(["Sector A", "Sector B"])
+            sc_df = sc_flat.reset_index()
+            sc_df.columns = ["Sector A", "Sector B", "Correlation (r)"]
+            sc_df = sc_df.sort_values("Correlation (r)", ascending=False).reset_index(drop=True)
+            sc_df["Correlation (r)"] = sc_df["Correlation (r)"].round(3)
+            st.dataframe(sc_df, width="stretch", hide_index=True, height=400)
+
+    # ══════════════════════════════════════════════════════════
+    # TAB 9 — GEOGRAPHIC PROXIMITY
+    # ══════════════════════════════════════════════════════════
+    with tabs[8]:
+        st.markdown("#### Are geographically close regions actually similar?")
+        c1, c2 = st.columns(2, gap="medium")
+        with c1:
+            proximity_year_choice = st.selectbox("Year", year_or_all_options(all_years),
+                                                 index=len(all_years),  # defaults to latest year
+                                                 key="proximity_year")
+        with c2:
+            neighbor_km = st.slider("Neighbour distance threshold (km)", 20, 400, 100, step=10,
+                                    key="neighbor_km")
+
+        geo = fetch_region_geometry()
+        if geo is None:
+            st.warning("Couldn't load region boundaries from Statistics Finland's WFS service "
+                      "right now — this tab needs outbound internet access to geo.stat.fi.")
+        else:
+            geo_m = geo.to_crs("EPSG:3067")  # metric CRS for real distances
+            geo_m["centroid"] = geo_m.geometry.centroid
+
+            if proximity_year_choice == "All years (average)":
+                metric_df = summary.groupby("region")[["total_ktco2e", "per_capita_tco2e",
+                                                        "population"]].mean().reset_index()
+                label = "average across all years"
+            else:
+                y = int(proximity_year_choice)
+                metric_df = summary[summary["year"] == y][
+                    ["region", "total_ktco2e", "per_capita_tco2e", "population"]]
+                label = f"year {proximity_year_choice}"
+
+            metric_df["region_key"] = metric_df["region"].apply(normalize_region_name)
+            geo_snap = geo_m.merge(metric_df, on="region_key", how="inner")
+
+            if gdp_merged is not None and not gdp_merged.empty:
+                if proximity_year_choice == "All years (average)":
+                    gdp_snap = gdp_merged.groupby("region")["gdp_per_capita_eur"].mean().reset_index()
+                else:
+                    gdp_snap = gdp_merged[gdp_merged["year"] == int(proximity_year_choice)][
+                        ["region", "gdp_per_capita_eur"]]
+                gdp_snap["region_key"] = gdp_snap["region"].apply(normalize_region_name)
+                geo_snap = geo_snap.merge(gdp_snap[["region_key", "gdp_per_capita_eur"]],
+                                          on="region_key", how="left")
+
+            n = len(geo_snap)
+            if n < 2:
+                st.info("Need at least 2 matched regions with geometry to run this analysis.")
+            else:
+                rows = []
+                for i in range(n):
+                    for j in range(i + 1, n):
+                        a, b = geo_snap.iloc[i], geo_snap.iloc[j]
+                        dist_km = a["centroid"].distance(b["centroid"]) / 1000
+                        if dist_km > neighbor_km:
+                            continue
+                        row = {
+                            "Region A": a["region"], "Region B": b["region"],
+                            "Distance (km)": round(dist_km, 1),
+                            "CO2/capita A": round(a["per_capita_tco2e"], 2),
+                            "CO2/capita B": round(b["per_capita_tco2e"], 2),
+                            "|Δ CO2/capita|": round(abs(a["per_capita_tco2e"] - b["per_capita_tco2e"]), 2),
+                            "Population A": int(a["population"]),
+                            "Population B": int(b["population"]),
+                            "|Δ Population|": int(abs(a["population"] - b["population"])),
+                        }
+                        if "gdp_per_capita_eur" in geo_snap.columns:
+                            row["GDP/capita A"] = round(a.get("gdp_per_capita_eur", np.nan), 0)
+                            row["GDP/capita B"] = round(b.get("gdp_per_capita_eur", np.nan), 0)
+                            row["|Δ GDP/capita|"] = round(
+                                abs(a.get("gdp_per_capita_eur", np.nan) - b.get("gdp_per_capita_eur", np.nan)), 0)
+                        rows.append(row)
+
+                neighbours_df = pd.DataFrame(rows).sort_values("Distance (km)")
+                st.markdown(f"**{len(neighbours_df)} region pairs within {neighbor_km} km "
+                           f"({label})**")
+                if neighbours_df.empty:
+                    st.info("No pairs within this threshold — try a larger distance.")
+                else:
+                    st.dataframe(neighbours_df, width="stretch", hide_index=True, height=450)
+
+                    st.markdown("#### Does distance actually predict similarity? (all pairs, not just close ones)")
+                    all_pairs = []
+                    for i in range(n):
+                        for j in range(i + 1, n):
+                            a, b = geo_snap.iloc[i], geo_snap.iloc[j]
+                            all_pairs.append({
+                                "distance_km": a["centroid"].distance(b["centroid"]) / 1000,
+                                "diff_co2": abs(a["per_capita_tco2e"] - b["per_capita_tco2e"]),
+                            })
+                    all_pairs_df = pd.DataFrame(all_pairs)
+                    if len(all_pairs_df) >= 3:
+                        r = all_pairs_df["distance_km"].corr(all_pairs_df["diff_co2"])
+                        fig = px.scatter(all_pairs_df, x="distance_km", y="diff_co2",
+                                        labels={"distance_km": "Distance between regions (km)",
+                                               "diff_co2": "|Δ CO2 per capita|"})
+                        z = np.polyfit(all_pairs_df["distance_km"], all_pairs_df["diff_co2"], 1)
+                        xs = np.linspace(all_pairs_df["distance_km"].min(),
+                                        all_pairs_df["distance_km"].max(), 50)
+                        fig.add_trace(go.Scatter(x=xs, y=np.poly1d(z)(xs), mode="lines",
+                                                line=dict(color=C_TEAL, width=2), name="trend"))
+                        fig.update_layout(**PLOTLY_LAYOUT,
+                                          title=f"r = {r:.2f} "
+                                                f"({'weak/no' if abs(r)<0.2 else 'some' if abs(r)<0.5 else 'fairly strong'} relationship)",
+                                          height=450)
+                        st.plotly_chart(fig, width="stretch")

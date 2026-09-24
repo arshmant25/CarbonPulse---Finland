@@ -1,0 +1,9 @@
+{
+  "test": {
+    "MAE": null,
+    "RMSE": null,
+    "MAPE": null
+  },
+  "n_groups_fit": 0,
+  "n_groups_skipped": 227
+}

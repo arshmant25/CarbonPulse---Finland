@@ -1,0 +1,1 @@
+ALL: k=19 variables, n_train=14 obs, need >= 2223 for a reliable VAR(2) fit -- skipped.

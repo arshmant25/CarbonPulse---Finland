@@ -1,0 +1,19 @@
+('Central Finland',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Central Ostrobothnia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Kainuu',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Kanta-Häme',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Kymenlaakso',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Lapland',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('North Karelia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('North Ostrobothnia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('North Savo',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Ostrobothnia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Pirkanmaa',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Päijät-Häme',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Satakunta',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('South Karelia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('South Ostrobothnia',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('South Savo',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Southwest Finland',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Uusimaa',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
+('Åland',): k=14 variables, n_train=14 obs, need >= 1218 for a reliable VAR(2) fit -- skipped.
